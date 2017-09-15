@@ -1,0 +1,185 @@
+html,body {
+	background-color: white;
+}
+.mui-bar{
+	background-color: white;
+	height: 6.5rem;
+	padding: 0;
+	box-shadow: none;
+}
+#slider{
+	top:6.5rem;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.mui-pull-top-tips {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -1rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	z-index: 1;
+}
+.mui-bar~.mui-pull-top-tips {
+	top: 1rem;
+}
+.mui-scroll a{
+	font-size: 1.375rem;
+	line-height: 3.083333rem!important;
+}
+.mui-segmented-control.mui-scroll-wrapper,.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+	height: 3.1rem;
+}
+.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+	top:3.1rem;
+}
+/*选中的tab*/
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	background-color: white;
+	color: #3d94ff;
+	border: none;
+}
+/*上拉下拉*/
+.mui-pull-top-wrapper {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	text-align: center;
+	background-color: #efeff4;
+	border: 1px solid #ddd;
+	border-radius: 1rem;
+	background-clip: padding-box;
+	box-shadow: 0 0.166666rem 0.416666rem #bbb;
+	overflow: hidden;
+}
+.mui-pull-top-tips.mui-transitioning {
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+}
+.mui-pull-top-tips .mui-pull-loading {
+	margin: 0;
+}
+.mui-pull-loading{
+	display: block;
+}
+.mui-pull-top-wrapper .mui-icon,
+.mui-pull-top-wrapper .mui-spinner {
+	margin-top: 0.291666rem;
+}
+.mui-pull-bottom-tips {
+	text-align: center;
+	font-size: 0.625rem;
+	line-height: 1.666666rem;
+	color: #777;
+}
+.mui-pull-top-canvas {
+	overflow: hidden;
+	background-color: #fafafa;
+	border-radius: 1.666666rem;
+	box-shadow: 0 0.166666rem 0.416666rem #bbb;
+	width: 1.666666rem;
+	height: 1.666666rem;
+	margin: 0 auto;
+}
+.mui-pull-top-canvas canvas {
+	width: 1.666666rem;
+}
+.mui-slider-indicator.mui-segmented-control {
+	background-color: rgb(238, 238, 238);
+	border: none;
+}
+
+/*header*/
+.backBox{
+	width: 100%;
+	color: #3d94ff;
+	margin-bottom: 0.5rem;
+}
+.backBox a{
+	position: absolute;
+	left: 1rem;
+	top: 0.4rem;
+}
+.backBox a span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	margin-left: 0.5rem;
+}
+.backBox a img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.875rem;
+	height: 1.541666rem;
+}
+.title{
+	text-align: center;
+	color: #3d94ff;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0;
+}
+.backBox>img{
+	position: absolute;
+	right: 1rem;
+	top: 0.8rem;
+	width: 1.666666rem;
+	height: 1.625rem;
+}
+.searchBox{
+	margin: 0 4.2rem;
+}
+.searchBox input{
+	height: 2.4rem;
+	font-size: 1rem;
+	border: solid 1px rgba(229, 229, 229, 1);
+}
+.searchBox img{
+	position: absolute;
+	right: 4.2rem;
+	top: 3.35rem;
+	width: 2.3rem;
+	height: 2.3rem;
+}
+
+/*列表*/
+.mui-table-view{
+	width: 100%;
+	margin-top: 1rem;
+	overflow: hidden;
+}
+.mui-table-view a{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 33.3%;
+	padding: 0.7rem;
+	padding-bottom: 0;
+	text-align: center;
+	display: block;
+}
+.mui-table-view a .readerPic{
+	width: 6.291666rem!important;
+	height: 6.291666rem;
+}
+.mui-table-view a p{
+	font-size: 1rem;
+	margin: 0;
+	line-height: 2rem;
+	color: black;
+}
+.mui-table-view a .total,.mui-table-view a .author{
+	color: #a0a0a0;
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+}
+
+.mui-table-view a .coursePic{
+	width: 8.5rem;
+	height: 8.5rem;
+}

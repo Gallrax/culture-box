@@ -1,0 +1,155 @@
+.title{
+	width: 100%;
+	height: 2.625rem;
+	overflow: hidden;
+	position: relative;
+}
+.title-img1{
+	display: block;
+	width: 0.8333rem;
+	height: 1.5833rem;
+	position: absolute;
+	top: 0.5208rem;
+	left: 1rem;
+}
+.title-img2{
+	display: block;
+	width: 1.6666rem;
+	height: 1.6666rem;
+	position: absolute;
+	top: 0.4792rem;
+	right: 1rem;
+   
+}
+.title span{
+	display: block;
+	position: absolute;
+	height: 2.625rem;
+	line-height: 2.625rem;
+	font-size: 1.4583rem;
+	color: #3d94ff;
+	top: 0;
+	left: 3rem;
+}
+.title div{
+	height: 2.625rem;
+	width: 50%;
+	line-height: 2.625rem;
+	font-size: 1.4583rem;
+	color: #3d94ff;
+	margin: 0 auto;
+	text-align: center;
+}
+.video-wrap{
+	width: 100%;
+	height: 17.7916rem;
+}
+.video-info{
+	width: 100%;
+	height: 3.75rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.video-info span:nth-child(1){
+	width: 50%;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	font-size: 1.1666rem;
+	color: #000;
+}
+.video-info span:nth-child(2){
+	display: -moz-box; 
+    display: -webkit-box;
+    display: -o-box;
+    display: box; 
+	width: 33%;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	font-size: 1rem;
+	color: #a0a0a0;
+	text-align: right;
+	-moz-box-pack:end; -webkit-box-pack:end; -o-box-pack:end; box-pack:end;
+	-moz-box-align:center; -webkit-box-align:center; -o-box-align:center; box-align:center;
+}
+.down{
+	display: none;
+}
+.down img{
+	display: block;
+	width: 1.0833rem;
+	height: 0.5833rem;
+	margin-top: 1.333rem;
+}
+.video-info span:nth-child(2) img{
+	display: inline-block;
+	width: 0.4166rem;
+	height: 1rem;
+	margin-left: 0.3rem;
+}
+.video-menu{
+	width: 100%;
+	min-height: 13.8333rem;
+}
+.video-content{
+	width: 100%;
+	min-height: 0.3333rem;
+	display: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.video-menu .video-button{
+	width: 100%;
+	height: 2.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-bottom: 1.25rem;
+}
+.video-button span{
+	font-size: 1.1666rem;
+	color: #3d94ff;
+	line-height: 2.25rem;
+	color: #3d94ff;
+}
+.video-title{
+	width: 100%;
+	height: 2.25rem;
+	font-size: 1.1666rem;
+	line-height: 2.25rem;
+	color: #000000;
+	text-align: left;
+	padding-left: 1rem;
+	border-bottom: 1px solid #dcdcdc;
+}
+.video-news{
+	width: 100%;
+	padding: 1rem 1rem 0 1rem;
+	color: #000000;
+	font-size: 1rem;
+
+}
+.video-news span{
+	margin-bottom: 1rem;
+}
+.blue{
+	color: #3d94ff;
+}
+.teacher-introduce {
+	width: 100%;
+	height: 2.6666rem;
+}
+.teacher-introduce span{
+	line-height: 2.6666rem;
+	color: #000000;
+	font-size: 1.1666rem;
+}
+.teacher-introduce img{
+	width:2.5rem;
+	height: 2.5rem;
+	border-radius: 2.5rem;
+}
+.video-content p{
+	text-indent: 2rem;
+	font-size: 1rem;
+	color: #000;
+	line-height: 1.8rem;
+}
