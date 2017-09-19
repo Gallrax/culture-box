@@ -12,7 +12,7 @@ public class StringUtil {
         return str == null || str.isEmpty();
     }
 
-    public static boolean jusgeNotEnmty(String str) {
+    public static boolean judgeNotEmpty(String str) {
         return str != null && !str.isEmpty();
     }
 }

@@ -1,6 +1,7 @@
 package com.cx.web;
 
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.cx.constant.Size;
@@ -36,7 +37,7 @@ public class SeriesController {
 
     @RequestMapping("/getByFields")
     @ResponseBody
-    public List<Series> getByFields(String eq, String like, Integer page) {
+    public String getByFields(String eq, String like, Integer page) {
         logger.info(" ---------- series getByFields ---------- ");
         EntityWrapper<Series> ew = new EntityWrapper<>();
         Map<String, String> eqMap = URLUtil.decodeAndMap(eq);//将eq进行解码并转为Map
@@ -44,11 +45,10 @@ public class SeriesController {
         logger.info(" paramer : eqMap : " + eqMap + " likeMap : " + likeMap);
         EWUtil.eqMap(ew, eqMap);
         EWUtil.likeMap(ew, likeMap);
-        List<Series> series = seriesService.selectPage(
-                new Page<Series>(page == null ? 1 : page, Size.SMALL_SIZE), ew.orderBy("insertTime", true))
-                .getRecords();
-        logger.info(" result series : " + series);
-        return series;
+        Page<Series> pager = seriesService.selectPage(new Page<Series>(page == null ? 1 : page, Size.SMALL_SIZE), ew.orderBy("insertTime", true));
+        logger.info(" result pager : " + pager);
+//        if(StringUtil.judgeNotEmpty(like)) return JSON.toJSONString(page);//如果like不为空则顺带返回查询结果总数
+        return JSON.toJSONString(pager.getRecords());//如果like为空则说明不需要结果总数，只需返回数据即可
     }
 
     @RequestMapping("/getByPCid/{pcid}")

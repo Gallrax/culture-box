@@ -1,5 +1,7 @@
 package com.cx.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -43,6 +45,7 @@ public class Series extends Model<Series> {
 	//系列封面路径
 	private String image;
 	//系列下总资源数
+	@JSONField(serialzeFeatures = SerializerFeature.WriteNullNumberAsZero)
 	private Integer count;
 	//系列是否推荐
 	private Integer isRecommend;

@@ -129,13 +129,14 @@
         var obj = getData(page, categoryId);
         var tempStr = "";
         for (var i in obj) {
+//            console.log(obj[i].name);
             tempStr += "<a> " +
                 "<img class=\"readerPic\" src=\""+ obj[i].image +"\" onclick=\"location.href = '/coursemusic.html?sid="+ obj[i].id +"'\"/> " +
                 "<p class=\"title word\">"+ obj[i].name +"</p> " +
                 "<p class=\"total word\">共"+ obj[i].count +"集</p> " +
                 "</a> ";
         }
-        console.log(" index : " + index + " tempStr : " + tempStr);
+//        console.log(" index : " + index + " tempStr : " + tempStr);
         $("#ul_" + index).append(tempStr);
     }
 
@@ -144,7 +145,8 @@
         obj.categoryId = categoryId;
         var eq = ifyAndEnc(obj);
         var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
-        var obj = $.parseJSON(result);
+        var obj = $.parseJSON($.parseJSON(result));//因为web返回的json是再一次序列化的结果，因此需要序列化两次
+        console.log(obj);
         return obj;
     }
 </script>

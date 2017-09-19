@@ -45,7 +45,7 @@
 <div class="video-content clearfix">
     <div class="teacher-introduce">
         <span class="fl">讲师简介</span>
-        <img class="fr" src="static/image/course1.png"/>
+        <%--<img class="fr" src="static/image/course1.png"/>--%>
     </div>
     <p>
         何建民，男，华东师范大学经济系毕业，获经济学学士学位；后获复旦大学博士学位。现为教授，经济学博士，旅游管理专业博士生导师，上海财经大学工商管理博士后流动站旅游管理专业博士后联系导师。上海财经大学旅游管理系主任，获国务院特殊津贴专家，全国优秀教师。长期从事旅游业开发与管理研究，发表多篇学术性论文并获奖，被邀请去各地巡回演讲受到欢迎。</p>
