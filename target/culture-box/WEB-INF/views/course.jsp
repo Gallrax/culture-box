@@ -92,6 +92,8 @@
 <script>
 
     var pid = 2;
+    var map = new Object();//用于储存每个分类下查询当前页
+
     $(function () {
         getCategory();
     });
@@ -102,12 +104,14 @@
         var obj = $.parseJSON(result);
         var tempStr = "";
         if (obj.length >= 1) {
-            tempStr += "<a class=\"mui-control-item mui-active\" href=\"#item" + 1 + "mobile\">" + obj[0].name + "</a>";
+            tempStr += "<a id=\"category_0\" title=\"" + obj[0].id + "\" class=\"mui-control-item mui-active\" href=\"#item" + 1 + "mobile\">" + obj[0].name + "</a>";
             writeDiv(1, obj[0].id, true);
+            map[0] = 1;//初始化
         }
         for (var i = 1; i < obj.length; i++) {
-            tempStr += "<a class=\"mui-control-item\" href=\"#item" + (i + 1) + "mobile\">" + obj[i].name + "</a>";
+            tempStr += "<a id=\"category_" + i + "\" title=\"" + obj[i].id + "\" class=\"mui-control-item\" href=\"#item" + (i + 1) + "mobile\">" + obj[i].name + "</a>";
             writeDiv((i + 1), obj[i].id, false);
+            map[i] = 1;//初始化
         }
         $("#reader_categary").append(tempStr);
     }
@@ -144,8 +148,13 @@
         obj.categoryId = categoryId;
         var eq = ifyAndEnc(obj);
         var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
-        var obj = $.parseJSON(result);
+        var obj = $.parseJSON($.parseJSON(result));
         return obj;
+    }
+
+    function getCategoryId(index) {
+        var categoryId = $("#category_" + index).attr("title");
+        return categoryId;
     }
 </script>
 
@@ -188,10 +197,12 @@
             var createFragment = function (ul, index, count, reverse) {
                 var length = ul.querySelectorAll('a').length;
                 var fragment = document.createDocumentFragment();
-                var li;
-                for (var i = 0; i < count; i++) {
+                var current_page = map[index] + 1;
+                var obj = getData(current_page, getCategoryId(index));
+                if (obj.length != 0) map[index] = current_page + 1;
+                for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
-                    li.innerHTML = '<img class="readerPic" src="static/image/pic.png" /><p class="title word">了不起的火箭</p><p class="author word">共一集</p>'
+                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
                     fragment.appendChild(li);
                 }
                 return fragment;

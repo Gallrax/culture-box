@@ -25,7 +25,7 @@
 </div>
 <div class="nov-wrap">
     <div class="nov fl">
-        <img src="static/image/nov1.png" onclick="location.href='/course.html'"/>
+        <img src="static/image/nov1.png" onclick="location.href='/books.html'"/>
         <center>书城</center>
     </div>
     <div class="nov fl">

@@ -45,7 +45,7 @@ public class Series extends Model<Series> {
 	//系列封面路径
 	private String image;
 	//系列下总资源数
-	@JSONField(serialzeFeatures = SerializerFeature.WriteNullNumberAsZero)
+	@JSONField(serialzeFeatures = {SerializerFeature.WriteMapNullValue, SerializerFeature.WriteNullNumberAsZero})//允许输出此空值，并将此空值转换为0
 	private Integer count;
 	//系列是否推荐
 	private Integer isRecommend;

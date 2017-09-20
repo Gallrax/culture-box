@@ -1,5 +1,6 @@
 package com.test;
 
+import com.alibaba.fastjson.JSON;
 import com.cx.entity.Series;
 import com.cx.service.SeriesService;
 import org.junit.Before;
@@ -41,5 +42,12 @@ public class TestSeries {
             series.setName(temp[i] + i);
             seriesService.insert(series);
         }
+    }
+
+    @Test
+    public void test03() {
+        Series series = seriesService.selectById(1);
+        String s = JSON.toJSONString(series);
+        System.out.println(s);
     }
 }
