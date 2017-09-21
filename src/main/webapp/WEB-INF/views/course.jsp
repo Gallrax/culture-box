@@ -16,7 +16,7 @@
 <body>
 <header class="mui-bar mui-bar-nav">
 	<div class="backBox">
-		<a onclick="window.history.back();"><img src="static/image/arrow-blue-left.png"/><span>返回</span></a>
+		<a href="javascript:void(0);" onclick="window.history.back();"><img src="static/image/arrow-blue-left.png"/><span>返回</span></a>
 		<p class="title">公开课</p>
 		<img src="static/image/home.png" onclick="location.href = '/'"/>
 	</div>
