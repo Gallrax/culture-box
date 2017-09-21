@@ -21,15 +21,15 @@
 		<img src="static/image/home.png" onclick="location.href = '/'"/>
 	</div>
 	<div class="searchBox">
-		<input type="text" placeholder="请输入书名或作者"/>
-		<img src="static/image/search.png"/>
+		<input id="search_value" type="text" placeholder="请输入书名或作者"/>
+		<img src="static/image/search.png" onclick="search()"/>
 	</div>
 </header>
 <div class="mui-content">
 	<div id="slider" class="mui-slider mui-fullscreen">
 		<div id="sliderSegmentedControl"
 			 class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-			<div class="mui-scroll" id="reader_categary">
+			<div id="reader_categary" class="mui-scroll">
 				<%--<a class="mui-control-item mui-active" href="#item1mobile">科幻文学</a>
                 <a class="mui-control-item" href="#item2mobile">儿童故事</a>
                 <a class="mui-control-item" href="#item3mobile">英语听力</a>
@@ -98,6 +98,7 @@
         getCategory();
     });
 
+    //获取分类
     function getCategory() {
         var url = "/category/getByPid/" + pid;
         var result = jsGet(url, null);
@@ -116,6 +117,7 @@
         $("#reader_categary").append(tempStr);
     }
 
+    //根据分类在分类下的div中写数据
     function writeDiv(index, categoryId, isOne) {
         var tempStr = isOne ? "<div id=\"item" + index + "mobile\" class=\"mui-slider-item mui-control-content mui-active\"> " : "<div id=\"item" + index + "mobile\" class=\"mui-slider-item mui-control-content\"> ";
         tempStr += "<div id=\"scroll" + index + "\" class=\"mui-scroll-wrapper\"> " +
@@ -129,6 +131,7 @@
         writeData(index, 1, categoryId);
     }
 
+    //写数据实现
     function writeData(index, page, categoryId) {
         var obj = getData(page, categoryId);
         var tempStr = "";
@@ -143,6 +146,7 @@
         $("#ul_" + index).append(tempStr);
     }
 
+    //获取数据并转换
     function getData(page, categoryId) {
         var obj = new Object();
         obj.categoryId = categoryId;
@@ -152,6 +156,13 @@
         return obj;
     }
 
+    //搜索跳转
+	function search() {
+        var value = $("#search_value").val();
+        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + value;
+    }
+
+    //方便下方mui获取(在下方script中无法获取)
     function getCategoryId(index) {
         var categoryId = $("#category_" + index).attr("title");
         return categoryId;

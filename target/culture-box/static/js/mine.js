@@ -28,3 +28,7 @@ function ifyAndEnc(obj) {
     var s = encodeURI(encodeURI(eq));
     return s;
 }
+
+function isEmpty(value) {
+    return value == null || value == "";
+}

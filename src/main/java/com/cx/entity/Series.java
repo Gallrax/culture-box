@@ -55,6 +55,8 @@ public class Series extends Model<Series> {
 	private Date insertTime;
 	//系列分类id
 	private Integer categoryId;
+	//系列分类父id
+	private Integer categoryPId;
 
 
 	public Integer getId() {
@@ -191,6 +193,14 @@ public class Series extends Model<Series> {
 
 	public void setCategoryId(Integer categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public Integer getCategoryPId() {
+		return categoryPId;
+	}
+
+	public void setCategoryPId(Integer categoryPId) {
+		this.categoryPId = categoryPId;
 	}
 
 	@Override

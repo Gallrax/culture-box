@@ -48,8 +48,11 @@ public class URLUtil {
     }
 
     public static Map<String, String> decodeAndMap(String str) {
+        logger.info(" URLUtil decode : " + str);
         String result = decode(str);
+        logger.info(" decode result : " + str);
         HashMap<String, String> map = JSON.parseObject(result, HashMap.class);
+        logger.info(" result : " + map);
         return map == null ? new HashMap<String, String>() : map;
     }
 }

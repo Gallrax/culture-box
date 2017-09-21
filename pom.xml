@@ -173,6 +173,35 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+
+        <!--epubreader 引入本地的-->
+        <dependency>
+            <groupId>com.cx</groupId>
+            <artifactId>epubreader</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!--epubreader 核心包-->
+        <dependency>
+            <groupId>com.cx</groupId>
+            <artifactId>epublib-core</artifactId>
+            <version>3.1</version>
+        </dependency>
+
+        <!--epubreader 依赖-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
+        <!--epubreader 依赖-->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.8.3</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>culture-box</finalName>

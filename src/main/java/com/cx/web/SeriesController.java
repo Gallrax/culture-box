@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * <p>
@@ -41,11 +40,8 @@ public class SeriesController {
     public String getByFields(String eq, String like, Integer page) {
         logger.info(" ---------- series getByFields ---------- ");
         EntityWrapper<Series> ew = new EntityWrapper<>();
-        Map<String, String> eqMap = URLUtil.decodeAndMap(eq);//将eq进行解码并转为Map
-        Map<String, String> likeMap = URLUtil.decodeAndMap(like);//将eq进行解码并转为Map//将like进行解码并转为Map
-        logger.info(" paramer : eqMap : " + eqMap + " likeMap : " + likeMap);
-        EWUtil.eqMap(ew, eqMap);
-        EWUtil.likeMap(ew, likeMap);
+        EWUtil.eqMap(ew, URLUtil.decodeAndMap(eq));
+        EWUtil.likeMap(ew, URLUtil.decodeAndMap(like));
         Page<Series> pager = seriesService.selectPage(new Page<Series>(page == null ? 1 : page, Size.SMALL_SIZE), ew.orderBy("insertTime", true));
         logger.info(" result pager : " + pager);
         if(StringUtil.judgeNotEmpty(like)) return JSON.toJSONString(page);//如果like不为空则顺带返回查询结果总数
