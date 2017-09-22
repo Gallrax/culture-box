@@ -188,7 +188,7 @@
                 "<p class=\"word\">"+ obj[i].name +"</p> " +
                 "<p class=\"word\">"+ obj[i].author +"</p> " +
                 "</div> " +
-                "<span class=\"fr\">阅读</span> " +
+                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?id="+ obj[i].id +"'\">阅读</span> " +
                 "</li>";
         }
         console.log(" index : " + index + " tempStr : " + tempStr);
@@ -197,9 +197,9 @@
 
     //获取数据并转换
     function getData(page, categoryId) {
-        var obj = new Object();
-        obj.categoryId = categoryId;
-        var eq = ifyAndEnc(obj);
+        var temp = new Object();
+        temp.categoryId = categoryId;
+        var eq = ifyAndEnc(temp);
         var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;

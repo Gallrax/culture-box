@@ -49,14 +49,12 @@
     </div>
     <span class="fr list-button">查看</span>
 </div>
+<%--<div class="pullUp">已经到底啦~(>_<)~~</div>--%>
 </body>
 </html>
 
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/mine.js"></script>
-<script src="static/js/mui.min.js"></script>
-<script src="static/js/mui.pullToRefresh.js"></script>
-<script src="static/js/mui.pullToRefresh.material.js"></script>
 <script>
     var pid;
     var search;
@@ -83,61 +81,9 @@
         var obj = new Object();
         obj.categoryPId = pid;
         var eq = ifyAndEnc(obj);
-        var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
+        var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
     }
 
-</script>
-<script>
-    mui.init();
-    (function ($) {
-        //阻尼系数
-//				var deceleration = mui.os.ios?0.003:0.0009;
-        $('.mui-scroll-wrapper').scroll({
-            bounce: false,
-            indicators: true, //是否显示滚动条
-//					deceleration:deceleration
-        });
-        $.ready(function () {
-            //循环初始化所有下拉刷新，上拉加载。
-            $.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function (index, pullRefreshEl) {
-                $(pullRefreshEl).pullToRefresh({
-                    down: {
-                        callback: function () {
-                            var self = this;
-                            setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.insertBefore(createFragment(ul, index, 6, true), ul.firstChild);
-                                self.endPullDownToRefresh();
-                            }, 1000);
-                        }
-                    },
-                    up: {
-                        callback: function () {
-                            var self = this;
-                            setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.appendChild(createFragment(ul, index, 6));
-                                self.endPullUpToRefresh();
-                            }, 1000);
-                        }
-                    }
-                });
-            });
-            var createFragment = function (ul, index, count, reverse) {
-                /*var length = ul.querySelectorAll('a').length;
-                 var fragment = document.createDocumentFragment();
-                 var current_page = map[index] + 1;
-                 var obj = getData(current_page, getCategoryId(index));
-                 if (obj.length != 0) map[index] = current_page + 1;
-                 for (var i = 0; i < obj.length; i++) {
-                 li = document.createElement('a');
-                 li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
-                 fragment.appendChild(li);
-                 }
-                 return fragment;*/
-            };
-        });
-    })(mui);
 </script>

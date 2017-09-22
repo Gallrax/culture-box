@@ -41,7 +41,7 @@
     <div class="content-title">
         <span class="fl">好书推荐</span>
         <img class="fr" src="static/image/jiantou.png"/>
-        <div class="fr" onclick="location.href='/course.html'">更多</div>
+        <div class="fr" onclick="location.href='/books.html'">更多</div>
     </div>
     <div id="data_1" class="content fl">
         <%--<div class="content-section fl">

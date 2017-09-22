@@ -1,17 +1,21 @@
 package com.cx.web;
 
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.cx.entity.Resource;
 import com.cx.service.ResourceService;
 import com.cx.util.EWUtil;
 import com.cx.util.URLUtil;
+import com.yd.epub.modules.parse.read.BookInfo;
+import com.yd.epub.modules.parse.read.Reader;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -43,4 +47,15 @@ public class ResourceController {
         logger.info(" result : " + resources);
         return resources;
     }
+
+    @RequestMapping("/epubRead")
+    @ResponseBody
+    public String epubRead(Integer id) {
+        Resource resource = resourceService.selectById(id);
+        String route = resource.getRoute();
+        File file = new File(route);
+        BookInfo book = new Reader().read(new File(file.getAbsolutePath()), 20, 600, 800,1);
+        return JSON.toJSONString(book);
+    }
+
 }

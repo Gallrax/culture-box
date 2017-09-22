@@ -27,7 +27,7 @@
 		SELECT * FROM cx_series
 		WHERE categoryId IN
 			(SELECT id FROM cx_category WHERE pid =  #{pcid})
-		ORDER BY insertTime
+		ORDER BY insertTime DESC
 		LIMIT #{index}, #{size}
 	</select>
 

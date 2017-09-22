@@ -59,27 +59,27 @@
     });
 
     function getTitle() {
-        var obj = new Object();
-        obj.id = seriesId;
-        var result = jsGet("/series/getByFields", "eq=" + ifyAndEnc(obj));
-        var obj = $.parseJSON(result);
+        var temp = new Object();
+        temp.id = seriesId;
+        var result = jsGet("/series/getByFields", "eq=" + ifyAndEnc(temp));
+        var obj = $.parseJSON($.parseJSON(result));
         $("#series_name").append(obj[0].name);
     }
 
     function getAutio() {
-        var obj = new Object();
-        obj.seriesId = seriesId;
-        obj.innerId = innerId;
-        var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(obj));
+        var temp = new Object();
+        temp.seriesId = seriesId;
+        temp.innerId = innerId;
+        var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         var obj = $.parseJSON(result);
         $("#audio_resource").attr("src", obj[0].route);
         console.log("obj[0].route");
     }
 
     function getList() {
-        var obj = new Object();
-        obj.seriesId = seriesId;
-        var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(obj));
+        var temp = new Object();
+        temp.seriesId = seriesId;
+        var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         var obj = $.parseJSON(result);
         maxId = obj.length;
         var str = "";

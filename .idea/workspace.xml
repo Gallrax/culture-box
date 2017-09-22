@@ -2,13 +2,127 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/SeriesController.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/cover/00001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/cover/00002.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/image/banner1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/image/banner2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/image/banner3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8044397.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8044398.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8898.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8899.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8900.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8901.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8902.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8903.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8904.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/8905.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/resources/ct0821-0473.epub" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/bok001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/cov001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/cov002_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/cover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/fow001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/fow003_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt002_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt003_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt003_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt003_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt005_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt006_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt006_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt006_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt007_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt009_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt009_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt010_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt014_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt014_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt016_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt017_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt018_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt019_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt021_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt021_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt021_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt023_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt025_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt039_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/20406f056e2ce41de30165e075c209f5/images/txt040_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/bok001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/cov001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/cov002_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/cover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/fow001_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/fow003_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt002_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt003_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt003_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt003_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt005_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt006_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt006_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt006_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt007_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt009_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt009_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt010_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt014_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt014_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt016_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt017_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt018_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt019_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt021_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt021_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt021_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt023_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt025_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt039_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/epubread/cache/image/7b04714873c1c3feddfa45810cccc4c3/images/txt040_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/test/TestResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/entity/Series.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/entity/Series.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/ResourceController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/ResourceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/SeriesMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/SeriesMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/epubread.properties" afterPath="$PROJECT_DIR$/src/main/resources/epubread.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/test/TestEpub.java" afterPath="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/SeriesMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/SeriesMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/mybatis/mapper/SeriesMapper.xml" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/mybatis/mapper/SeriesMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursemusic.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursemusic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/reader.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/reader.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,22 +142,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="books.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp">
+      <file leaf-file-name="coursevideo.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1726">
-              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3363">
-              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#video#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,48 +157,8 @@
       <file leaf-file-name="coursemusic.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1304">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coursevideo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reader.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570">
-              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="199">
+              <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -104,9 +170,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Enum" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -118,6 +184,8 @@
       <find>book-list-wrap</find>
       <find>mui-scroll-wrapper</find>
       <find>&lt;a</find>
+      <find>series_name1</find>
+      <find>left</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,9 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/service/impl/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/service/impl/ResourceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ResourceMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Temp.jsp" />
@@ -145,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Temp.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/dao/CarouselMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/CarouselMapper.xml" />
@@ -157,31 +221,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/CarouselController.java" />
         <option value="$PROJECT_DIR$/src/test/com/test/TestCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/EWUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/service/SeriesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/service/impl/SeriesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/dao/SeriesDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/test/com/test/TestSeries.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/reader.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/mine.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/URLUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/CategoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/epubread.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/SeriesMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/mui.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
+        <option value="$PROJECT_DIR$/src/test/com/test/TestResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/epubread.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" />
       </list>
     </option>
   </component>
@@ -234,10 +302,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="333" />
+    <option name="y" value="106" />
+    <option name="width" value="1521" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -258,6 +326,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,10 +450,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,34 +498,14 @@
       <recent name="com.common" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\epubread\cache\image" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static\image" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\resources" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\lib" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static\css" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\java\com\cx\web" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.culture-box">
-    <configuration default="false" name="TestSeries.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="culture-box" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.TestSeries" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TestSeries.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="culture-box" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -483,6 +553,46 @@
       <option name="PACKAGE_NAME" value="com.test" />
       <option name="MAIN_CLASS_NAME" value="com.test.TestEpub" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestResource.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="culture-box" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TestResource" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestResource.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="culture-box" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TestResource" />
+      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -758,19 +868,21 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.culture-box" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestSeries.test01" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestSeries.test02" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestSeries.test03" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestEpub.test01" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestSeries.test02" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestSeries.test03" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestEpub.test01" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestResource.test01" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestResource.test02" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestEpub.test01" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestSeries.test03" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestSeries.test02" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSeries.test01" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestResource.test02" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestEpub.test01" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestResource.test01" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestSeries.test03" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestSeries.test02" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -787,39 +899,39 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestEpub_test01 - 2017.09.20 at 16h 44m 39s.xml">
+    <history-entry file="TestEpub_test01 - 2017.09.21 at 16h 01m 40s.xml">
       <configuration name="TestEpub.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEpub_test01 - 2017.09.20 at 16h 49m 01s.xml">
-      <configuration name="TestEpub.test01" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 38m 02s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEpub_test01 - 2017.09.20 at 16h 52m 45s.xml">
-      <configuration name="TestEpub.test01" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 38m 49s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEpub_test01 - 2017.09.20 at 16h 54m 02s.xml">
-      <configuration name="TestEpub.test01" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 41m 00s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEpub_test01 - 2017.09.20 at 16h 54m 43s.xml">
-      <configuration name="TestEpub.test01" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 42m 33s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSeries_test03 - 2017.09.19 at 10h 20m 56s.xml">
-      <configuration name="TestSeries.test03" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 52m 17s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSeries_test03 - 2017.09.19 at 10h 22m 20s.xml">
-      <configuration name="TestSeries.test03" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 53m 43s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSeries_test03 - 2017.09.19 at 10h 24m 33s.xml">
-      <configuration name="TestSeries.test03" configurationId="JUnit" />
+    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 55m 02s.xml">
+      <configuration name="TestResource.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSeries_test03 - 2017.09.19 at 10h 27m 37s.xml">
-      <configuration name="TestSeries.test03" configurationId="JUnit" />
+    <history-entry file="TestResource_test02 - 2017.09.21 at 16h 08m 09s.xml">
+      <configuration name="TestResource.test02" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSeries_test03 - 2017.09.20 at 14h 13m 27s.xml">
-      <configuration name="TestSeries.test03" configurationId="JUnit" />
+    <history-entry file="TestResource_test02 - 2017.09.21 at 16h 09m 42s.xml">
+      <configuration name="TestResource.test02" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="333" y="106" width="1521" height="944" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -835,18 +947,18 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13471779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1367054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24948736" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29777777" sideWeight="0.49574015" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2969543" sideWeight="0.49574015" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -865,95 +977,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="665" column="0" lean-forward="false" selection-start-line="665" selection-start-column="0" selection-end-line="665" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/datas/cover/00001.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/entity/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_75/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="763" column="23" lean-forward="true" selection-start-line="763" selection-start-column="23" selection-end-line="763" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/temp.jsp" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus/2.1.0/mybatis-plus-2.1.0.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/service/SeriesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="81" lean-forward="false" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/service/impl/SeriesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/dao/SeriesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus/2.1.0/mybatis-plus-2.1.0.jar!/com/baomidou/mybatisplus/plugins/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus/2.1.0/mybatis-plus-2.1.0.jar!/com/baomidou/mybatisplus/plugins/pagination/Pagination.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -975,22 +1003,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#293#294#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,13 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="173" column="17" lean-forward="true" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1075,43 +1084,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1123,10 +1099,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/SeriesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="153" column="33" lean-forward="true" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="110" column="42" lean-forward="true" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/mui.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="13201" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="75461" />
+          <folding>
+            <element signature="e#11120#12271#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestSeries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/entity/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/cx/epubreader/1.0.0/epubreader-1.0.0.jar!/com/yd/epub/modules/parse/read/Reader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="253">
+          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1137,120 +1256,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestEpub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="69" lean-forward="false" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="145" column="58" lean-forward="true" selection-start-line="145" selection-start-column="58" selection-end-line="145" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/cx/epubreader/1.0.0/epubreader-1.0.0.jar!/com/yd/epub/modules/parse/read/Page.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/cx/epubreader/1.0.0/epubreader-1.0.0.jar!/com/yd/epub/modules/parse/read/BookInfo.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/epubread.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="57">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestEpub.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/SeriesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <marker date="1505959279286" expanded="true" signature="1167:1318" ph="SELECT * FRO... cx_series" />
-            <marker date="1505959279286" expanded="true" signature="1217:1264" ph="SELECT id FR... cx_category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="1425">
+          <caret line="75" column="112" lean-forward="false" selection-start-line="75" selection-start-column="112" selection-end-line="75" selection-end-column="112" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4-sources.jar!/org/apache/ibatis/jdbc/AbstractSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="244">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5637#5638#0" expanded="false" />
+            <element signature="e#5657#5658#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4-sources.jar!/org/apache/ibatis/annotations/SelectProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1726">
-          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4-sources.jar!/org/apache/ibatis/jdbc/SQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3363">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="114">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1304">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="199">
+          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

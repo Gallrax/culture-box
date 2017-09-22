@@ -1,5 +1,7 @@
 package com.cx.web;
 
+import com.cx.service.SeriesService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,10 +17,14 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/")
 public class IndexController {
 
+    @Autowired
+    private SeriesService seriesService;
+
     @RequestMapping(value = {"/*.html", "/"})
     public String index(HttpServletRequest request) {
         String uri = request.getRequestURI();
         if("/".equals(uri)) return "index";
         return uri.substring(1, uri.length() - 5);
     }
+
 }

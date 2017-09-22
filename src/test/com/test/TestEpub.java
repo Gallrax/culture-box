@@ -18,8 +18,9 @@ public class TestEpub {
     public void test01() {
         File file = new File("/temp.epub");
         BookInfo bookInfo = new Reader().read(file, 20, 600, 800, 1);
-        System.out.println(bookInfo.getCatalogs().get(0).getTitle());
+        System.out.println(bookInfo.getCatalogs().get(0).getPageNum());
         System.out.println(" ---------- ");
+        System.out.println(bookInfo.getContents().get(0).getPageNum());
         System.out.println(bookInfo.getContents().get(0).getContent());
     }
 

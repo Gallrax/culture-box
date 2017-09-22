@@ -148,9 +148,9 @@
 
     //获取数据并转换
     function getData(page, categoryId) {
-        var obj = new Object();
-        obj.categoryId = categoryId;
-        var eq = ifyAndEnc(obj);
+        var temp = new Object();
+        temp.categoryId = categoryId;
+        var eq = ifyAndEnc(temp);
         var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;

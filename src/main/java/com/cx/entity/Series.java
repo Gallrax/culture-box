@@ -30,11 +30,14 @@ public class Series extends Model<Series> {
 	private Integer status;
 	//系列作者
 	private String author;
+	//系列简介
+	private String introduce;
 	//系列作者单位
 	private String authorCompany;
 	//系列页数
 	private Integer page;
 	//系列出版社
+	@JSONField(serialzeFeatures = {SerializerFeature.WriteMapNullValue, SerializerFeature.WriteNullStringAsEmpty})
 	private String press;
 	//系列发布时间(为防止提供的Excel导入异常,此处设置类型为String)
 	private String pubishDate;
@@ -97,6 +100,14 @@ public class Series extends Model<Series> {
 
 	public void setAuthor(String author) {
 		this.author = author;
+	}
+
+	public String getIntroduce() {
+		return introduce;
+	}
+
+	public void setIntroduce(String introduce) {
+		this.introduce = introduce;
 	}
 
 	public String getAuthorCompany() {
@@ -211,23 +222,25 @@ public class Series extends Model<Series> {
 	@Override
 	public String toString() {
 		return "Series{" +
-			", id=" + id +
-			", name=" + name +
-			", type=" + type +
-			", status=" + status +
-			", author=" + author +
-			", authorCompany=" + authorCompany +
-			", page=" + page +
-			", press=" + press +
-			", pubishDate=" + pubishDate +
-			", isbn=" + isbn +
-			", keyword=" + keyword +
-			", image=" + image +
-			", count=" + count +
-			", isRecommend=" + isRecommend +
-			", isFine=" + isFine +
-			", insertTime=" + insertTime +
-			", categoryId=" + categoryId +
-			"}";
+				"id=" + id +
+				", name='" + name + '\'' +
+				", type='" + type + '\'' +
+				", status=" + status +
+				", author='" + author + '\'' +
+				", introduce='" + introduce + '\'' +
+				", authorCompany='" + authorCompany + '\'' +
+				", page=" + page +
+				", press='" + press + '\'' +
+				", pubishDate='" + pubishDate + '\'' +
+				", isbn='" + isbn + '\'' +
+				", keyword='" + keyword + '\'' +
+				", image='" + image + '\'' +
+				", count=" + count +
+				", isRecommend=" + isRecommend +
+				", isFine=" + isFine +
+				", insertTime=" + insertTime +
+				", categoryId=" + categoryId +
+				", categoryPId=" + categoryPId +
+				'}';
 	}
 }
