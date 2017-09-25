@@ -79,10 +79,14 @@
 
     //获取数据并转换
     function getData(page, pid) {
-        var obj = new Object();
-        obj.categoryPId = pid;
-        var eq = ifyAndEnc(obj);
-        var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
+        var eqObj = new Object();
+        eqObj.categoryPId = pid;
+        var eq = ifyAndEnc(eqObj);
+        var likeObj = new Object();
+        likeObj.name = jsLike(search);
+        likeObj.author = jsLike(search);
+        var like = ifyAndEnc(likeObj);
+        var result = jsGet("/series/getByFields", "eq=" + eq + "&like=" + like + "&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
     }

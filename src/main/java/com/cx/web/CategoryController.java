@@ -56,7 +56,7 @@ public class CategoryController {
         EntityWrapper<Category> ew = new EntityWrapper<>();
         Map<String, String> eqMap = URLUtil.decodeAndMap(eq);//将eq进行解码并转为Map
         logger.info(" paramer : eqMap : " + eqMap);
-        EWUtil.eqMap(ew, eqMap);
+        EWUtil.eqMap(ew, eqMap, false);
         List<Category> categories = categoryService.selectList(ew.orderBy("insertTime", false));
         return categories;
     }

@@ -44,8 +44,8 @@ public class SeriesController {
     public String getByFields(String eq, String like, Integer page) {
         logger.info(" ---------- series getByFields ---------- ");
         EntityWrapper<Series> ew = new EntityWrapper<>();
-        EWUtil.eqMap(ew, URLUtil.decodeAndMap(eq));
-        EWUtil.likeMap(ew, URLUtil.decodeAndMap(like));
+        EWUtil.eqMap(ew, URLUtil.decodeAndMap(eq), false);
+        EWUtil.likeMap(ew, URLUtil.decodeAndMap(like), true);
         Page<Series> pager = seriesService.selectPage(new Page<Series>(page == null ? 1 : page, Size.SMALL_SIZE), ew.orderBy("insertTime", true));
         logger.info(" result pager : " + pager);
         if (StringUtil.judgeNotEmpty(like)) return JSON.toJSONString(page);//如果like不为空则顺带返回查询结果总数
