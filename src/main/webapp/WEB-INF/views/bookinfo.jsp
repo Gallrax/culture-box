@@ -66,6 +66,7 @@
         writeBooks(categoryPId);//categoryPId 在 writeData已赋值
     });
 
+    //写数据
     function writeData(seriesId) {
         var obj = getData(seriesId);
         categoryPId = obj[0].categoryPId;
@@ -79,6 +80,7 @@
         $("#data_text").append(tempText);
     }
 
+    //写好书推荐
     function writeBooks(categoryPId) {
         var obj = getBooks(categoryPId);
         var tempStr = "";
@@ -88,6 +90,7 @@
         $("#books").append(tempStr);
     }
 
+    //获取数据
     function getData(seriesId) {
         var temp = new Object();
         temp.id = seriesId;
@@ -96,6 +99,7 @@
         return obj;
     }
 
+    //获取好书推荐
     function getBooks(categoryPId) {
         var temp = new Object();
         temp.categoryPId = categoryPId;

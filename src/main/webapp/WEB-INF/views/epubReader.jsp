@@ -36,6 +36,13 @@
         writeData(1);
     });
 
+    //初始化
+    function init() {
+        seriesId = getUrlParamer("id");
+        bookinfo = getData();
+    }
+
+    //写数据
     function writeData(index) {
         index = index <= 1 ? 1 : index;
         $("#epub_temp").empty();
@@ -44,12 +51,8 @@
         console.log(text);
         $("#epub_temp").append(text);
     }
-    
-    function init() {
-        seriesId = getUrlParamer("id");
-        bookinfo = getData();
-    }
 
+    //获取数据
     function getData() {
         var temp = new Object();
         temp.seriesId = seriesId;

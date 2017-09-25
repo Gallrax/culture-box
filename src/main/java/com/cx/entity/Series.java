@@ -11,9 +11,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 系列(资源总称)
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯 
+ * @Description: 系列
+ * @Date: Created on 2017/9/25
+ * @Version: 1.0
  */
 @TableName("cx_series")
 public class Series extends Model<Series> {

@@ -9,9 +9,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 资源
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯 
+ * @Description: 资源
+ * @Date: Created on 2017/9/25
+ * @Version: 1.0
  */
 @TableName("cx_resource")
 public class Resource extends Model<Resource> {

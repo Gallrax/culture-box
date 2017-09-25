@@ -20,12 +20,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * <p>
- * InnoDB free: 34816 kB; (`categoryId`) REFER `culture-box/cx_category`(`id`) 前端控制器
- * </p>
- *
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯
+ * @Description: 系列控制器
+ * @Date: Created on 2017/9/12
+ * @Version: 1.0
  */
 @Controller
 @RequestMapping("/series")
@@ -35,6 +33,12 @@ public class SeriesController {
     private SeriesService seriesService;
     private static Logger logger = Logger.getLogger(SeriesController.class);
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 根据转码后的等值、模糊进行分页查询
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByFields")
     @ResponseBody
     public String getByFields(String eq, String like, Integer page) {
@@ -48,6 +52,12 @@ public class SeriesController {
         return JSON.toJSONString(pager.getRecords());//如果like为空则说明不需要结果总数，只需返回数据即可
     }
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据分类父id进行查询
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByPCid/{pcid}")
     @ResponseBody
     public List<Series> getByPCid(@PathVariable Integer pcid) {

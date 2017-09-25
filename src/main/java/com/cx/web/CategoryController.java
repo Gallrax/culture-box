@@ -17,12 +17,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
- * InnoDB free: 34816 kB; (`pid`) REFER `culture-box/cx_category`(`id`) 前端控制器
- * </p>
- *
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯
+ * @Description: 分类控制器
+ * @Date: Created on 2017/9/12
+ * @Version: 1.0
  */
 @Controller
 @RequestMapping("/category")
@@ -32,6 +30,12 @@ public class CategoryController {
     private CategoryService categoryService;
     private static Logger logger = Logger.getLogger(CategoryController.class);
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据分类父id查询所以子分类
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByPid/{pid}")
     @ResponseBody
     public List<Category> getByLv(@PathVariable Integer pid) {
@@ -39,6 +43,12 @@ public class CategoryController {
         return categories;
     }
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据转码后的等值进行查询
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByFields")
     @ResponseBody
     public List<Category> getByFields(String eq) {

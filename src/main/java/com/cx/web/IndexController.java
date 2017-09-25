@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author: 冯冠凯
- * @Description:
+ * @Description: Index控制器
  * @Date: Created on 2017/9/12
  * @Version: 1.0
  */
@@ -20,6 +20,12 @@ public class IndexController {
     @Autowired
     private SeriesService seriesService;
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 静态页面跳转
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping(value = {"/*.html", "/"})
     public String index(HttpServletRequest request) {
         String uri = request.getRequestURI();

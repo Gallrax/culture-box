@@ -58,6 +58,7 @@
         getList();
     });
 
+    //获取标题
     function getTitle() {
         var temp = new Object();
         temp.id = seriesId;
@@ -66,6 +67,7 @@
         $("#series_name").append(obj[0].name);
     }
 
+    //获取播放数据来源
     function getAutio() {
         var temp = new Object();
         temp.seriesId = seriesId;
@@ -76,6 +78,7 @@
         console.log("obj[0].route");
     }
 
+    //获取该系列下所有资源(集)
     function getList() {
         var temp = new Object();
         temp.seriesId = seriesId;

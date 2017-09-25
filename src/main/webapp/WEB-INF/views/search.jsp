@@ -67,6 +67,7 @@
         getTitle();
     });
 
+    //获取标题
     function getTitle() {
         var obj = new Object();
         obj.id = pid;

@@ -16,12 +16,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * <p>
- * InnoDB free: 34816 kB 前端控制器
- * </p>
- *
- * @author Gallrax
- * @since 2017-09-13
+ * @Author: 冯冠凯
+ * @Description: 轮播图控制器
+ * @Date: Created on 2017/9/12
+ * @Version: 1.0
  */
 @Controller
 @RequestMapping("/carousel")
@@ -31,6 +29,12 @@ public class CarouselController {
     private CarouselService carouselService;
     private static Logger logger = Logger.getLogger(CarouselController.class);
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据默认分页大小查询轮播图
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByPage")
     @ResponseBody
     public List<Carousel> getByPage() {

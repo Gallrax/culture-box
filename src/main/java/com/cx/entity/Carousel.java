@@ -9,12 +9,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- * InnoDB free: 34816 kB
- * </p>
- *
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯
+ * @Description: 轮播图
+ * @Date: Created on 2017/9/25
+ * @Version: 1.0
  */
 @TableName("cx_carousel")
 public class Carousel extends Model<Carousel> {

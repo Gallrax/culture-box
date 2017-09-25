@@ -2,7 +2,7 @@ package com.cx.constant;
 
 /**
  * @Author: 冯冠凯
- * @Description:
+ * @Description: 查询分页常量
  * @Date: Created on 2017/9/12
  * @Version: 1.0
  */

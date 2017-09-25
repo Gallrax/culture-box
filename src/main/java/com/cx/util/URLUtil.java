@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  * @Author: 冯冠凯
- * @Description:
+ * @Description: 对URL操作工具类
  * @Date: Created on 2017/9/14
  * @Version: 1.0
  */
@@ -19,6 +19,12 @@ public class URLUtil {
 
     private static Logger logger = Logger.getLogger(URLUtil.class);
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 普通解码
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     public static String decode(String str) {
         logger.info(" URLUtil decode : " + str);
         if(str == null || str.isEmpty()) return null;
@@ -33,6 +39,12 @@ public class URLUtil {
         return result;
     }
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 普通编码
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     public static String encode(String str) {
         logger.info(" URLUtil decode : " + str);
         if(str == null || str.isEmpty()) return null;
@@ -47,6 +59,12 @@ public class URLUtil {
         return result;
     }
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 解码并将返回值转换为map
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     public static Map<String, String> decodeAndMap(String str) {
         logger.info(" URLUtil decode : " + str);
         String result = decode(str);

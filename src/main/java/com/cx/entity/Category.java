@@ -9,9 +9,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 分类
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯 
+ * @Description: 分类
+ * @Date: Created on 2017/9/25
+ * @Version: 1.0
  */
 @TableName("cx_category")
 public class Category extends Model<Category> {

@@ -20,12 +20,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
- * InnoDB free: 34816 kB; (`seriesId`) REFER `culture-box/cx_series`(`id`) 前端控制器
- * </p>
- *
- * @author Gallrax
- * @since 2017-09-12
+ * @Author: 冯冠凯
+ * @Description: 资源控制器
+ * @Date: Created on 2017/9/12
+ * @Version: 1.0
  */
 @Controller
 @RequestMapping("/resource")
@@ -35,6 +33,12 @@ public class ResourceController {
     private ResourceService resourceService;
     private static Logger logger = Logger.getLogger(ResourceController.class);
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据转码后的等值进行分页查询
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/getByFields")
     @ResponseBody
     public List<Resource> getByFields(String eq) {
@@ -48,6 +52,12 @@ public class ResourceController {
         return resources;
     }
 
+    /**
+     * @Author: 冯冠凯
+     * @Description: 根据资源id查询资源，并通过epubReader进行编译
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     @RequestMapping("/epubRead")
     @ResponseBody
     public String epubRead(Integer id) {

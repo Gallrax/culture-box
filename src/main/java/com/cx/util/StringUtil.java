@@ -2,7 +2,7 @@ package com.cx.util;
 
 /**
  * @Author: 冯冠凯
- * @Description:
+ * @Description: String工具类
  * @Date: Created on 2017/9/14
  * @Version: 1.0
  */

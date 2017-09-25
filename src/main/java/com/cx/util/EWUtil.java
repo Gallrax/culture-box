@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @Author: 冯冠凯
- * @Description:
+ * @Description: 将map与EntityWrapper进行封装
  * @Date: Created on 2017/9/14
  * @Version: 1.0
  */
@@ -15,6 +15,12 @@ public class EWUtil {
 
     private static Logger logger = Logger.getLogger(EWUtil.class);
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 相等的map封装至EntityWrapper
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     public static void eqMap(EntityWrapper ew, Map<String, String> map) {
         logger.info(" EWUtil eqMap param : map - "+ map);
         if(ew == null) throw new RuntimeException(" EWUtil eqMap ew is null !!!");
@@ -23,6 +29,12 @@ public class EWUtil {
         }
     }
 
+    /**
+     * @Author: 冯冠凯 
+     * @Description: 模糊的map封装至EntityWrapper
+     * @Date: Created on 2017/9/25
+     * @Version: 1.0
+     */
     public static void likeMap(EntityWrapper ew, Map<String, String> map) {
         logger.info(" EWUtil likeMap param : map - "+ map);
         if(ew == null) throw new RuntimeException(" EWUtil likeMap ew is null !!!");

@@ -95,10 +95,11 @@
         if (innerId == null) innerId = 1;
         innerId = parseInt(innerId);
         getTitle();
-        getAutio();
+        getVedio();
         getList();
     });
 
+    //获取标题
     function getTitle() {
         var temp = new Object();
         temp.id = seriesId;
@@ -109,7 +110,8 @@
         $("#series_introduce").append(obj[0].introduce);
     }
 
-    function getAutio() {
+    //获取播放数据来源
+    function getVedio() {
         var temp = new Object();
         temp.seriesId = seriesId;
         temp.innerId = innerId;
@@ -119,6 +121,7 @@
         console.log("obj[0].route");
     }
 
+    //获取该系列下所有资源(集)
     function getList() {
         var temp = new Object();
         temp.seriesId = seriesId;
