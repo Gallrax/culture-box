@@ -188,7 +188,7 @@
                 "<p class=\"word\">"+ obj[i].name +"</p> " +
                 "<p class=\"word\">"+ obj[i].author +"</p> " +
                 "</div> " +
-                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?id="+ obj[i].id +"'\">阅读</span> " +
+                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\">阅读</span> " +
                 "</li>";
         }
         console.log(" index : " + index + " tempStr : " + tempStr);
@@ -208,7 +208,8 @@
     //搜索跳转
     function search() {
         var value = $("#search_value").val();
-        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + value;
+        var search = encodeURI(encodeURI(value));
+        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + search;
     }
 
     //方便下方mui获取(在下方script中无法获取)

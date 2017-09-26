@@ -114,6 +114,8 @@
         writeSeries("data_2", 2);
         writeSeries("data_3", 3);
     });
+
+    //获取分裂
     function getCarousel() {
         var url = "/carousel/getByPage";
         var result = jsGet(url, null);
@@ -125,6 +127,7 @@
         $("#carousel_image").append(tempStr);
     }
 
+    //根据分类写系列
     function writeSeries(domId, pcid) {
         var obj = getSeries(pcid);
         var tempStr = "";
@@ -134,6 +137,7 @@
         $("#" + domId).append(tempStr);
     }
 
+    //获取系列
     function getSeries(pcid) {
         var result = jsGet("/series/getByPCid/" + pcid, null);
         var obj = $.parseJSON(result);

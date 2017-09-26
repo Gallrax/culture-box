@@ -61,7 +61,7 @@
     var categoryPId;
 
     $(function () {
-        seriesId = getUrlParamer("id");
+        seriesId = getUrlParamer("sid");
         writeData(seriesId);
         writeBooks(categoryPId);//categoryPId 在 writeData已赋值
     });

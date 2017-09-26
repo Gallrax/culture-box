@@ -161,7 +161,8 @@
     //搜索跳转
     function search() {
         var value = $("#search_value").val();
-        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + value;
+        var search = encodeURI(encodeURI(value));
+        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + search;
     }
 
     //方便下方mui获取(在下方script中无法获取)

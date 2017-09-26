@@ -24,6 +24,9 @@ public class EWUtil {
     public static void eqMap(EntityWrapper ew, Map<String, String> map, Boolean isOr) {
         logger.info(" EWUtil eqMap param : map - " + map);
         if (ew == null) throw new RuntimeException(" EWUtil eqMap ew is null !!!");
+        if(isOr && !map.isEmpty()) {
+            ew.andNew();//前置后置括号自动设置，无需关心
+        }
         int temp = 0;
         for (String s : map.keySet()) {
             if (isOr && temp > 0) ew.or();
@@ -41,6 +44,7 @@ public class EWUtil {
     public static void likeMap(EntityWrapper ew, Map<String, String> map, Boolean isOr) {
         logger.info(" EWUtil likeMap param : map - " + map);
         if (ew == null) throw new RuntimeException(" EWUtil likeMap ew is null !!!");
+        if(isOr && !map.isEmpty()) ew.andNew();//前置后置括号自动设置，无需关心
         int temp = 0;
         for (String s : map.keySet()) {
             if (isOr && temp > 0) ew.or();
