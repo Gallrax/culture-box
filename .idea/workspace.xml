@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/util/EWUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/util/EWUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/SeriesController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/SeriesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Carousel.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Carousel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Category.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Category.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Resource.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/util/EWUtil.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/util/EWUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/util/URLUtil.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/util/URLUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CarouselController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CarouselController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CategoryController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CategoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/util/EWUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/util/EWUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursemusic.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursemusic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/reader.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/reader.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,12 +23,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeriesController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeriesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="224">
+              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coursemusic.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/URLUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/EWUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
@@ -146,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
       </list>
     </option>
   </component>
@@ -198,8 +184,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="283" />
-    <option name="y" value="91" />
+    <option name="x" value="115" />
+    <option name="y" value="18" />
     <option name="width" value="1581" />
     <option name="height" value="944" />
   </component>
@@ -221,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,10 +219,121 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,21 +348,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static\image" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\epubread\cache\image" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\resources" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.common" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\views" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\datas" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.common" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\epubread\cache\image" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static\image" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\resources" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.culture-box">
@@ -695,7 +791,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="283" y="91" width="1581" height="944" extended-state="0" />
+    <frame x="115" y="18" width="1581" height="944" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -711,7 +807,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1680893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1700591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -794,13 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="4" column="13201" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="75461" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1012,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -1073,14 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3002">
           <caret line="158" column="10" lean-forward="true" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1119,9 +1191,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="224">
+          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
