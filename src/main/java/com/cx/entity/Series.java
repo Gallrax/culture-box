@@ -23,7 +23,7 @@ public class Series extends Model<Series> {
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
-	//系列名
+	//系列名称
 	private String name;
 	//系列资源格式
 	private String type;

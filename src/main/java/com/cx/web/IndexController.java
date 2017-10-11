@@ -26,7 +26,7 @@ public class IndexController {
      * @Date: Created on 2017/9/25
      * @Version: 1.0
      */
-    @RequestMapping(value = {"/*.html", "/"})
+    @RequestMapping(value = {"/*.html", "/", "/**/*.html"})
     public String index(HttpServletRequest request) {
         String uri = request.getRequestURI();
         if("/".equals(uri)) return "index";

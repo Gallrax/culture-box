@@ -24,9 +24,12 @@
     <div id="series_name" class="word"></div>
     <img src="static/image/home.png" class="title-img2" onclick="location.href = '/'"/>
 </div>
+<div>
     <audio id="audio_resource" src="" controls="controls" style="width: 100%;"></audio>
-<%--<div class="video-wrap" id="a1">
-</div>--%>
+</div>
+<div class="video-wrap" id="a1">
+    <img src="static/image/MP3.png" style="height: 310px; width: 100%"/>
+</div>
 <div class="video-menu">
     <div class="video-button clearfix">
         <span class="fl" onclick="goTo(-1)">上一集</span>
