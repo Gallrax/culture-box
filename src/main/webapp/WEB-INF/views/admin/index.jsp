@@ -133,9 +133,9 @@
                     <ul class="tree treeFolder">
                         <li><a href="javascript:void(0);">推荐管理</a>
                             <ul>
-                                <li><a href="/admin/resourceManage.html" target="navTab" rel="boxId_1-1">好书推荐</a></li>
-                                <li><a href="/admin/resourceManage.html" target="navTab" rel="boxId_1-2">精品课程</a></li>
-                                <li><a href="/admin/resourceManage.html" target="navTab" rel="boxId_1-3">有声读物</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=1" target="navTab" rel="boxId_1-1" external="true" onclick="changeCategory(1)">好书推荐</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=2" target="navTab" rel="boxId_1-2" external="true" onclick="changeCategory(2)">精品课程</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=3" target="navTab" rel="boxId_1-3" external="true" onclick="changeCategory(3)">有声读物</a></li>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0);">图片管理</a>
@@ -180,7 +180,12 @@
     </div>
 
 </div>
-
-
 </body>
 </html>
+<script>
+    var categoryId;
+
+    function changeCategory(id) {
+        categoryId = id;
+    }
+</script>

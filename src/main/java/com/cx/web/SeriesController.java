@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -65,9 +66,26 @@ public class SeriesController {
 //        List<Series> series = seriesService.selectByParentCategoryId(pcid, 0, Size.SMALL_SIZE);
         List<Series> series = seriesService.selectPage(
                 new Page<Series>(1, Size.SMALL_SIZE),
-                new EntityWrapper<Series>().eq("categoryPId", pcid).orderBy("insertTime", false))
+                new EntityWrapper<Series>().eq("categoryPId", pcid).eq("isRecommend", 1).orderBy("updateTime", false))
                 .getRecords();
         logger.info(" result series : " + series);
         return series;
+    }
+
+    @RequestMapping("/recommend/{id}")
+    @ResponseBody
+    public String recommend(@PathVariable Integer id) {
+        logger.info(" ---------- series recommend ---------- ");
+        Series series = seriesService.selectById(id);
+        series.setIsRecommend(1);
+        series.setUpdateTime(new Date());
+        try {
+            seriesService.updateById(series);
+        } catch (Exception e) {
+            logger.info(" series recommend 发生异常 : "+ e.getMessage());
+            e.printStackTrace();
+            return "false";
+        }
+        return "success";
     }
 }

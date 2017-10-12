@@ -57,6 +57,8 @@ public class Series extends Model<Series> {
 	private Integer isFine;
 	//系列创建时间
 	private Date insertTime;
+	//系列更改时间(更新为推荐的时间)
+	private Date updateTime;
 	//系列分类id
 	private Integer categoryId;
 	//系列分类父id
@@ -197,6 +199,14 @@ public class Series extends Model<Series> {
 
 	public void setInsertTime(Date insertTime) {
 		this.insertTime = insertTime;
+	}
+
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
 	}
 
 	public Integer getCategoryId() {
