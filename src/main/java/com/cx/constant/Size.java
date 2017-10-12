@@ -8,9 +8,9 @@ package com.cx.constant;
  */
 public class Size {
 
-    public static Integer SMALL_SIZE = 3;
-    public static Integer MIDDLE_SIZE = 5;
-    public static Integer BIG_SIZE = 10;
-    public static Integer SUPER_SIZE = 20;
+    public static final Integer SMALL_SIZE = 3;
+    public static final Integer MIDDLE_SIZE = 5;
+    public static final Integer BIG_SIZE = 10;
+    public static final Integer SUPER_SIZE = 20;
 
 }

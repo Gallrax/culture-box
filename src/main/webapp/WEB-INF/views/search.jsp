@@ -103,7 +103,7 @@
             tempStr += "<div class=\"list-wrap\"> " +
                 "<img src=\"" + obj[i].image + "\" class=\"fl\"/> " +
                 "<div class=\"fl list-content\"> " +
-                "<p class=\"word\"> " + obj[i].name + " <span class=\"red\">故事新编</span> </p> " +
+                "<p class=\"word\"> " + obj[i].name + "</p> " +
                 "<p>" + obj[i].author + "著</p> " +
                 "</div> " +
                 "<span class=\"fr list-button\" onclick=\"location.href = '" + url + "?sid=" + obj[i].id + "'\">查看</span> " +

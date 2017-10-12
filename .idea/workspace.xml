@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/entity/Series.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/entity/Series.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/SeriesController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/SeriesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/entity/Series.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/SeriesController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cx/constant/Logo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/test/TestOther.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/constant/Size.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/constant/Size.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/constant/Size.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/constant/Size.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +33,70 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="search.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Logo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestEpub.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/com/test/TestEpub.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestOther.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/com/test/TestOther.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,8 +104,8 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,8 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Temp.html" />
@@ -93,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/mui.min.css" />
         <option value="$PROJECT_DIR$/src/test/com/test/TestResource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/epubread.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Carousel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Category.java" />
@@ -110,18 +171,21 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursemusic.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/logoManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/mine.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Series.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/constant/Logo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
+        <option value="$PROJECT_DIR$/src/test/com/test/TestOther.java" />
       </list>
     </option>
   </component>
@@ -174,8 +238,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="68" />
+    <option name="x" value="99" />
+    <option name="y" value="29" />
     <option name="width" value="1581" />
     <option name="height" value="944" />
   </component>
@@ -209,6 +273,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -228,6 +380,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\datas" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\dwz" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\views\admin" />
@@ -235,17 +396,28 @@
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static\image" />
       <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\epubread\cache\image" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.common" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\static" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\Program Files (x86)\JetBrains\ChaoXProjects\culture-box\src\main\webapp\WEB-INF\datas" />
-    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.culture-box">
+  <component name="RunManager" selected="JUnit.TestOther.test01">
+    <configuration default="false" name="TestOther.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="culture-box" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TestOther" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -508,9 +680,15 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.culture-box" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestOther.test01" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestOther.test01" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -525,14 +703,14 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestEpub_test02 - 2017.10.11 at 16h 53m 28s.xml">
-      <configuration name="TestEpub.test02" configurationId="JUnit" />
+    <history-entry file="TestOther_test01 - 2017.10.12 at 11h 05m 12s.xml">
+      <configuration name="TestOther.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 38m 02s.xml">
-      <configuration name="TestResource.test01" configurationId="JUnit" />
+    <history-entry file="TestOther_test01 - 2017.10.12 at 11h 05m 35s.xml">
+      <configuration name="TestOther.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestResource_test01 - 2017.09.21 at 14h 38m 49s.xml">
-      <configuration name="TestResource.test01" configurationId="JUnit" />
+    <history-entry file="TestOther_test01 - 2017.10.12 at 11h 06m 04s.xml">
+      <configuration name="TestOther.test01" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestResource_test01 - 2017.09.21 at 14h 41m 00s.xml">
       <configuration name="TestResource.test01" configurationId="JUnit" />
@@ -566,7 +744,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="68" width="1581" height="944" extended-state="0" />
+    <frame x="99" y="29" width="1581" height="944" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -578,7 +756,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946002" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37563452" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37563452" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -589,7 +767,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29822335" sideWeight="0.49574015" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29822335" sideWeight="0.49574015" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -618,20 +796,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/cx/epubreader/1.0.0/epubreader-1.0.0.jar!/com/yd/epub/modules/parse/read/Reader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -692,13 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -828,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/mui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -853,21 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,13 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestEpub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -965,10 +1093,10 @@
         <state relative-caret-position="988">
           <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="27" />
           <folding>
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3786#3787#0" expanded="true" />
-            <element signature="e#3821#3822#0" expanded="true" />
+            <element signature="e#3715#3716#0" expanded="false" />
+            <element signature="e#3739#3740#0" expanded="false" />
+            <element signature="e#3786#3787#0" expanded="false" />
+            <element signature="e#3821#3822#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -986,6 +1114,64 @@
         <state relative-caret-position="92">
           <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Logo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestEpub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/test/TestOther.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
