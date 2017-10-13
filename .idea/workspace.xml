@@ -4,24 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" line="154" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="-">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/culture-box/datas/image/banner1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/culture-box/datas/image/banner2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/culture-box/datas/image/banner3.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/CarouselController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/CarouselController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CarouselController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/CarouselController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/IndexController.class" />
+    <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/entity/Carousel.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/entity/Carousel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/CarouselController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/CarouselController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/carouselManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/carouselManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/logoManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/logoManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/datas/image/banner1.png" afterPath="$PROJECT_DIR$/src/main/webapp/datas/carousel/banner1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/datas/image/banner2.png" afterPath="$PROJECT_DIR$/src/main/webapp/datas/carousel/banner2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/datas/image/banner3.png" afterPath="$PROJECT_DIR$/src/main/webapp/datas/carousel/banner3.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
