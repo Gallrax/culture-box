@@ -12,15 +12,7 @@
 </head>
 <body>
 <div>
-    <div class="pageContent">
-        <div class="panelBar">
-            <ul class="toolBar">
-                <li><input type="checkbox" class="checkboxCtrl" group="ids"/>全选</li>
-            </ul>
-        </div>
-    </div>
-
-    <table class="list" width="98%">
+    <table border="1" width="98%" style="text-align: center">
         <thead>
         <tr>
             <th>系列名称</th>
@@ -33,7 +25,6 @@
 
         </tbody>
     </table>
-
 </div>
 </div>
 </body>
@@ -58,7 +49,7 @@
         var data = getData(page);
         var tempStr = "";
         for (var i in data) {
-            tempStr += "<tr><td>" + data[i].name + "</td><td>" + data[i].type + "</td><td>" + data[i].author + "</td><td><input type=\"button\" value=\"推荐\" onclick=\"recommend("+ data[i].id +")\"/></td></tr>";
+            tempStr += "<tr><td>" + data[i].name + "</td><td>" + data[i].type + "</td><td>" + data[i].author + "</td><td><input type=\"button\" value=\"推荐\" onclick=\"recommend(" + data[i].id + ")\"/></td></tr>";
         }
         $("#series_list").append(tempStr);
     }
@@ -74,10 +65,10 @@
 
     function recommend(id) {
         $.ajax({
-            url : "/series/recommend/"+ id,
-            type : "get",
-            success : function(data) {
-                if($.parseJSON(data) == "success") {
+            url: "/series/recommend/" + id,
+            type: "get",
+            success: function (data) {
+                if ($.parseJSON(data) == "success") {
                     alert(" 推荐成功 ");
                 }
             }

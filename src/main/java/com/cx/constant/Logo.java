@@ -8,6 +8,10 @@ package com.cx.constant;
  */
 public class Logo {
 
-    private static String path;
+    public static String name;
+
+    static {
+        name = "logo-1.png";
+    }
 
 }

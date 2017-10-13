@@ -13,4 +13,9 @@ public class Size {
     public static final Integer BIG_SIZE = 10;
     public static final Integer SUPER_SIZE = 20;
 
+    public static Integer CAROUSEL_SIZE;
+
+    static {
+        CAROUSEL_SIZE = 3;
+    }
 }

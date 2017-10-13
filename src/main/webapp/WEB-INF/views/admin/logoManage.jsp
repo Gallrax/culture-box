@@ -5,40 +5,70 @@
   Time: 14:51
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-    <table class="list" width="98%">
-        <thead>
-        <tr>
-            <th colspan="2">客户信息</th>
-            <th colspan="2">基本信息</th>
-            <th colspan="3">资料信息</th>
-        </tr>
-        <tr>
-            <th width="80">客户号</th>
-            <th width="100">客户名称</th>
-            <th width="100">客户划分</th>
-            <th>证件号码</th>
-            <th align="right" width="100">信用等级</th>
-            <th width="100">企业性质</th>
-            <th width="100">建档日期</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>iso127309</td>
-            <td>北京市政府咿呀哟</td>
-            <td>政府单位</td>
-            <td>0-0001027766351528</td>
-            <td>四等级</td>
-            <td>政府单位</td>
-            <td>2009-05-21</td>
-        </tr>
-        </tbody>
-    </table>
+<h1>当前logo :</h1>
+<img src="/datas/logo/${_logo}"/><br/>
+<h1>替换logo :</h1>
+<form id="logoForm"  enctype="multipart/form-data">
+    <input id="tempFile" type="file" name="file" onchange="imgPreview(this)"/>
+    <input type="button" value="提交" onclick="sub()"/>
+</form>
+<img id="tempImg"/>
 </body>
 </html>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/mine.js"></script>
+<script>
+    function imgPreview(fileDom) {
+        //判断是否支持FileReader
+        if (window.FileReader) {
+            var reader = new FileReader();
+        } else {
+            alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+        }
+
+        //获取文件
+        var file = fileDom.files[0];
+        var imageType = /^image\//;
+        //是否是图片
+        if (!imageType.test(file.type)) {
+            alert($("#tempFile").val(null));
+            alert("请选择图片！");
+            return;
+        }
+        //读取完成
+        reader.onload = function (e) {
+            //获取图片dom
+            var img = document.getElementById("tempImg");
+            //图片路径设置为读取的图片
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+    
+    function sub() {
+        var judge = $("#tempFile").val() == null || $("#tempFile").val() == "";
+        if(judge) {
+            alert("请添加图片");
+            return false;
+        }else {
+            var formData = new FormData($("#logoForm")[0]);
+            $.ajax({
+                url : "/changeLogo",
+                type : "post",
+                data : formData,
+                contentType: false,
+                processData: false,
+                success : function(data) {
+                    location.reload();
+                }
+            })
+        }
+    }
+
+</script>

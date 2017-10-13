@@ -1,13 +1,18 @@
 package com.cx.web;
 
+import com.cx.constant.Logo;
 import com.cx.service.SeriesService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @Author: 冯冠凯
@@ -32,15 +37,30 @@ public class IndexController {
     @RequestMapping(value = {"/*.html", "/", "/**/*.html"})
     public String index(HttpServletRequest request) {
         String uri = request.getRequestURI();
+        request.setAttribute("_logo", Logo.name);
+        System.out.println(request.getAttribute("_logo"));
         logger.info(" ---------- uri : " + uri + " ----------");
         if ("/".equals(uri)) return "index";
         return uri.substring(1, uri.length() - 5);
     }
 
     @RequestMapping("/changeLogo")
-    public String changeLogo(MultipartFile file, HttpServletRequest request) {
+    @ResponseBody
+    public String changeLogo(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
         logger.info(" ---------- changeLogo ----------");
-        return "";
+        String[] tempStr = file.getOriginalFilename().split("\\.");
+        String path = request.getServletContext().getRealPath("/datas/logo/");
+        String logoName = "/logo-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
+        String logoPath = path + logoName;
+        System.out.println(path);
+        File tempFile = new File(logoPath);
+        try {
+            file.transferTo(tempFile);
+            Logo.name = logoName;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "success";
     }
 
 }

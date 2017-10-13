@@ -39,7 +39,7 @@ public class CarouselController {
     @ResponseBody
     public List<Carousel> getByPage() {
         logger.info(" ---------- carousel getByPager ----------");
-        List<Carousel> carousels = carouselService.selectPage(new Page<Carousel>(1, Size.SMALL_SIZE),
+        List<Carousel> carousels = carouselService.selectPage(new Page<Carousel>(1, Size.CAROUSEL_SIZE),
                 new EntityWrapper<Carousel>().orderBy("insertTime", false)).getRecords();
         logger.info(" result : "+ carousels);
         return carousels;

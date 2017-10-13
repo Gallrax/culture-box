@@ -14,7 +14,8 @@ public class TestOther {
 
     @Test
     public void test01() {
-        File file = new File("datas/logo");
+        File file = new File("D:\\Program Files (x86)\\JetBrains\\ChaoXProjects\\culture-box\\src\\main\\webapp\\datas\\logo");
+        System.out.println(file.exists());
         String path = file.getPath();
         String absolutePath = file.getAbsolutePath();
         System.out.println(path);

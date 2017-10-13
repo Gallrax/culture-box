@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 
 <head>
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<img src="static/image/head1.png" class="head"/>
+<img src="/datas/logo/${_logo}" class="head"/>
 <div class="banner-wrap">
     <div class="swiper-container">
         <div class="swiper-wrapper" id="carousel_image">
