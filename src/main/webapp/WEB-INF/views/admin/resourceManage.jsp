@@ -39,11 +39,13 @@
         init();
     });
 
+    //初始化
     function init() {
         categoryId = getUrlParamer("categoryId");
         writeData(1);
     }
 
+    //写系列
     function writeData(page) {
         $("#series_list").empty();
         var data = getData(page);
@@ -54,6 +56,7 @@
         $("#series_list").append(tempStr);
     }
 
+    //获取系列
     function getData(page) {
         var tempObj = new Object();
         tempObj.categoryPId = categoryId;//index已定义
@@ -63,6 +66,7 @@
         return obj;
     }
 
+    //推荐系列
     function recommend(id) {
         $.ajax({
             url: "/series/recommend/" + id,

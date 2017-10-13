@@ -24,6 +24,8 @@
 <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/mine.js"></script>
 <script>
+
+    //上传图片预览
     function imgPreview(fileDom) {
         //判断是否支持FileReader
         if (window.FileReader) {
@@ -50,7 +52,8 @@
         };
         reader.readAsDataURL(file);
     }
-    
+
+    //提交
     function sub() {
         var judge = $("#tempFile").val() == null || $("#tempFile").val() == "";
         if(judge) {

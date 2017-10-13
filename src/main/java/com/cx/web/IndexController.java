@@ -1,6 +1,7 @@
 package com.cx.web;
 
 import com.cx.constant.Logo;
+import com.cx.constant.Size;
 import com.cx.service.SeriesService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,7 @@ public class IndexController {
     public String index(HttpServletRequest request) {
         String uri = request.getRequestURI();
         request.setAttribute("_logo", Logo.name);
+        request.setAttribute("_carouselSize", Size.CAROUSEL_SIZE);
         System.out.println(request.getAttribute("_logo"));
         logger.info(" ---------- uri : " + uri + " ----------");
         if ("/".equals(uri)) return "index";
@@ -50,15 +52,17 @@ public class IndexController {
         logger.info(" ---------- changeLogo ----------");
         String[] tempStr = file.getOriginalFilename().split("\\.");
         String path = request.getServletContext().getRealPath("/datas/logo/");
-        String logoName = "/logo-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
+        String logoName = "logo-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
+        logger.info(" new logoName : "+ logoName);
         String logoPath = path + logoName;
-        System.out.println(path);
         File tempFile = new File(logoPath);
         try {
             file.transferTo(tempFile);
             Logo.name = logoName;
         } catch (IOException e) {
+            logger.info(" changeLogo 发生异常 : "+ e.getMessage());
             e.printStackTrace();
+            return "false";
         }
         return "success";
     }

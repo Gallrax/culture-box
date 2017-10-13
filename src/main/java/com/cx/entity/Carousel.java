@@ -23,7 +23,7 @@ public class Carousel extends Model<Carousel> {
 	private Integer id;
 	private String name;
 	private String image;
-	private Integer status;
+	private Integer status;//删除:-1, 无:0, 有:1
 	private Integer sort;
 	private Date insertTime;
 
