@@ -39,7 +39,7 @@
         var imageType = /^image\//;
         //是否是图片
         if (!imageType.test(file.type)) {
-            alert($("#tempFile").val(null));
+            //alert($("#tempFile").val(null));
             alert("请选择图片！");
             return;
         }

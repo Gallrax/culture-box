@@ -78,21 +78,22 @@ public class CarouselController {
     public String add(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
         logger.info(" ---------- /carousel/add ----------");
         String[] tempStr = file.getOriginalFilename().split("\\.");
-        String path = request.getServletContext().getRealPath("/datas/carousel/");
-        String carouselName = "carousel-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
-        logger.info(" new carouselName : "+ carouselName);
-        String logoPath = path + carouselName;
-        File tempFile = new File(logoPath);
+        String path = request.getServletContext().getRealPath("/datas/carousel/");//获取的路径会去掉最后的/,因此要在name前加/
+        String carouselName = "/carousel-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
+        logger.info(" new carouselName : " + carouselName);
+        String carouselPath = path + "/" + carouselName;
+        logger.info(" carouselPath : " + carouselPath);
+        File tempFile = new File(carouselPath);
         try {
             file.transferTo(tempFile);
             Carousel carousel = new Carousel();
             carousel.setImage("/datas/carousel/" + carouselName);
             carousel.setStatus(1);
             carousel.setInsertTime(new Date());
-            logger.info(" carousel : "+ carousel);
+            logger.info(" carousel : " + carousel);
             carouselService.insert(carousel);
         } catch (IOException e) {
-            logger.info(" carousel add 发生异常 : "+ e.getMessage());
+            logger.info(" carousel add 发生异常 : " + e.getMessage());
             e.printStackTrace();
             return "false";
         }
@@ -110,8 +111,8 @@ public class CarouselController {
     public String delete(@PathVariable Integer id) {
         logger.info(" ---------- /carousel/delete ----------");
         Carousel carousel = carouselService.selectById(id);
-        logger.info(" carousel : "+ carousel);
-        if(carousel == null) return "false";
+        logger.info(" carousel : " + carousel);
+        if (carousel == null) return "false";
         carousel.setStatus(-1);
         carouselService.updateById(carousel);
         return "success";

@@ -8,6 +8,7 @@
           id="vp"/>
     <link rel="stylesheet" href="static/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="static/css/select.css" type="text/css"/>
+    <%--<link rel="stylesheet" href="static/css/mui.min.css"/>--%>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <style>
 
@@ -27,29 +28,38 @@
 <div class="info-wrap">
     相关结果共<span id="result_count"></span>个
 </div>
-<div id="result_data">
-    <%--<div class="list-wrap">
-        <img src="static/image/list1.png" class="fl"/>
-        <div class="fl list-content">
-            <p class="word">
-                <span class="red">故事新编</span>
-                ：插图本
-            </p>
-            <p>鲁迅著</p>
+<div class="mui-content">
+    <div id="slider" class="mui-slider mui-fullscreen">
+        <div id="sliderSegmentedControl"
+             class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <div id="books_categary" class="mui-scroll">
+                <div id="result_data">
+                    <%--<div class="list-wrap">
+                        <img src="static/image/list1.png" class="fl"/>
+                        <div class="fl list-content">
+                            <p class="word">
+                                <span class="red">故事新编</span>
+                                ：插图本
+                            </p>
+                            <p>鲁迅著</p>
+                        </div>
+                        <span class="fr list-button">查看</span>
+                    </div>
+                    <div class="list-wrap">
+                        <img src="static/image/list1.png" class="fl"/>
+                        <div class="fl list-content">
+                            <p class="word">
+                                呐喊.彷徨
+                                <span class="red">故事新编</span>
+                            </p>
+                            <p>鲁迅著</p>
+                        </div>
+                        <span class="fr list-button">查看</span>
+                    </div>--%>
+                </div>
+            </div>
         </div>
-        <span class="fr list-button">查看</span>
     </div>
-    <div class="list-wrap">
-        <img src="static/image/list1.png" class="fl"/>
-        <div class="fl list-content">
-            <p class="word">
-                呐喊.彷徨
-                <span class="red">故事新编</span>
-            </p>
-            <p>鲁迅著</p>
-        </div>
-        <span class="fr list-button">查看</span>
-    </div>--%>
 </div>
 <%--<div class="pullUp">已经到底啦~(>_<)~~</div>--%>
 </body>
@@ -57,6 +67,9 @@
 
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/mine.js"></script>
+<script src="static/js/mui.min.js"></script>
+<script src="static/js/mui.pullToRefresh.js"></script>
+<script src="static/js/mui.pullToRefresh.material.js"></script>
 <script>
     var pid;
     var search;
@@ -133,4 +146,57 @@
         if (!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + search;
     }
 
+</script>
+<script>
+    mui.init();
+    (function ($) {
+        //阻尼系数
+//				var deceleration = mui.os.ios?0.003:0.0009;
+        $('.mui-scroll-wrapper').scroll({
+            bounce: false,
+            indicators: true, //是否显示滚动条
+//					deceleration:deceleration
+        });
+        $.ready(function () {
+            //循环初始化所有下拉刷新，上拉加载。
+            $.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function (index, pullRefreshEl) {
+                $(pullRefreshEl).pullToRefresh({
+                    down: {
+                        callback: function () {
+                            var self = this;
+                            setTimeout(function () {
+                                var ul = self.element.querySelector('.mui-table-view');
+                                ul.insertBefore(createFragment(ul, index, 6, true), ul.firstChild);
+                                self.endPullDownToRefresh();
+                            }, 1000);
+                        }
+                    },
+                    up: {
+                        callback: function () {
+                            var self = this;
+                            setTimeout(function () {
+                                var ul = self.element.querySelector('.mui-table-view');
+                                ul.appendChild(createFragment(ul, index, 6));
+                                self.endPullUpToRefresh();
+                            }, 1000);
+                        }
+                    }
+                });
+            });
+            var createFragment = function (ul, index, count, reverse) {
+//						var length = ul.querySelectorAll('a').length;
+                var fragment = document.createDocumentFragment();
+                var li;
+                var current_page = map[index] + 1;
+                /*var obj = getData(current_page, getCategoryId(index));
+                if (obj.length != 0) map[index] = current_page + 1;
+                for (var i = 0; i < obj.length; i++) {
+                    li = document.createElement('a');
+                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
+                    fragment.appendChild(li);
+                }*/
+                return fragment;
+            };
+        });
+    })(mui);
 </script>

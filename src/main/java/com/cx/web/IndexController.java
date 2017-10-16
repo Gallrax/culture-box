@@ -51,10 +51,11 @@ public class IndexController {
     public String changeLogo(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
         logger.info(" ---------- changeLogo ----------");
         String[] tempStr = file.getOriginalFilename().split("\\.");
-        String path = request.getServletContext().getRealPath("/datas/logo/");
+        String path = request.getServletContext().getRealPath("/datas/logo/");//获取的路径会去掉最后的/,因此要在name前加/
         String logoName = "logo-" + System.currentTimeMillis() + "." + tempStr[tempStr.length - 1];
         logger.info(" new logoName : "+ logoName);
-        String logoPath = path + logoName;
+        String logoPath = path + "/" + logoName;
+        logger.info(" logoPath : "+ logoPath);
         File tempFile = new File(logoPath);
         try {
             file.transferTo(tempFile);
