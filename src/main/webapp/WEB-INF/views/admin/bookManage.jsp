@@ -1,18 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2017/10/10
-  Time: 14:42
+  Date: 2017/10/16
+  Time: 16:37
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<div>
-    <table border="1" width="98%" style="text-align: center">
+
+<div class="pageContent">
+    <table class="table" width="100%" layoutH="138">
         <thead>
         <tr>
             <th>系列名称</th>
@@ -22,7 +18,19 @@
         </tr>
         </thead>
         <tbody id="series_list">
-
+        <tr rel="1">
+            <td>天津农信社</td>
+            <td>A120113196309052434</td>
+            <td>天津市华建装饰工程有限公司</td>
+            <td>联社营业部</td>
+            <td>29385739203816293</td>
+            <td>5级</td>
+            <td>政府机构</td>
+            <td>2009-05-21</td>
+            <td>
+                <a class="button" onclick="alert('-')"><span>推荐</span></a>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>
@@ -33,21 +41,16 @@
     </select>
     页
 </div>
-</body>
-</html>
-<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/mine.js"></script>
 <script>
 
-    var categoryId;
+    var categoryId = 1;
+    var totalCount;
 
     $(function () {
         init();
     });
 
-    //初始化
     function init() {
-        categoryId = getUrlParamer("categoryId");
         writeData(1);
         writePage();
     }
@@ -58,7 +61,7 @@
         var data = getData(page);
         var tempStr = "";
         for (var i in data) {
-            tempStr += "<tr><td>" + data[i].name + "</td><td>" + data[i].type + "</td><td>" + data[i].author + "</td><td><input type=\"button\" value=\"推荐\" onclick=\"recommend(" + data[i].id + ")\"/></td></tr>";
+            tempStr += "<tr><td>" + data[i].name + "</td><td>" + data[i].type + "</td><td>" + data[i].author + "</td><td><a class=\"button\"  onclick=\"recommend(" + data[i].id + ")\"><span>推荐</span></a></td></tr>";
         }
         $("#series_list").append(tempStr);
     }
@@ -78,8 +81,8 @@
         totalCount = getCount();
         var page = totalCount % 12 == 0 ? totalCount / 12 : totalCount / 12 + 1;
         var tempStr;
-        for (var i = 1; i <= page; i++) {
-            tempStr += "<option value=\"" + i + "\">" + i + "</option>";
+        for (var i = 1; i <= page; i ++) {
+            tempStr += "<option value=\""+ i +"\">" + i + "</option>";
         }
         $("#tempPage").append(tempStr);
     }
@@ -104,6 +107,6 @@
                     alert(" 推荐成功 ");
                 }
             }
-        })
+        });
     }
 </script>

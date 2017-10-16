@@ -9,9 +9,9 @@ package com.cx.constant;
 public class Size {
 
     public static final Integer SMALL_SIZE = 3;
-    public static final Integer MIDDLE_SIZE = 5;
-    public static final Integer BIG_SIZE = 10;
-    public static final Integer SUPER_SIZE = 20;
+    public static final Integer MIDDLE_SIZE = 6;
+    public static final Integer BIG_SIZE = 12;
+    public static final Integer SUPER_SIZE = 24;
 
     public static Integer CAROUSEL_SIZE;
 

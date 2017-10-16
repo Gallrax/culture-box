@@ -34,7 +34,7 @@ public class Resource extends Model<Resource> {
 	//系列内id(系列的该资源的序号)
 	private Integer innerId;
 	//系列id
-	private Integer seriesId;
+	private Long seriesId;
 
 
 	public Integer getId() {
@@ -93,11 +93,11 @@ public class Resource extends Model<Resource> {
 		this.innerId = innerId;
 	}
 
-	public Integer getSeriesId() {
+	public Long getSeriesId() {
 		return seriesId;
 	}
 
-	public void setSeriesId(Integer seriesId) {
+	public void setSeriesId(Long seriesId) {
 		this.seriesId = seriesId;
 	}
 

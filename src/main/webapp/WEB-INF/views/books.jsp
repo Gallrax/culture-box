@@ -130,9 +130,10 @@
 <script src="static/js/mui.min.js"></script>
 <script src="static/js/mui.pullToRefresh.js"></script>
 <script src="static/js/mui.pullToRefresh.material.js"></script>
+
 <script>
 
-    var pid = 1;
+    var pid = 2;
     var map = new Object();//用于储存每个分类下查询当前页
 
     $(function () {
@@ -225,7 +226,7 @@
 //				var deceleration = mui.os.ios?0.003:0.0009;
         $('.mui-scroll-wrapper').scroll({
             bounce: false,
-            indicators: true, //是否显示滚动条
+            indicators: true //是否显示滚动条
 //					deceleration:deceleration
         });
         $.ready(function () {
@@ -263,7 +264,16 @@
                 if (obj.length != 0) map[index] = current_page + 1;
                 for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
-                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
+                    var tempStr = "<li class=\"book-list-wrap\">" +
+                        "<img class=\"fl book-list-img\" src=\""+ obj[i].image +"\"/>" +
+                        "<div class=\"fl book-list-content\">" +
+                        "<p class=\"word\">"+ obj[i].name +"</p> " +
+                        "<p class=\"word\">"+ obj[i].author +"</p> " +
+                        "</div> " +
+                        "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\">阅读</span> " +
+                        "</li>";
+//                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
+                    li.innerHTML = tempStr;
                     fragment.appendChild(li);
                 }
                 return fragment;

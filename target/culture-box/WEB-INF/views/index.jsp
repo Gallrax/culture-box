@@ -108,6 +108,15 @@
 <script src="static/js/swiper.min.js"></script>
 
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay:2000,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true//修改swiper的父元素时，自动初始化swiper
+    });
+</script>
+<script>
     $(function () {
         getCarousel();
         writeSeries("data_1", 1);
@@ -145,9 +154,4 @@
     }
 
 </script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    });
-</script>
+

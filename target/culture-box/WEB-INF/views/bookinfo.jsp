@@ -28,7 +28,7 @@
     </div>
     <div class="content">
         <p>内容简介</p>
-        <p id="data_text" class="clearfix">-</p>
+        <p id="data_text" class="clearfix"></p>
     </div>
 </div>
 <div class="nov-wrap clearfix">

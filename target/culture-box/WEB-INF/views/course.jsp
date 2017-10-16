@@ -91,11 +91,12 @@
 
 <script>
 
-    var pid = 2;
+    var pid = 1;
     var map = new Object();//用于储存每个分类下查询当前页
 
     $(function () {
         getCategory();
+        $("#category_0").click();
     });
 
     //获取分类

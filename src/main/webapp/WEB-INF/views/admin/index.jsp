@@ -88,7 +88,7 @@
                     orderDirection: "orderDirection"
                 }, //【可选】
                 keys: {statusCode: "statusCode", message: "message"}, //【可选】
-                ui: {hideMode: 'offsets'}, //【可选】hideMode:navTab组件切换的隐藏方式，支持的值有’display’，’offsets’负数偏移位置的值，默认值为’display’
+                ui: {hideMode: 'display'}, //【可选】hideMode:navTab组件切换的隐藏方式，支持的值有’display’，’offsets’负数偏移位置的值，默认值为’display’
                 debug: false,	// 调试模式 【true|false】
                 callback: function () {
                     initEnv();
@@ -113,13 +113,6 @@
     </div>
 
     <div id="leftside">
-        <div id="sidebar_s">
-            <div class="collapse">
-                <div class="toggleCollapse">
-                    <div></div>
-                </div>
-            </div>
-        </div>
         <div id="sidebar">
             <div class="toggleCollapse"><h2>主菜单</h2>
                 <div>收缩</div>
@@ -131,11 +124,11 @@
                 </div>
                 <div class="accordionContent">
                     <ul class="tree treeFolder">
-                        <li><a href="javascript:void(0);">推荐管理</a>
+                        <li><a href="javascript:void(0);" target="navTab">推荐管理</a>
                             <ul>
-                                <li><a href="/admin/resourceManage.html?categoryId=1" target="navTab" rel="boxId_1-1" external="true" onclick="changeCategory(1)">好书推荐</a></li>
-                                <li><a href="/admin/resourceManage.html?categoryId=2" target="navTab" rel="boxId_1-2" external="true" onclick="changeCategory(2)">精品课程</a></li>
-                                <li><a href="/admin/resourceManage.html?categoryId=3" target="navTab" rel="boxId_1-3" external="true" onclick="changeCategory(3)">有声读物</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=1" target="navTab" external="true" rel="temp_1">好书推荐</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=2" target="navTab" external="true" rel="temp_2">精品课程</a></li>
+                                <li><a href="/admin/resourceManage.html?categoryId=3" target="navTab" external="true" rel="temp_3">有声读物</a></li>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0);">图片管理</a>
