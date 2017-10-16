@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>简单实用国产jQuery UI框架 - DWZ富客户端框架(J-UI.com)</title>
+    <title>文化盒子后台管理系统</title>
 
     <link href="/dwz/themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="/dwz/themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -168,7 +168,7 @@
             <div class="navTab-panel tabsPageContent layoutBox">
                 <div class="page unitBox">
                     <div class="accountInfo">
-                        <p><span>DWZ富客户端框架</span></p>
+                        <p><span>文化盒子后台管理系统</span></p>
                     </div>
                     <div class="pageFormContent" layoutH="80" style="margin-right:230px">
                     </div>
