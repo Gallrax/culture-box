@@ -1,6 +1,7 @@
 package com.test;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.cx.entity.Series;
 import com.cx.service.SeriesService;
 import org.junit.Before;
@@ -49,5 +50,41 @@ public class TestSeries {
         Series series = seriesService.selectById(1);
         String s = JSON.toJSONString(series);
         System.out.println(s);
+    }
+
+    @Test
+    public void test04() {
+        List<Series> list = seriesService.selectList(new EntityWrapper<Series>().eq("1", "1"));
+        for (Series series : list) {
+            series.getImage();
+            String route = series.getImage();
+            String tempRoute = "";
+            System.out.println(" old route : " + route);
+            if (route.contains("文化盒子视频数据")) {
+                String replace = route.replace("文化盒子视频数据", "mp4");
+                if (route.contains("报告厅视频")) {
+                    tempRoute = replace.replace("报告厅视频", "bgtsp");
+                } else if (route.contains("超星课堂视频")) {
+                    tempRoute = replace.replace("超星课堂视频", "cxktsp");
+                } else if (route.contains("少儿视频")) {
+                    tempRoute = replace.replace("少儿视频", "sesp");
+                } else if (route.contains("微视频")) {
+                    tempRoute = replace.replace("微视频", "wsp");
+                } else {
+                    tempRoute = replace;
+                }
+            } else if (route.contains("文化盒子图书数据")) {
+                tempRoute = route.replace("文化盒子图书数据", "epub");
+            } else if (route.contains("文化盒子音频整理")) {
+                String replace = route.replace("文化盒子音频整理", "mp3");
+                tempRoute = replace.replace("文化盒子\\", "");
+            } else {
+                System.out.println(" ---------- !!! ----------");
+            }
+            String result = tempRoute.replace("H:\\", "\\datas\\resources\\").replace("\\", "/");
+            /*series.setImage(result);
+            seriesService.updateById(series);*/
+//            System.out.println(" new route : " + result);
+        }
     }
 }
