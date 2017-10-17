@@ -24,7 +24,7 @@
     <div id="series_name1" class="word"></div>
     <img src="static/image/home.png" class="title-img2" onclick="location.href = '/'"/>
 </div>
-<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" style="clear:both;display:block;margin:auto;width: 100%"></video></div>
+<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" style="clear:both;display:block;margin:auto;width: 80%"></video></div>
 <div class="video-info">
     <span id="series_name2" class="fl word"></span>
     <span class="fr left">课程及讲师简介<img src="static/image/jiantou.png"/></span>
@@ -90,14 +90,19 @@
     var innerId;
     var maxId;
     $(function () {
+        init();
+    });
+
+    function init() {
         seriesId = getUrlParamer("sid");
         innerId = getUrlParamer("iid");
         if (innerId == null) innerId = 1;
         innerId = parseInt(innerId);
+        addClick(seriesId);
         getTitle();
         getVedio();
         getList();
-    });
+    }
 
     //获取标题
     function getTitle() {
@@ -127,6 +132,7 @@
         temp.seriesId = seriesId;
         var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         var obj = $.parseJSON(result);
+        maxId = obj.length;
         var str = "";
         for (var i in obj) {
             var tempLR = i % 2 ? "fr" : "fl";

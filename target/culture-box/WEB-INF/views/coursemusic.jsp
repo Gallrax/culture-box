@@ -52,14 +52,19 @@
     var innerId;
     var maxId;
     $(function () {
+        init();
+    });
+
+    function init() {
         seriesId = getUrlParamer("sid");
         innerId = getUrlParamer("iid");
         if (innerId == null) innerId = 1;
         innerId = parseInt(innerId);
+        addClick(seriesId);
         getTitle();
         getAutio();
         getList();
-    });
+    }
 
     //获取标题
     function getTitle() {

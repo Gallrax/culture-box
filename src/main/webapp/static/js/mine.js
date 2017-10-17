@@ -12,6 +12,14 @@ function jsGet(url, fields) {
     return result;
 }
 
+function addClick(innerId, outterId) {
+    console.log(" innerId : " + innerId + " outterId : " + outterId);
+    if(innerId == null) return false;
+    var type = isEmpty(outterId) ? 2 : 1;
+    outterId = outterId == null ? "" : outterId;
+    $.get("/click/add", "innerId=" + innerId + "&outterId=" + outterId + "&type=" + type);
+}
+
 function getUrlParamer(key) {
     var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
     var r = window.location.search.substr(1).match(reg);

@@ -62,6 +62,7 @@
 
     $(function () {
         seriesId = getUrlParamer("sid");
+        addClick(seriesId);
         writeData(seriesId);
         writeBooks(categoryPId);//categoryPId 在 writeData已赋值
     });
