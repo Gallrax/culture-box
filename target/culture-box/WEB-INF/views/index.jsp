@@ -124,7 +124,7 @@
         writeSeries("data_3", 3);
     });
 
-    //获取分裂
+    //获取分类
     function getCarousel() {
         var url = "/carousel/getByPage";
         var result = jsGet(url, null);
@@ -139,9 +139,17 @@
     //根据分类写系列
     function writeSeries(domId, pcid) {
         var obj = getSeries(pcid);
+        var url;
+        if(pcid == 1) {
+            url = "/bookinfo.html";
+        }else if(pcid == 2) {
+            url = "/coursevideo.html";
+        }else if(pcid == 3) {
+            url = "/coursemusic.html";
+        }
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div class=\"content-section fl\"><img src=\"" + obj[i].image + "\"/><center>" + obj[i].name + "</center></div>";
+            tempStr += "<div class=\"content-section fl\" onclick=\"location.href = '"+ url +"?sid="+ obj[i].id +"'\"><img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\"/><center>" + obj[i].name + "</center></div>";
         }
         $("#" + domId).append(tempStr);
     }

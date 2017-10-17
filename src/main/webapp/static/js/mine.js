@@ -29,6 +29,10 @@ function ifyAndEnc(obj) {
     return s;
 }
 
+function autoReplaceImage(src, temp) {
+    return src == null || src == "" ? temp : src;
+}
+
 function isEmpty(value) {
     return value == null || value == "";
 }
