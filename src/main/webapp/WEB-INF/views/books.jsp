@@ -16,7 +16,8 @@
 <body>
 <header class="mui-bar mui-bar-nav">
     <div class="backBox">
-        <a href="javascript:void(0);" onclick="window.history.back();"><img src="static/image/arrow-blue-left.png"/><span>返回</span></a>
+        <a href="javascript:void(0);" onclick="window.history.back();"><img
+                src="static/image/arrow-blue-left.png"/><span>返回</span></a>
         <p class="title">书城</p>
         <img src="static/image/home.png" onclick="location.href = '/'"/>
     </div>
@@ -30,7 +31,7 @@
     <div id="slider" class="mui-slider mui-fullscreen">
         <div id="sliderSegmentedControl"
              class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-            <div  id="books_categary" class="mui-scroll">
+            <div id="books_categary" class="mui-scroll">
                 <%--<a class="mui-control-item mui-active" href="#item1mobile">艺术</a>
                 <a class="mui-control-item" href="#item2mobile">经济</a>
                 <a class="mui-control-item" href="#item3mobile">历史</a>
@@ -138,6 +139,17 @@
 
     $(function () {
         getCategory();
+
+        $(".mui-control-item").change(function () {
+            alert("-");
+        });
+
+        document.querySelector('.mui-slider').addEventListener('slide', function (event) {
+            alert(event.target.id);
+            $(".mui-active").each(function (i) {
+                if(i == 0) alert($(this).attr("title"));
+            });
+        });
     });
 
     //获取分类
@@ -179,17 +191,17 @@
         var tempStr = "";
         for (var i in obj) {
             /*tempStr += "<a> " +
-                "<img class=\"readerPic\" src=\""+ obj[i].image +"\" onclick=\"location.href = '/coursevideo.html?sid="+ obj[i].id +"'\"/> " +
-                "<p class=\"title word\">"+ obj[i].name +"</p> " +
-                "<p class=\"author word\">"+ obj[i].authorCompany +"</p> " +
-                "</a> ";*/
+             "<img class=\"readerPic\" src=\""+ obj[i].image +"\" onclick=\"location.href = '/coursevideo.html?sid="+ obj[i].id +"'\"/> " +
+             "<p class=\"title word\">"+ obj[i].name +"</p> " +
+             "<p class=\"author word\">"+ obj[i].authorCompany +"</p> " +
+             "</a> ";*/
             tempStr += "<li class=\"book-list-wrap\">" +
-                "<img class=\"fl book-list-img\" src=\""+ obj[i].image +"\"/>" +
+                "<img class=\"fl book-list-img\" src=\"" + obj[i].image + "\"/>" +
                 "<div class=\"fl book-list-content\">" +
-                "<p class=\"word\">"+ obj[i].name +"</p> " +
-                "<p class=\"word\">"+ obj[i].author +"</p> " +
+                "<p class=\"word\">" + obj[i].name + "</p> " +
+                "<p class=\"word\">" + obj[i].author + "</p> " +
                 "</div> " +
-                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\">阅读</span> " +
+                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">阅读</span> " +
                 "</li>";
         }
         console.log(" index : " + index + " tempStr : " + tempStr);
@@ -201,7 +213,7 @@
         var temp = new Object();
         temp.categoryId = categoryId;
         var eq = ifyAndEnc(temp);
-        var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
+        var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
     }
@@ -210,7 +222,7 @@
     function search() {
         var value = $("#search_value").val();
         var search = encodeURI(encodeURI(value));
-        if(!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + search;
+        if (!isEmpty(value)) location.href = "/search.html?pid=" + pid + "&search=" + search;
     }
 
     //方便下方mui获取(在下方script中无法获取)
@@ -265,12 +277,12 @@
                 for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
                     var tempStr = "<li class=\"book-list-wrap\">" +
-                        "<img class=\"fl book-list-img\" src=\""+ obj[i].image +"\"/>" +
+                        "<img class=\"fl book-list-img\" src=\"" + obj[i].image + "\"/>" +
                         "<div class=\"fl book-list-content\">" +
-                        "<p class=\"word\">"+ obj[i].name +"</p> " +
-                        "<p class=\"word\">"+ obj[i].author +"</p> " +
+                        "<p class=\"word\">" + obj[i].name + "</p> " +
+                        "<p class=\"word\">" + obj[i].author + "</p> " +
                         "</div> " +
-                        "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\">阅读</span> " +
+                        "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">阅读</span> " +
                         "</li>";
 //                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
                     li.innerHTML = tempStr;
