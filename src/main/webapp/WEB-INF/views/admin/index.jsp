@@ -133,8 +133,8 @@
                         </li>
                         <li><a href="javascript:void(0);">图片管理</a>
                             <ul>
-                                <li><a href="/admin/carouselManage.html" target="navTab" rel="boxId_2-1">轮播图管理</a></li>
-                                <li><a href="/admin/logoManage.html" target="navTab" rel="boxId_2-2">LOGO管理</a></li>
+                                <li><a href="/admin/carouselManage.html" target="navTab" external="true" rel="boxId_2-1">轮播图管理</a></li>
+                                <li><a href="/admin/logoManage.html" target="navTab" external="true" rel="boxId_2-2">LOGO管理</a></li>
                             </ul>
                         </li>
 

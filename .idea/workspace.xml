@@ -2,32 +2,13 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" line="147" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" line="144" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cx/web/ResourceController.class" afterPath="$PROJECT_DIR$/target/classes/com/cx/web/ResourceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/com/cx/web/ResourceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/test/TestCategory$1.class" afterPath="$PROJECT_DIR$/target/test-classes/com/test/TestCategory$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/test/TestCategory.class" afterPath="$PROJECT_DIR$/target/test-classes/com/test/TestCategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/test/TestSeries.class" afterPath="$PROJECT_DIR$/target/test-classes/com/test/TestSeries.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cx/web/ResourceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/epubread.properties" afterPath="$PROJECT_DIR$/src/main/resources/epubread.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/test/TestCategory.java" afterPath="$PROJECT_DIR$/src/test/com/test/TestCategory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/test/TestEpub.java" afterPath="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/test/TestResource.java" afterPath="$PROJECT_DIR$/src/test/com/test/TestResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/test/TestSeries.java" afterPath="$PROJECT_DIR$/src/test/com/test/TestSeries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/bookinfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" afterPath="$PROJECT_DIR$/target/culture-box/WEB-INF/views/coursevideo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,28 +27,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bookinfo.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="books.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="191" column="97" lean-forward="false" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,13 +102,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cx/entity/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/reader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/mui.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/constant/Size.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cx/web/SeriesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/readerManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/courseManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/bookManage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/resourceManage.jsp" />
         <option value="$PROJECT_DIR$/src/test/com/test/TestEpub.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp" />
@@ -163,6 +121,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coursevideo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" />
       </list>
     </option>
   </component>
@@ -281,6 +241,28 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="culture-box" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -301,10 +283,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -983,6 +961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="6" column="13492" lean-forward="false" selection-start-line="6" selection-start-column="13492" selection-end-line="6" selection-end-column="13492" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,14 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
           <caret line="140" column="32" lean-forward="true" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="132" column="29" lean-forward="true" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1177,14 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="106" column="42" lean-forward="true" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/epubReader.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1229,8 +1192,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bookinfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="166">
+          <caret line="87" column="115" lean-forward="false" selection-start-line="87" selection-start-column="100" selection-end-line="87" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="144" column="29" lean-forward="true" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="136" column="100" lean-forward="false" selection-start-line="136" selection-start-column="100" selection-end-line="136" selection-end-column="100" />
           <folding />
         </state>
       </provider>
