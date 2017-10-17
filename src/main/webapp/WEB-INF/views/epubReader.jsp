@@ -57,6 +57,7 @@
         var temp = new Object();
         temp.seriesId = seriesId;
         var tempResult = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
+        console.log(tempResult);
         var resources = $.parseJSON(tempResult);//获得该系列下的resource
         var result = jsGet("/resource/epubRead", "id=" + resources[0].id);
         var obj = $.parseJSON($.parseJSON(result));

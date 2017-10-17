@@ -1,6 +1,7 @@
 package com.test;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.cx.constant.Size;
 import com.cx.entity.Category;
 import com.cx.service.CategoryService;
@@ -56,6 +57,25 @@ public class TestCategory {
         }};
         List<Category> categories = categoryService.selectByMap(map);
         System.out.println(categories);
+    }
+
+    @Test
+    public void test05() {
+        List<Category> categories = categoryService.selectList(new EntityWrapper<Category>());
+        for (Category category : categories) {
+            Integer pid = category.getPid();
+            System.out.println(" old category : " + category);
+            if (pid == null) {
+                continue;
+            } else if (pid == 2) {
+                category.setPid(1);
+                categoryService.updateById(category);
+            } else if (pid == 1) {
+                category.setPid(2);
+                categoryService.updateById(category);
+            }
+            System.out.println(" new category : " + category);
+        }
     }
 
 }

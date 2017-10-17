@@ -91,7 +91,7 @@
 
 <script>
 
-    var pid = 1;
+    var pid = 2;
     var map = new Object();//用于储存每个分类下查询当前页
 
     $(function () {

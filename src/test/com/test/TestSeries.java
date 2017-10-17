@@ -82,9 +82,28 @@ public class TestSeries {
                 System.out.println(" ---------- !!! ----------");
             }
             String result = tempRoute.replace("H:\\", "\\datas\\resources\\").replace("\\", "/");
-            /*series.setImage(result);
-            seriesService.updateById(series);*/
-//            System.out.println(" new route : " + result);
+            series.setImage(result);
+            seriesService.updateById(series);
+            System.out.println(" new route : " + result);
+        }
+    }
+
+    @Test
+    public void test05() {
+        List<Series> list = seriesService.selectList(new EntityWrapper<Series>().eq("1", "1"));
+        for (Series series : list) {
+            Integer categoryPId = series.getCategoryPId();
+            System.out.println(" old series : " + series);
+            if (categoryPId == null) {
+                continue;
+            } else if (categoryPId == 2) {
+                series.setCategoryPId(1);
+                seriesService.updateById(series);
+            } else if (categoryPId == 1) {
+                series.setCategoryPId(2);
+                seriesService.updateById(series);
+            }
+            System.out.println(" new series : " + series);
         }
     }
 }

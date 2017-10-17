@@ -24,7 +24,7 @@
     <div id="series_name1" class="word"></div>
     <img src="static/image/home.png" class="title-img2" onclick="location.href = '/'"/>
 </div>
-<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" style="clear:both;display:block;margin:auto"></video></div>
+<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" style="clear:both;display:block;margin:auto;width: 100%"></video></div>
 <div class="video-info">
     <span id="series_name2" class="fl word"></span>
     <span class="fr left">课程及讲师简介<img src="static/image/jiantou.png"/></span>

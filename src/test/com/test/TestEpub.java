@@ -24,4 +24,11 @@ public class TestEpub {
         System.out.println(bookInfo.getContents().get(0).getContent());
     }
 
+    @Test
+    public void test02() {
+        String tempStr = "/temp/temp.epub";
+        String s = tempStr.replaceFirst("/", "");
+        System.out.println(s);
+    }
+
 }

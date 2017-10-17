@@ -87,4 +87,11 @@ public class TestResource {
         String replace = tempStr.replace("BC", "ZZ");
         System.out.println(replace);
     }
+
+    @Test
+    public void test05() {
+        Resource resource = resourceService.selectById(6);
+        System.out.println(resource.getRoute());
+        System.out.println(resource.getRoute().replaceFirst("/", ""));
+    }
 }

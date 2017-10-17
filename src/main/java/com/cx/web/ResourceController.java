@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
@@ -60,11 +61,16 @@ public class ResourceController {
      */
     @RequestMapping("/epubRead")
     @ResponseBody
-    public String epubRead(Integer id) {
+    public String epubRead(Integer id, HttpServletRequest request) {
+        logger.info(" ---------- resource epubRead ---------- ");
+        logger.info(" paramer : id : " + id);
         Resource resource = resourceService.selectById(id);
-        String route = resource.getRoute();
-        File file = new File(route);
-        BookInfo book = new Reader().read(new File(file.getAbsolutePath()), 20, 600, 800,1);
+        String route = resource.getRoute().replaceFirst("/", "");
+        logger.info(" tempPath : "+request.getRealPath("/"));
+        String path = request.getRealPath("/") + route;
+        logger.info(" path : " + path);
+//        File file = new File(route.replaceFirst("/", ""));//需要将第一个/去掉，以防到根目录寻找资源
+        BookInfo book = new Reader().read(new File(path), 20, 600, 800,1);
         return JSON.toJSONString(book);
     }
 
