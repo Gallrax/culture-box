@@ -139,18 +139,21 @@
 
     $(function () {
         getCategory();
+        slideEvent();
+    });
 
-        $(".mui-control-item").change(function () {
-            alert("-");
-        });
-
+    function slideEvent() {
         document.querySelector('.mui-slider').addEventListener('slide', function (event) {
-            alert(event.target.id);
             $(".mui-active").each(function (i) {
-                if(i == 0) alert($(this).attr("title"));
+                if (i == 0) {
+                    alert(" i : " + i);
+                    var innerId = $(this).attr("title");
+                    addClick(innerId, pid);
+                    console.log(" books click innerId : " + innerId + " outterId : " + pid);
+                }
             });
         });
-    });
+    }
 
     //获取分类
     function getCategory() {

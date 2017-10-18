@@ -96,8 +96,21 @@
 
     $(function () {
         getCategory();
-        $("#category_0").click();
+        slideEvent();
+//        $("#category_0").click();
     });
+
+    function slideEvent() {
+        document.querySelector('.mui-slider').addEventListener('slide', function (event) {
+            $(".mui-active").each(function (i) {
+                if(i == 0) {
+                    var innerId = $(this).attr("title");
+                    addClick(innerId, pid);
+                    console.log(" books click innerId : " + innerId + " outterId : " + pid);
+                }
+            });
+        });
+    }
 
     //获取分类
     function getCategory() {
