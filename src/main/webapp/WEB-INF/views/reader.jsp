@@ -101,12 +101,9 @@
 
     function slideEvent() {
         document.querySelector('.mui-slider').addEventListener('slide', function (event) {
-            $(".mui-active").each(function (i) {
-                if(i == 0) {
-                    var innerId = $(this).attr("title");
-                    addClick(innerId, pid);
-                }
-            });
+            var index = event.detail.slideNumber;
+            var innerId = $("#category_" + index).attr("title");
+            addClick(innerId, pid);
         });
     }
 
@@ -151,7 +148,7 @@
         for (var i in obj) {
 //            console.log(obj[i].name);
             tempStr += "<a> " +
-                "<img class=\"readerPic\" src=\"" + obj[i].image + "\" onclick=\"location.href = '/coursemusic.html?sid=" + obj[i].id + "'\"/> " +
+                "<img class=\"readerPic\" src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\" onclick=\"location.href = '/coursemusic.html?sid=" + obj[i].id + "'\"/> " +
                 "<p class=\"title word\">" + obj[i].name + "</p> " +
                 "<p class=\"total word\">共" + obj[i].count + "集</p> " +
                 "</a> ";

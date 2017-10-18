@@ -61,4 +61,16 @@ public class CategoryController {
         return categories;
     }
 
+    @RequestMapping("/getCountByField")
+    @ResponseBody
+    public Integer getCountByField(String eq) {
+        logger.info(" ---------- resource getByFields ---------- ");
+        EntityWrapper<Category> ew = new EntityWrapper<>();
+        Map<String, String> eqMap = URLUtil.decodeAndMap(eq);//将eq进行解码并转为Map
+        logger.info(" paramer : eqMap : " + eqMap);
+        EWUtil.eqMap(ew, eqMap, false);
+        int count = categoryService.selectCount(ew);
+        return count;
+    }
+
 }

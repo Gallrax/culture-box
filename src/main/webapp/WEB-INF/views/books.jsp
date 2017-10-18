@@ -144,12 +144,9 @@
 
     function slideEvent() {
         document.querySelector('.mui-slider').addEventListener('slide', function (event) {
-            $(".mui-active").each(function (i) {
-                if (i == 0) {
-                    var innerId = $(this).attr("title");
-                    addClick(innerId, pid);
-                }
-            });
+            var index = event.detail.slideNumber;
+            var innerId = $("#category_" + index).attr("title");
+            addClick(innerId, pid);
         });
     }
 

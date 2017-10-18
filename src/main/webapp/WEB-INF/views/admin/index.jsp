@@ -137,6 +137,13 @@
                                 <li><a href="/admin/logoManage.html" target="navTab" external="true" rel="boxId_2-2">LOGO管理</a></li>
                             </ul>
                         </li>
+                        <li><a href="javascript:void(0);">点击量</a>
+                            <ul>
+                                <li><a href="/admin/clickManage.html?type=1" target="navTab" external="true" rel="boxId_3-1">一级分类</a></li>
+                                <li><a href="/admin/clickManage.html?type=2" target="navTab" external="true" rel="boxId_3-2">二级分类</a></li>
+                                <li><a href="/admin/clickManage.html?type=3" target="navTab" external="true" rel="boxId_3-3">资源</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>

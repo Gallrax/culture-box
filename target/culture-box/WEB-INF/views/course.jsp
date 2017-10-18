@@ -102,13 +102,9 @@
 
     function slideEvent() {
         document.querySelector('.mui-slider').addEventListener('slide', function (event) {
-            $(".mui-active").each(function (i) {
-                if(i == 0) {
-                    var innerId = $(this).attr("title");
-                    addClick(innerId, pid);
-                    console.log(" books click innerId : " + innerId + " outterId : " + pid);
-                }
-            });
+            var index = event.detail.slideNumber;
+            var innerId = $("#category_" + index).attr("title");
+            addClick(innerId, pid);
         });
     }
 
@@ -119,6 +115,7 @@
         var obj = $.parseJSON(result);
         var tempStr = "";
         if (obj.length >= 1) {
+            addClick(obj[0].id, pid);//默认第一个增加点击量
             tempStr += "<a id=\"category_0\" title=\"" + obj[0].id + "\" class=\"mui-control-item mui-active\" href=\"#item" + 1 + "mobile\">" + obj[0].name + "</a>";
             writeDiv(1, obj[0].id, true);
             map[0] = 1;//初始化
