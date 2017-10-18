@@ -114,7 +114,7 @@
         var tempStr = "";
         for (var i in obj) {
             tempStr += "<div class=\"list-wrap\"> " +
-                "<img src=\"" + obj[i].image + "\" class=\"fl\"/> " +
+                "<img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\" class=\"fl\"/> " +
                 "<div class=\"fl list-content\"> " +
                 "<p class=\"word\"> " + obj[i].name + "</p> " +
                 "<p>" + obj[i].author + "著</p> " +
