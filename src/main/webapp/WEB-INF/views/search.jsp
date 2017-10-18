@@ -8,12 +8,42 @@
           id="vp"/>
     <link rel="stylesheet" href="static/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="static/css/select.css" type="text/css"/>
-    <%--<link rel="stylesheet" href="static/css/mui.min.css"/>--%>
-    <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <style>
+        .pullUp {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            color: #b3b3b3;
+        }
 
+        .pullUp .pullUpIcon {
+            display: inline-block;
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+            margin: 12px 9px 0 0;
+            background: url(http://img.learn.16q.cn/home/2/new/refresh.png) no-repeat;
+            background-size: contain;
+            -webkit-transform: rotate(0deg) translateZ(0);
+            -webkit-transition-duration: 0ms;
+            -webkit-animation-name: loading;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes loading {
+            from {
+                -webkit-transform: rotate(0deg) translateZ(0);
+            }
+            to {
+                -webkit-transform: rotate(360deg) translateZ(0);
+            }
+        }
     </style>
 </head>
+
 <body>
 <div class="title">
     <img src="static/image/jiantou2.png" class="title-img1" onclick="window.history.back();"/>
@@ -22,63 +52,49 @@
     <img src="static/image/home.png" class="title-img2" onclick="location.href = '/'"/>
 </div>
 <div class="ipt-wrap">
-    <input id="search_value" type="text" class="fl" value="故事新编"/>
+    <input id="search_value" type="text" class="fl"/>
     <img src="static/image/search.png" class="fr" onclick="flushSearch()"/>
 </div>
 <div class="info-wrap">
     相关结果共<span id="result_count"></span>个
 </div>
-<div class="mui-content">
-    <div id="slider" class="mui-slider mui-fullscreen">
-        <div id="sliderSegmentedControl"
-             class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-            <div id="books_categary" class="mui-scroll">
-                <div id="result_data">
-                    <%--<div class="list-wrap">
-                        <img src="static/image/list1.png" class="fl"/>
-                        <div class="fl list-content">
-                            <p class="word">
-                                <span class="red">故事新编</span>
-                                ：插图本
-                            </p>
-                            <p>鲁迅著</p>
-                        </div>
-                        <span class="fr list-button">查看</span>
-                    </div>
-                    <div class="list-wrap">
-                        <img src="static/image/list1.png" class="fl"/>
-                        <div class="fl list-content">
-                            <p class="word">
-                                呐喊.彷徨
-                                <span class="red">故事新编</span>
-                            </p>
-                            <p>鲁迅著</p>
-                        </div>
-                        <span class="fr list-button">查看</span>
-                    </div>--%>
-                </div>
-            </div>
+<div id="result_data">
+    <%--<div class="list-wrap">
+        <img src="static/image/ears.png" class="fl"/>
+        <div class="fl list-content">
+            <p class="word red">
+                <span class="red">故事新编</span>
+            </p>
+            <p>第一集</p>
         </div>
+        <span class="fr list-button">查看</span>
     </div>
+    <div class="list-wrap">
+        <img src="static/image/ears.png" class="fl"/>
+        <div class="fl list-content">
+            <p class="word red">
+                <span class="red">故事新编</span>
+            </p>
+            <p>第二集</p>
+        </div>
+        <span class="fr list-button">查看</span>
+    </div>--%>
 </div>
-<%--<div class="pullUp">已经到底啦~(>_<)~~</div>--%>
+<div class="pullUp">已经到底啦~(>_<)~~</div>
 </body>
 </html>
-
-<script src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
 <script src="static/js/mine.js"></script>
-<script src="static/js/mui.min.js"></script>
-<script src="static/js/mui.pullToRefresh.js"></script>
-<script src="static/js/mui.pullToRefresh.material.js"></script>
 <script>
     var pid;
     var search;
     var url;
+    var index = 1;
 
     $(function () {
         init();
         getTitle();
-        writeData(1);
+        writeData(index);
     });
 
     //初始化
@@ -123,6 +139,7 @@
                 "</div>";
         }
         $("#result_data").append(tempStr);
+        index++;
     }
 
     //获取数据并转换
@@ -148,55 +165,14 @@
 
 </script>
 <script>
-    mui.init();
-    (function ($) {
-        //阻尼系数
-//				var deceleration = mui.os.ios?0.003:0.0009;
-        $('.mui-scroll-wrapper').scroll({
-            bounce: false,
-            indicators: true, //是否显示滚动条
-//					deceleration:deceleration
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(document).scrollTop() <= 0) {
+                //				      alert("滚动条已经到达顶部为0");
+            }
+            if ($(document).scrollTop() + $(window).height() + 1 >= $(document).height()) {
+                writeData(index);
+            }
         });
-        $.ready(function () {
-            //循环初始化所有下拉刷新，上拉加载。
-            $.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function (index, pullRefreshEl) {
-                $(pullRefreshEl).pullToRefresh({
-                    down: {
-                        callback: function () {
-                            var self = this;
-                            setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.insertBefore(createFragment(ul, index, 6, true), ul.firstChild);
-                                self.endPullDownToRefresh();
-                            }, 1000);
-                        }
-                    },
-                    up: {
-                        callback: function () {
-                            var self = this;
-                            setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.appendChild(createFragment(ul, index, 6));
-                                self.endPullUpToRefresh();
-                            }, 1000);
-                        }
-                    }
-                });
-            });
-            var createFragment = function (ul, index, count, reverse) {
-//						var length = ul.querySelectorAll('a').length;
-                var fragment = document.createDocumentFragment();
-                var li;
-                var current_page = map[index] + 1;
-                /*var obj = getData(current_page, getCategoryId(index));
-                if (obj.length != 0) map[index] = current_page + 1;
-                for (var i = 0; i < obj.length; i++) {
-                    li = document.createElement('a');
-                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
-                    fragment.appendChild(li);
-                }*/
-                return fragment;
-            };
-        });
-    })(mui);
+    });
 </script>

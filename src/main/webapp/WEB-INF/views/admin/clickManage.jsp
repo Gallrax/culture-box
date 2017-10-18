@@ -16,6 +16,8 @@
         <thead>
         <tr>
             <th>名称</th>
+            <th>一级分类</th>
+            <th>二级分类</th>
             <th>点击量</th>
         </tr>
         </thead>

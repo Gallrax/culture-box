@@ -148,7 +148,7 @@
         for (var i in obj) {
 //            console.log(obj[i].name);
             tempStr += "<a> " +
-                "<img class=\"readerPic\" src=\"" + obj[i].image + "\" onclick=\"location.href = '/coursemusic.html?sid=" + obj[i].id + "'\"/> " +
+                "<img class=\"readerPic\" src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\" onclick=\"location.href = '/coursemusic.html?sid=" + obj[i].id + "'\"/> " +
                 "<p class=\"title word\">" + obj[i].name + "</p> " +
                 "<p class=\"total word\">共" + obj[i].count + "集</p> " +
                 "</a> ";
