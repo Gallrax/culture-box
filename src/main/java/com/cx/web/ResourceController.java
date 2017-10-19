@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -61,16 +62,16 @@ public class ResourceController {
      */
     @RequestMapping("/epubRead")
     @ResponseBody
-    public String epubRead(Integer id, HttpServletRequest request) {
+    public String epubRead(Integer id, @RequestParam Integer width, @RequestParam Integer height, HttpServletRequest request) {
         logger.info(" ---------- resource epubRead ---------- ");
-        logger.info(" paramer : id : " + id);
+        logger.info(" paramer : id : " + id + " width : " + width + " height : " + height);
         Resource resource = resourceService.selectById(id);
         String route = resource.getRoute().replaceFirst("/", "");
-        logger.info(" tempPath : "+request.getRealPath("/"));
+        logger.info(" tempPath : " + request.getRealPath("/"));
         String path = request.getRealPath("/") + route;
         logger.info(" path : " + path);
 //        File file = new File(route.replaceFirst("/", ""));//需要将第一个/去掉，以防到根目录寻找资源
-        BookInfo book = new Reader().read(new File(path), 20, 600, 800,1);
+        BookInfo book = new Reader().read(new File(path), 20, width, height, 1);
         return JSON.toJSONString(book);
     }
 
