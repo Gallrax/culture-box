@@ -129,11 +129,12 @@
         $("#result_count").html(result.total);
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div class=\"list-wrap\"> " +
+            var tempAuthor = isEmpty(obj[i].author) ? "" : obj[i].author + "著";
+            tempStr += "<div class=\"list-wrap\" onclick=\"location.href = '" + url + "?sid=" + obj[i].id + "'\"> " +
                 "<img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\" class=\"fl\"/> " +
                 "<div class=\"fl list-content\"> " +
                 "<p class=\"word\"> " + obj[i].name + "</p> " +
-                "<p>" + obj[i].author + "著</p> " +
+                "<p>" + tempAuthor + "</p> " +
                 "</div> " +
                 "<span class=\"fr list-button\" onclick=\"location.href = '" + url + "?sid=" + obj[i].id + "'\">查看</span> " +
                 "</div>";
