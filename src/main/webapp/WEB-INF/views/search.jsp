@@ -130,8 +130,9 @@
         var tempStr = "";
         for (var i in obj) {
             var tempAuthor = isEmpty(obj[i].author) ? "" : obj[i].author + "著";
+            var tempImage = isEmpty(obj[i].image) ? (obj[i].type == "mp3" ? "/static/image/listen.png" : "/static/image/defaultVedio.jpg") : obj[i].image;
             tempStr += "<div class=\"list-wrap\" onclick=\"location.href = '" + url + "?sid=" + obj[i].id + "'\"> " +
-                "<img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\" class=\"fl\"/> " +
+                "<img src=\"" + tempImage + "\" class=\"fl\"/> " +
                 "<div class=\"fl list-content\"> " +
                 "<p class=\"word\"> " + obj[i].name + "</p> " +
                 "<p>" + tempAuthor + "</p> " +
