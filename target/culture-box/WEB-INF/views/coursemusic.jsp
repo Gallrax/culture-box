@@ -61,8 +61,8 @@
         if (innerId == null) innerId = 1;
         innerId = parseInt(innerId);
         addClick(seriesId);
-        getTitle();
-        getAutio();
+//        getTitle();
+        getAutio();//标题在此方法中设置
         getList();
     }
 
@@ -83,6 +83,7 @@
         var result = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         var obj = $.parseJSON(result);
         $("#audio_resource").attr("src", obj[0].route);
+        $("#series_name").append(obj[0].name);
         console.log("obj[0].route");
     }
 
