@@ -71,7 +71,7 @@ public class ResourceController {
         String path = request.getRealPath("/") + route;
         logger.info(" path : " + path);
 //        File file = new File(route.replaceFirst("/", ""));//需要将第一个/去掉，以防到根目录寻找资源
-        BookInfo book = new Reader().read(new File(path), 20, width, height, 1);
+        BookInfo book = new Reader().read(new File(path), 30, width, height, 1);
         return JSON.toJSONString(book);
     }
 
