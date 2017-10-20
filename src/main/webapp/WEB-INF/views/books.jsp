@@ -244,16 +244,6 @@
             //循环初始化所有下拉刷新，上拉加载。
             $.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function (index, pullRefreshEl) {
                 $(pullRefreshEl).pullToRefresh({
-                    down: {
-                        callback: function () {
-                            var self = this;
-                            setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.insertBefore(createFragment(ul, index, 6, true), ul.firstChild);
-                                self.endPullDownToRefresh();
-                            }, 1000);
-                        }
-                    },
                     up: {
                         callback: function () {
                             var self = this;
