@@ -148,7 +148,7 @@
         var tempStr = "";
         for (var i in obj) {
             tempStr += "<a> " +
-                "<img class=\"readerPic\" src=\""+ obj[i].image +"\" onclick=\"location.href = '/coursevideo.html?sid="+ obj[i].id +"'\"/> " +
+                "<img class=\"readerPic\" src=\""+ autoReplaceImage(obj[i].image, "/static/image/defaultVideo.jpg") +"\" onclick=\"location.href = '/coursevideo.html?sid="+ obj[i].id +"'\"/> " +
                 "<p class=\"title word\">"+ obj[i].name +"</p> " +
                 "<p class=\"author word\">"+ obj[i].authorCompany +"</p> " +
                 "</a> ";
@@ -215,7 +215,7 @@
                 if (obj.length != 0) map[index] = current_page + 1;
                 for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
-                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
+                    li.innerHTML = "<img class=\"readerPic\" src=\"" + autoReplaceImage(obj[i].image, "/static/image/defaultVideo.jpg") + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
                     fragment.appendChild(li);
                 }
                 return fragment;
