@@ -194,13 +194,13 @@
              "<p class=\"title word\">"+ obj[i].name +"</p> " +
              "<p class=\"author word\">"+ obj[i].authorCompany +"</p> " +
              "</a> ";*/
-            tempStr += "<li class=\"book-list-wrap\">" +
+            tempStr += "<li class=\"book-list-wrap\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">" +
                 "<img class=\"fl book-list-img\" src=\"" + obj[i].image + "\"/>" +
                 "<div class=\"fl book-list-content\">" +
                 "<p class=\"word\">" + obj[i].name + "</p> " +
                 "<p class=\"word\">" + obj[i].author + "</p> " +
                 "</div> " +
-                "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">阅读</span> " +
+                "<span class=\"fr\">阅读</span> " +
                 "</li>";
         }
         console.log(" index : " + index + " tempStr : " + tempStr);
@@ -265,13 +265,13 @@
                 if (obj.length != 0) map[index] = current_page + 1;
                 for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
-                    var tempStr = "<li class=\"book-list-wrap\">" +
+                    var tempStr = "<li class=\"book-list-wrap\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">" +
                         "<img class=\"fl book-list-img\" src=\"" + obj[i].image + "\"/>" +
                         "<div class=\"fl book-list-content\">" +
                         "<p class=\"word\">" + obj[i].name + "</p> " +
                         "<p class=\"word\">" + obj[i].author + "</p> " +
                         "</div> " +
-                        "<span class=\"fr\" onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\">阅读</span> " +
+                        "<span class=\"fr\">阅读</span> " +
                         "</li>";
 //                    li.innerHTML = "<img class=\"readerPic\" src=\"" + obj[i].image + "\" /><p class=\"title word\">" + obj[i].name + "</p><p class=\"author word\">共" + obj[i].count + "集</p>";
                     li.innerHTML = tempStr;
