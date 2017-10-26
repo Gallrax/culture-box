@@ -2,7 +2,9 @@ package com.test;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.cx.entity.Resource;
+import com.cx.entity.Series;
 import com.cx.service.ResourceService;
+import com.cx.service.SeriesService;
 import com.yd.epub.modules.parse.read.BookInfo;
 import com.yd.epub.modules.parse.read.Reader;
 import org.junit.Before;
@@ -23,11 +25,13 @@ public class TestResource {
 
     ApplicationContext context;
     ResourceService resourceService;
+    SeriesService seriesService;
 
     @Before
     public void before() {
         context = new ClassPathXmlApplicationContext("spring/spring.xml");
         resourceService = context.getBean(ResourceService.class);
+        seriesService = context.getBean(SeriesService.class);
     }
 
     @Test
@@ -93,5 +97,41 @@ public class TestResource {
         Resource resource = resourceService.selectById(6);
         System.out.println(resource.getRoute());
         System.out.println(resource.getRoute().replaceFirst("/", ""));
+    }
+
+    @Test
+    public void test06() {
+        List<Series> seriesList = seriesService.selectList(new EntityWrapper<Series>().eq("type", "epub"));
+        System.out.println(seriesList.size());
+        for (Series series : seriesList) {
+            List<Resource> resources = resourceService.selectList(new EntityWrapper<Resource>().eq("seriesId", series.getId()));
+            for (Resource resource : resources) {
+                String route = resource.getRoute();
+                String substring = route.substring(26, route.length());
+                String[] split = substring.split("\\.");
+                String tempStr = route.substring(0, 26) +
+                        split[0].toLowerCase()
+                        + "."
+                        + split[1];
+                System.out.println( " old : "+route);
+                System.out.println( " new : "+tempStr);
+                resource.setRoute(tempStr);
+                resourceService.updateById(resource);
+            }
+        }
+    }
+
+    @Test
+    public void test07() {
+        String tempStr = "/datas/resources/epub/EPUB/TSas12a.epub";
+        String substring1 = tempStr.substring(0, 26);
+        String substring2 = tempStr.substring(26, tempStr.length());
+        String[] strings = substring2.split("\\.");
+        String str = substring1 + strings[0].toLowerCase() + "." + strings[1];
+        System.out.println(substring1);
+        System.out.println(substring2);
+        System.out.println(str);
+//        String s = tempStr.toUpperCase();
+//        System.out.println(s);
     }
 }
