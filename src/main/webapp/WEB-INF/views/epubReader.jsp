@@ -40,6 +40,9 @@
                 <p style="margin-left:0px;"></p></div>
         </div>--%>
     </div>
+    <div id="page_temp" style="text-align:center">
+
+    </div>
 </div>
 </body>
 </html>
@@ -54,15 +57,17 @@
 
     $(function () {
         init();
-        writeData(1);
-        writeData(2);
-        writeData(3);
     });
 
     //初始化
     function init() {
         seriesId = getUrlParamer("id");
         bookinfo = getData();
+        $("#page_temp").html(1 +" / "+ bookinfo.contents.length);
+        writeData(1);
+        writeData(2);
+        writeData(3);
+        writeData(4);
     }
 
     //写数据
@@ -70,7 +75,7 @@
         index = index <= 1 ? 1 : index;
 //        $("#epub_temp").empty();
         var text = bookinfo.contents[index - 1].content;
-        $("#epub_temp").append("<div id=\"page_"+ page +"\" class=\"swiper-slide\" style=\"background-color:#EBEBEB\">" + text + "</div>");
+        $("#epub_temp").append("<div id=\"page_"+ page +"\" class=\"swiper-slide\" style=\"height: 95%;\">" + text + "</div>");
         console.log(text);
         page++;
     }
@@ -85,7 +90,7 @@
 //        var width = document.body.scrollWidth - 50;
 //        var height = document.body.scrollHeight - 50;
         var width = $("#epub_temp").width() - 20;
-        var height = $("#epub_temp").height() - 20;
+        var height = $("#epub_temp").height() * 0.90 - 20;//传入的空间小于实际，以防字体截断
         console.log("width : " + width + " height : " + height);
         var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + Math.floor(width) + "&height=" + Math.floor(height));
         var obj = $.parseJSON($.parseJSON(result));
@@ -96,12 +101,13 @@
     var swiper = new Swiper('.swiper-container', {
         observer: true,//修改swiper自己或子元素时，自动初始化swiper
         observeParents: true,//修改swiper的父元素时，自动初始化swipe
-        onSlideNextStart: function (swiper, event) {
-            var index = swiper.activeIndex;
-            var judge = index + 2 == page;
+        onSlideChangeEnd: function (swiper, event){
+            var judge = swiper.activeIndex + 3 <= page;
             if(judge) {
                 writeData(page);
             }
+            var index = swiper.activeIndex + 1;
+            $("#page_temp").html(index +" / "+ bookinfo.contents.length);
         }
     });
 </script>
