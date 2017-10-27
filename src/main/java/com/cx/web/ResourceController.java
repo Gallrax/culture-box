@@ -62,7 +62,7 @@ public class ResourceController {
      */
     @RequestMapping("/epubRead")
     @ResponseBody
-    public String epubRead(Integer id, @RequestParam Integer width, @RequestParam Integer height, HttpServletRequest request) {
+    public String epubRead(Integer id, @RequestParam Integer width, @RequestParam Integer height, @RequestParam(required = false, defaultValue = "60") Integer fontSize, HttpServletRequest request) {
         logger.info(" ---------- resource epubRead ---------- ");
         logger.info(" paramer : id : " + id + " width : " + width + " height : " + height);
         Resource resource = resourceService.selectById(id);
@@ -71,7 +71,7 @@ public class ResourceController {
         String path = request.getRealPath("/") + route;
         logger.info(" path : " + path);
 //        File file = new File(route.replaceFirst("/", ""));//需要将第一个/去掉，以防到根目录寻找资源
-        BookInfo book = new Reader().read(new File(path), 50, width, height, 1);
+        BookInfo book = new Reader().read(new File(path), fontSize, width, height, 1);
         return JSON.toJSONString(book);
     }
 
