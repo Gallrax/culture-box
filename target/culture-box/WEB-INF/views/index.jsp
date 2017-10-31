@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="/static/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="/static/css/index.css" type="text/css"/>
     <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <style type="text/css">
+        .content-wrap {
+            width: 100%;
+            height: 14rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #dcdcdc;
+        }
+    </style>
 </head>
 
 <body>
 <img src="/datas/logo/${_logo}" class="head"/>
 <div class="banner-wrap">
-    <div class="swiper-container">
+    <div class="swiper-container swiper-container3">
         <div class="swiper-wrapper" id="carousel_image">
             <%--<div class="swiper-slide"><img src="static/image/banner1.png" height="100%" width="100%"/></div>
             <div class="swiper-slide"><img src="static/image/banner1.png" height="100%" width="100%"/></div>--%>
@@ -89,7 +97,7 @@
 </div>
 <div class="content-wrap clearfix listen">
     <div class="content-title">
-        <span class="fl">有声读物</span>
+        <span class="fl">有声推荐</span>
         <img class="fr" src="/static/image/jiantou.png"/>
         <div class="fr" onclick="location.href='/reader.html'">更多</div>
     </div>
@@ -164,6 +172,15 @@
 
 <script src="/static/js/swiper.min.js"></script>
 <script>
+
+    var swiper = new Swiper('.swiper-container1', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay:2000,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true//修改swiper的父元素时，自动初始化swiper
+    });
+
     var swiper = new Swiper('.swiper-container2', {
         slidesPerView: 3,
         spaceBetween: 10,

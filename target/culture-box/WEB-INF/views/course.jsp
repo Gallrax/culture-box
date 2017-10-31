@@ -144,7 +144,12 @@
 
     //写数据实现
     function writeData(index, page, categoryId) {
-        var obj = getData(page, categoryId);
+        var obj;
+        if(index != 1){
+            obj = getData(page, categoryId);
+        }else if (index == 1) {
+            obj = getRecommend(page);
+        }
         var tempStr = "";
         for (var i in obj) {
             tempStr += "<a> " +
@@ -163,6 +168,17 @@
         temp.categoryId = categoryId;
         var eq = ifyAndEnc(temp);
         var result = jsGet("/series/getByFields", "eq="+ eq +"&page=" + page);
+        var obj = $.parseJSON($.parseJSON(result));
+        return obj;
+    }
+
+    //获取推荐并转换
+    function getRecommend(page) {
+        var temp = new Object();
+        temp.categoryPId = pid;
+        temp.isRecommend = 1;
+        var eq = ifyAndEnc(temp);
+        var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
     }
