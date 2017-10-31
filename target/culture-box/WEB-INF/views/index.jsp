@@ -6,9 +6,9 @@
     <title></title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
           id="vp"/>
-    <link rel="stylesheet" href="static/css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/index.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
 </head>
 
 <body>
@@ -40,82 +40,80 @@
 <div class="content-wrap clearfix">
     <div class="content-title">
         <span class="fl">好书推荐</span>
-        <img class="fr" src="static/image/jiantou.png"/>
+        <img class="fr" src="/static/image/jiantou.png"/>
         <div class="fr" onclick="location.href='/books.html'">更多</div>
     </div>
-    <div id="data_1" class="content fl">
-        <%--<div class="content-section fl">
-            <img src="static/image/book1.png"/>
-            <center>人类群星闪耀时</center>
+    <div class="content fl">
+        <div class="swiper-container swiper-container2">
+            <div id="data_1" class="swiper-wrapper">
+                <%--<div class="swiper-slide content-section">
+                    <img src="/static/image/book1.png"/>
+                    <center>人类群星闪耀时</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/book2.png"/>
+                    <center>经济史的趣味</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/book3.png"/>
+                    <center>论语解读</center>
+                </div>--%>
+            </div>
         </div>
-        <div class="content-section fl">
-            <img src="static/image/book2.png"/>
-            <center>经济史的趣味</center>
-        </div>
-        <div class="content-section fl">
-            <img src="static/image/book3.png"/>
-            <center>论语解读</center>
-        </div>--%>
     </div>
 </div>
 <div class="content-wrap clearfix course">
     <div class="content-title">
         <span class="fl">精品课程</span>
-        <img class="fr" src="static/image/jiantou.png"/>
+        <img class="fr" src="/static/image/jiantou.png"/>
         <div class="fr" onclick="location.href='/course.html'">更多</div>
     </div>
-    <div id="data_2" class="content fl">
-        <%--<div class="content-section fl">
-            <img src="static/image/course1.png"/>
-            <center>可汗学院公开课</center>
+    <div class="content fl">
+        <div class="swiper-container swiper-container3">
+            <div id="data_2" class="swiper-wrapper">
+                <%--<div class="swiper-slide content-section">
+                    <img src="/static/image/course1.png"/>
+                    <center>可汗学院公开课</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/course2.png"/>
+                    <center>学好网路创意营销</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/course3.png"/>
+                    <center>博弈论</center>
+                </div>--%>
+            </div>
         </div>
-        <div class="content-section fl">
-            <img src="static/image/course2.png"/>
-            <center>学好网路创意营销</center>
-        </div>
-        <div class="content-section fl">
-            <img src="static/image/course3.png"/>
-            <center>博弈论</center>
-        </div>--%>
     </div>
 </div>
 <div class="content-wrap clearfix listen">
     <div class="content-title">
         <span class="fl">有声读物</span>
-        <img class="fr" src="static/image/jiantou.png"/>
+        <img class="fr" src="/static/image/jiantou.png"/>
         <div class="fr" onclick="location.href='/reader.html'">更多</div>
     </div>
-    <div id="data_3" class="content fl">
-        <%--<div class="content-section fl">
-            <img src="static/image/listen.png"/>
-            <center>了不起的火箭</center>
+    <div class="content fl" style="padding-bottom: 1rem;">
+        <div class="swiper-container swiper-container4">
+            <div id="data_3" class="swiper-wrapper">
+                <%--<div class="swiper-slide content-section">
+                    <img src="/static/image/listen.png"/>
+                    <center>了不起的火箭</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/listen.png"/>
+                    <center>夜莺与蔷薇</center>
+                </div>
+                <div class="swiper-slide content-section">
+                    <img src="/static/image/listen.png"/>
+                    <center>少年国王</center>
+                </div>--%>
+            </div>
         </div>
-        <div class="content-section fl">
-            <img src="static/image/listen.png"/>
-            <center>夜莺与蔷薇</center>
-        </div>
-        <div class="content-section fl">
-            <img src="static/image/listen.png"/>
-            <center>少年国王</center>
-        </div>--%>
     </div>
 </div>
-<%--<div class="pullUp"><span class="pullUpIcon"></span>正在加载中...</div>--%>
-</body>
-</html>
 <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/mine.js"></script>
-<script src="static/js/swiper.min.js"></script>
-
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay:2000,
-        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true//修改swiper的父元素时，自动初始化swiper
-    });
-</script>
 <script>
     $(function () {
         getCarousel();
@@ -139,6 +137,7 @@
     //根据分类写系列
     function writeSeries(domId, pcid) {
         var obj = getSeries(pcid);
+        console.log(obj.length);
         var url;
         if(pcid == 1) {
             url = "/bookinfo.html";
@@ -149,7 +148,7 @@
         }
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div class=\"content-section fl\" onclick=\"location.href = '"+ url +"?sid="+ obj[i].id +"'\"><img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\"/><center>" + obj[i].name + "</center></div>";
+            tempStr += "<div class=\"swiper-slide content-section\" onclick=\"location.href = '"+ url +"?sid="+ obj[i].id +"'\"><img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\"/><center>" + obj[i].name + "</center></div>";
         }
         $("#" + domId).append(tempStr);
     }
@@ -163,3 +162,26 @@
 
 </script>
 
+<script src="/static/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true//修改swiper的父元素时，自动初始化swiper
+    });
+    var swiper = new Swiper('.swiper-container3', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true//修改swiper的父元素时，自动初始化swiper
+    });
+    var swiper = new Swiper('.swiper-container4', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true//修改swiper的父元素时，自动初始化swiper
+    });
+</script>
+</body>
+</html>

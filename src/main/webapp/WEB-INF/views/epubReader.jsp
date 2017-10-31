@@ -40,7 +40,7 @@
                 <p style="margin-left:0px;"></p></div>
         </div>--%>
     </div>
-    <div id="page_temp" style="text-align:center">
+    <div id="page_temp" style="text-align:center; font-size:30px;">
 
     </div>
 </div>
@@ -101,7 +101,7 @@
     var swiper = new Swiper('.swiper-container', {
         observer: true,//修改swiper自己或子元素时，自动初始化swiper
         observeParents: true,//修改swiper的父元素时，自动初始化swipe
-        onSlideChangeEnd: function (swiper, event){
+        onSlideChangeStart: function (swiper, event){
             var judge = swiper.activeIndex + 3 <= page;
             if(judge) {
                 writeData(page);
