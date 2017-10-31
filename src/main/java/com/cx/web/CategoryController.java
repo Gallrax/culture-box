@@ -39,7 +39,7 @@ public class CategoryController {
     @RequestMapping("/getByPid/{pid}")
     @ResponseBody
     public List<Category> getByLv(@PathVariable Integer pid) {
-        List<Category> categories = categoryService.selectList(new EntityWrapper<Category>().eq("pid", pid));
+        List<Category> categories = categoryService.selectList(new EntityWrapper<Category>().eq("pid", pid).orderBy("insertTime", true));
         return categories;
     }
 
