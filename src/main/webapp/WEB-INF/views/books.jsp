@@ -157,11 +157,11 @@
         var obj = $.parseJSON(result);
         var tempStr = "";
         if (obj.length >= 1) {
-            addClick(obj[0].id, pid);//默认第一个增加点击量
-            tempStr += "<a id=\"category_0\" title=\"" + obj[0].id + "\" class=\"mui-control-item mui-active\" href=\"#item" + 1 + "mobile\">" + obj[0].name + "</a>";
-            writeDiv(1, obj[0].id, true);
-            map[0] = 1;//初始化
-        }
+         addClick(obj[0].id, pid);//默认第一个增加点击量
+         tempStr += "<a id=\"category_0\" title=\"" + obj[0].id + "\" class=\"mui-control-item mui-active\" href=\"#item" + 1 + "mobile\">" + obj[0].name + "</a>";
+         writeDiv(1, obj[0].id, true);
+         map[0] = 1;//初始化
+         }
         for (var i = 1; i < obj.length; i++) {
             tempStr += "<a id=\"category_" + i + "\" title=\"" + obj[i].id + "\" class=\"mui-control-item\" href=\"#item" + (i + 1) + "mobile\">" + obj[i].name + "</a>";
             writeDiv((i + 1), obj[i].id, false);
@@ -186,7 +186,12 @@
 
     //写数据实现
     function writeData(index, page, categoryId) {
-        var obj = getData(page, categoryId);
+        var obj;
+        if(index != 1){
+            obj = getData(page, categoryId);
+        }else if (index == 1) {
+            obj = getRecommend(page);
+        }
         var tempStr = "";
         for (var i in obj) {
             /*tempStr += "<a> " +
@@ -211,6 +216,17 @@
     function getData(page, categoryId) {
         var temp = new Object();
         temp.categoryId = categoryId;
+        var eq = ifyAndEnc(temp);
+        var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
+        var obj = $.parseJSON($.parseJSON(result));
+        return obj;
+    }
+
+    //获取推荐并转换
+    function getRecommend(page) {
+        var temp = new Object();
+        temp.categoryPId = pid;
+        temp.isRecommend = 1;
         var eq = ifyAndEnc(temp);
         var result = jsGet("/series/getByFields", "eq=" + eq + "&page=" + page);
         var obj = $.parseJSON($.parseJSON(result));
