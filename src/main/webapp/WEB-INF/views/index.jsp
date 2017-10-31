@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="/static/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="/static/css/index.css" type="text/css"/>
     <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <style type="text/css">
+        .content-wrap {
+            width: 100%;
+            height: 14rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #dcdcdc;
+        }
+    </style>
 </head>
 
 <body>
