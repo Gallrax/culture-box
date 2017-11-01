@@ -78,7 +78,7 @@ public class SeriesController {
         logger.info(" ---------- series getByPCid ---------- ");
 //        List<Series> series = seriesService.selectByParentCategoryId(pcid, 0, Size.SMALL_SIZE);
         List<Series> series = seriesService.selectPage(
-                new Page<Series>(1, 5),
+                new Page<Series>(1, 10),
                 new EntityWrapper<Series>().eq("categoryPId", pcid).eq("isRecommend", 1).orderBy("updateTime", false))
                 .getRecords();
         logger.info(" result series : " + series);

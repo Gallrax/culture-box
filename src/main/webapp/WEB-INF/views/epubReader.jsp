@@ -17,8 +17,8 @@
     }
 </style>
 <body>
-<div class="swiper-container">
-    <div id="epub_temp" class="swiper-wrapper" style="background-color:#EBEBEB">
+<div class="swiper-container" style="background-color:#EBEBEB">
+    <div id="epub_temp" class="swiper-wrapper">
         <%--<div id="1" class="swiper-slide">
             <div class="epub_content" style="text-indent: 2em;font-size: 20px;line-height: 1.5;"><p style="margin-left:0px;"
                                                                                class="text_none">

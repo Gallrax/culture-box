@@ -16,6 +16,16 @@
             padding-bottom: 1rem;
             border-bottom: 1px solid #dcdcdc;
         }
+        .content-section center {
+            font-size: 1rem;
+            color: #000000;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 
@@ -128,6 +138,7 @@
         writeSeries("data_1", 1);
         writeSeries("data_2", 2);
         writeSeries("data_3", 3);
+        endInit();
     });
 
     //获取分类
@@ -168,37 +179,41 @@
         return obj;
     }
 
+    function endInit() {
+        var swiper = new Swiper('.swiper-container1', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay:2000,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true//修改swiper的父元素时，自动初始化swiper
+        });
+
+        var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true//修改swiper的父元素时，自动初始化swiper
+        });
+        var swiper = new Swiper('.swiper-container3', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true//修改swiper的父元素时，自动初始化swiper
+        });
+        var swiper = new Swiper('.swiper-container4', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true//修改swiper的父元素时，自动初始化swiper
+        });
+    }
+
 </script>
 
 <script src="/static/js/swiper.min.js"></script>
 <script>
 
-    var swiper = new Swiper('.swiper-container1', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay:2000,
-        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true//修改swiper的父元素时，自动初始化swiper
-    });
 
-    var swiper = new Swiper('.swiper-container2', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true//修改swiper的父元素时，自动初始化swiper
-    });
-    var swiper = new Swiper('.swiper-container3', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true//修改swiper的父元素时，自动初始化swiper
-    });
-    var swiper = new Swiper('.swiper-container4', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        observer: true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true//修改swiper的父元素时，自动初始化swiper
-    });
 </script>
 </body>
 </html>

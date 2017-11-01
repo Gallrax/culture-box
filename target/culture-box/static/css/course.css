@@ -105,7 +105,7 @@
 	margin-bottom: 1.25rem;
 }
 .video-button span{
-	font-size: 1.1666rem;
+	font-size: 1.4rem;
 	color: #3d94ff;
 	line-height: 2.25rem;
 	color: #3d94ff;
@@ -133,6 +133,7 @@
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	font-size: 1.2rem;
 }
 .blue{
 	color: #3d94ff;

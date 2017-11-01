@@ -227,7 +227,13 @@
                 var length = ul.querySelectorAll('a').length;
                 var fragment = document.createDocumentFragment();
                 var current_page = map[index] + 1;
-                var obj = getData(current_page, getCategoryId(index));
+                var obj;
+                if(index != 0){
+                    obj = getData(current_page, getCategoryId(index));
+                }else if (index == 0) {
+                    obj = getRecommend(current_page);
+                }
+//                var obj = getData(current_page, getCategoryId(index));
                 if (obj.length != 0) map[index] = current_page + 1;
                 for (var i = 0; i < obj.length; i++) {
                     li = document.createElement('a');
