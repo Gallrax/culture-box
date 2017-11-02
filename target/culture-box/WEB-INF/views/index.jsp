@@ -32,7 +32,7 @@
 <body>
 <img src="/datas/logo/${_logo}" class="head"/>
 <div class="banner-wrap">
-    <div class="swiper-container swiper-container3">
+    <div class="swiper-container swiper-container1">
         <div class="swiper-wrapper" id="carousel_image">
             <%--<div class="swiper-slide"><img src="static/image/banner1.png" height="100%" width="100%"/></div>
             <div class="swiper-slide"><img src="static/image/banner1.png" height="100%" width="100%"/></div>--%>

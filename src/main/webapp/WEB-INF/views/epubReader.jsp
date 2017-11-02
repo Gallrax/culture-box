@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/swiper.min.css">
 </head>
 <style>
@@ -18,7 +19,7 @@
 </style>
 <body>
 <div class="swiper-container" style="background-color:#EBEBEB">
-    <div id="epub_temp" class="swiper-wrapper">
+    <div id="epub_temp" class="swiper-wrapper" style="height: 98%">
         <%--<div id="1" class="swiper-slide">
             <div class="epub_content" style="text-indent: 2em;font-size: 20px;line-height: 1.5;"><p style="margin-left:0px;"
                                                                                class="text_none">
@@ -54,6 +55,7 @@
     var seriesId;
     var page = 1;
     var bookinfo;
+    var clientType;
 
     $(function () {
         init();
@@ -61,7 +63,15 @@
 
     //初始化
     function init() {
+        console.log(" document.body.clientWidth : " + document.body.clientWidth + " document.body.clientHeight : " + document.body.clientHeight);
+        console.log(" document.body.offsetWidth : " + document.body.offsetWidth + " document.body.offsetHeight : " + document.body.offsetHeight);
+        console.log(" document.body.scrollWidth : " + document.body.clientWidth + " document.body.scrollHeight : " + document.body.clientHeight);
+        console.log(" document.body.scrollTop : " + document.body.clientWidth + " document.body.scrollLeft : " + document.body.clientHeight);
+        console.log(" window.screenTop  : " + window.screenTop  + " window.screenLeft : " + window.screenLeft);
+        console.log(" window.screen.height  : " + window.screen.height + " window.screen.width : " + window.screen.width);
+        console.log(" window.screen.availHeight  : " + window.screen.availHeight  + " window.screen.availWidth  : " + window.screen.availWidth );
         seriesId = getUrlParamer("id");
+        clientType = getClientType();
         bookinfo = getData();
         $("#page_temp").html(1 +" / "+ bookinfo.contents.length);
         writeData(1);
@@ -75,7 +85,7 @@
         index = index <= 1 ? 1 : index;
 //        $("#epub_temp").empty();
         var text = bookinfo.contents[index - 1].content;
-        $("#epub_temp").append("<div id=\"page_"+ page +"\" class=\"swiper-slide\" style=\"height: 95%;\">" + text + "</div>");
+        $("#epub_temp").append("<div id=\"page_"+ page +"\" class=\"swiper-slide\">" + text + "</div>");
         console.log(text);
         page++;
     }
@@ -87,14 +97,28 @@
         var tempResult = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         console.log(tempResult);
         var resources = $.parseJSON(tempResult);//获得该系列下的resource
-//        var width = document.body.scrollWidth - 50;
-//        var height = document.body.scrollHeight - 50;
-        var width = $("#epub_temp").width() - 20;
-        var height = $("#epub_temp").height() * 0.90 - 20;//传入的空间小于实际，以防字体截断
+        var width = document.documentElement.clientWidth - 20;
+        var height = document.documentElement.clientHeight - 20;
         console.log("width : " + width + " height : " + height);
-        var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + Math.floor(width) + "&height=" + Math.floor(height));
+//        var width = $("#epub_temp").width() - 20;
+//        var height = $("#epub_temp").height() * 0.90 - 20;//传入的空间小于实际，以防字体截断
+        var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + Math.floor(width) + "&height=" + Math.floor(height) + "&clientType=" + clientType);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
+    }
+
+    function getClientType() {
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        console.log(" isAndroid : " + isAndroid + " isIOS : "+ isIOS)
+        if(isAndroid) {
+            return 1;
+        }else if (isIOS) {
+            return 2;
+        }else {
+            return 3
+        }
     }
 </script>
 <script>
