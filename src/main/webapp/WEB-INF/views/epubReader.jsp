@@ -19,7 +19,7 @@
 </style>
 <body>
 <div class="swiper-container" style="background-color:#EBEBEB">
-    <div id="epub_temp" class="swiper-wrapper" style="height: 98%">
+    <div id="epub_temp" class="swiper-wrapper" style="height: 98%; text-align:center;">
         <%--<div id="1" class="swiper-slide">
             <div class="epub_content" style="text-indent: 2em;font-size: 20px;line-height: 1.5;"><p style="margin-left:0px;"
                                                                                class="text_none">
@@ -97,12 +97,12 @@
         var tempResult = jsGet("/resource/getByFields", "eq=" + ifyAndEnc(temp));
         console.log(tempResult);
         var resources = $.parseJSON(tempResult);//获得该系列下的resource
-        var width = document.documentElement.clientWidth - 20;
-        var height = document.documentElement.clientHeight - 20;
+//        var width = document.documentElement.clientWidth - 20;
+//        var height = document.documentElement.clientHeight - 20;
+        var width = $("#epub_temp").width();
+        var height = $("#epub_temp").height() ;
         console.log("width : " + width + " height : " + height);
-//        var width = $("#epub_temp").width() - 20;
-//        var height = $("#epub_temp").height() * 0.90 - 20;//传入的空间小于实际，以防字体截断
-        var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + Math.floor(width) + "&height=" + Math.floor(height) + "&clientType=" + clientType);
+        var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + width + "&height=" + height + "&clientType=" + clientType);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;
     }
