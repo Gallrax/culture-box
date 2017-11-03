@@ -6,7 +6,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cx/constant/Logo.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="-">
+    <list default="true" id="0ad52adc-0e11-4f12-8b25-edf590a79ff0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -762,7 +762,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="26" width="1581" height="944" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
