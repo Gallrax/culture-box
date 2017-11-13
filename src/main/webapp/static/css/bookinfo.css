@@ -49,7 +49,7 @@
 	text-overflow:ellipsis;
 }
 .content-section p:nth-child(2){
-	font-size: 1.1rem;
+	font-size: 1.1666rem;
 	color: #000;
 	margin-bottom: 1.25rem;
 	overflow: hidden;
@@ -123,7 +123,7 @@
 	display: block;
 	width: 100%;
 	height: 11.875rem;
-	font-size: 1rem;
+	font-size: 1.1666rem;
 	color: #313131;
 	line-height: 1.5rem;
 	overflow: hidden;
@@ -183,6 +183,6 @@
 }
 
 .nov-section center {
-	font-size: 0.5833rem;
+	font-size: 0.9166rem;
 	color: #000000;
 }

@@ -1,118 +1,133 @@
-.title{
-	width: 100%;
-	height: 2.625rem;
-	overflow: hidden;
-	position: relative;
+.title {
+    width: 100%;
+    height: 2.625rem;
+    overflow: hidden;
+    position: relative;
 }
-.title-img1{
-	display: block;
-	width: 0.8333rem;
-	height: 1.5833rem;
-	position: absolute;
-	top: 0.5208rem;
-	left: 1rem;
+
+.title-img1 {
+    display: block;
+    width: 0.8333rem;
+    height: 1.5833rem;
+    position: absolute;
+    top: 0.5208rem;
+    left: 1rem;
 }
-.title-img2{
-	display: block;
-	width: 1.6666rem;
-	height: 1.6666rem;
-	position: absolute;
-	top: 0.4792rem;
-	right: 1rem;
-   
+
+.title-img2 {
+    display: block;
+    width: 1.6666rem;
+    height: 1.6666rem;
+    position: absolute;
+    top: 0.4792rem;
+    right: 1rem;
+
 }
-.title span{
-	display: block;
-	position: absolute;
-	height: 2.625rem;
-	line-height: 2.625rem;
-	font-size: 1.4583rem;
-	color: #3d94ff;
-	top: 0;
-	left: 3rem;
+
+.title span {
+    display: block;
+    position: absolute;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    font-size: 1.4583rem;
+    color: #3d94ff;
+    top: 0;
+    left: 3rem;
 }
-.title div{
-	height: 2.625rem;
-	width: 50%;
-	line-height: 2.625rem;
-	font-size: 1.4583rem;
-	color: #3d94ff;
-	margin: 0 auto;
-	text-align: center;
+
+.title div {
+    height: 2.625rem;
+    width: 50%;
+    line-height: 2.625rem;
+    font-size: 1.4583rem;
+    color: #3d94ff;
+    margin: 0 auto;
+    text-align: center;
 }
-.ipt-wrap{
-				width: 71%;
-				height: 2.5rem;
-				margin: 0 auto;
-				margin-top: 0.5rem;
-				border: 1px solid #e5e5e5;
-				border-radius: 3px;
-				overflow: hidden;
-				margin-bottom: 1rem;
-			}
-			.ipt-wrap input{
-				width: 70%;
-				height: 2.4rem;
-				outline: 0 none;
-				border:0 none;
-				line-height: 2.5rem;
-				font-size: 1rem;
-				text-indent: 1rem;
-			}
-			.ipt-wrap img{
-				width: 2.5rem;
-				height: 2.5rem;
-			}
-			.info-wrap{
-				height: 2.9166rem;
-				width: 100%;
-				border-top:1px solid #E5E5E5;
-				border-bottom: 1px solid #E5E5E5;
-				font-size: 0.75rem;
-				color: #aaaaaa;
-				line-height: 2.9166rem;
-				padding-left: 1.6666rem;
-			}
-			.list-wrap{
-				width: 100%;
-				height: 4.7916rem;
-				padding-left: 1.1666rem;
-				padding-right: 1.1666rem;
-				border-bottom: 1px solid #E5E5E5;
-			}
-			.list-wrap img{
-				width: 3.7083rem;
-				height: 3.7083rem;
-				border-radius: 5px;
-				margin-top: 0.5416rem;
-				margin-right: 1.5833rem;
-			}
-			.list-content{
-				width: 60%;
-				height: 3.7083rem;
-				margin-top: 0.5416rem;
-			}
-			.list-content p:nth-child(1){
-				font-size: 1rem;
-				color: #000000;
-				line-height: 1.9583rem;
-			}
-			.red{
-				color: #e60012;
-			}
-			.list-content p:nth-child(2){
-				font-size: 0.8333rem;
-				color: #a7a7a7;
-				line-height: 1.9583rem;
-			}
-			.list-button{
-				width: 4.125rem;
-				height: 1.875rem;
-				border: 1px solid #3d94ff;
-				color: #3d94ff;
-				text-align: center;
-				line-height: 1.875rem;
-				font-size: 1.0833rem;
-				border-radius:3px ;
-				margin-top: 1.4583rem;
-			}
+
+.ipt-wrap {
+    width: 71%;
+    height: 2.5rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.ipt-wrap input {
+    width: 70%;
+    height: 2.4rem;
+    outline: 0 none;
+    border: 0 none;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.ipt-wrap img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.info-wrap {
+    height: 2.9166rem;
+    width: 100%;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 0.9166rem;
+    color: #aaaaaa;
+    line-height: 2.9166rem;
+    padding-left: 1.6666rem;
+}
+
+.list-wrap {
+    width: 100%;
+    height: 4.7916rem;
+    padding-left: 1.1666rem;
+    padding-right: 1.1666rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.list-wrap img {
+    width: 3.7083rem;
+    height: 3.7083rem;
+    border-radius: 5px;
+    margin-top: 0.5416rem;
+    margin-right: 1.5833rem;
+}
+
+.list-content {
+    width: 60%;
+    height: 3.7083rem;
+    margin-top: 0.5416rem;
+}
+
+.list-content p:nth-child(1) {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.9583rem;
+}
+
+.red {
+    color: #e60012;
+}
+
+.list-content p:nth-child(2) {
+    font-size: 0.8333rem;
+    color: #a7a7a7;
+    line-height: 1.9583rem;
+}
+
+.list-button {
+    width: 4.125rem;
+    height: 1.875rem;
+    border: 1px solid #3d94ff;
+    color: #3d94ff;
+    text-align: center;
+    line-height: 1.875rem;
+    font-size: 1.0833rem;
+    border-radius: 3px;
+    margin-top: 1.4583rem;
+}
