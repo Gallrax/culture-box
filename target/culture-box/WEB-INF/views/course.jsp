@@ -155,7 +155,7 @@
             tempStr += "<a> " +
                 "<img class=\"readerPic\" src=\""+ autoReplaceImage(obj[i].image, "/static/image/defaultVideo.jpg") +"\" onclick=\"location.href = '/coursevideo.html?sid="+ obj[i].id +"'\"/> " +
                 "<p class=\"title word\">"+ obj[i].name +"</p> " +
-                "<p class=\"author word\">"+ obj[i].authorCompany +"</p><p class=\"author word\">共" + obj[i].count + "集</p> " +
+                "<p class=\"author word\">共" + obj[i].count + "集</p> " +
                 "</a> ";
         }
         console.log(" index : " + index + " tempStr : " + tempStr);

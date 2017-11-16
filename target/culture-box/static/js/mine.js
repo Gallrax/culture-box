@@ -14,7 +14,7 @@ function jsGet(url, fields) {
 
 function addClick(innerId, outterId) {
     console.log(" innerId : " + innerId + " outterId : " + outterId);
-    if(innerId == null) return false;
+    if (innerId == null) return false;
     var type = isEmpty(outterId) ? 2 : 1;
     outterId = outterId == null ? "" : outterId;
     $.get("/click/add", "innerId=" + innerId + "&outterId=" + outterId + "&type=" + type);
@@ -39,6 +39,12 @@ function ifyAndEnc(obj) {
 
 function autoReplaceImage(src, temp) {
     return src == null || src == "" ? temp : src;
+}
+
+function autoReplaceLong(value) {
+    var temp = "";
+    if (!isEmpty(value)) temp = value.length > 5 ? value.substring(0, 6) + "..." : value;
+    return temp;
 }
 
 function isEmpty(value) {
