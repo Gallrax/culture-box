@@ -86,7 +86,7 @@
         var obj = getBooks(categoryPId);
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div class=\"nov-section fl\" onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\"><img src=\"" + obj[i].image + "\" /><center>" + autoReplaceLong(obj[i].name) + "</center> </div>";
+            tempStr += "<div onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\" class=\"nov-section fl\"><img src=\"" + obj[i].image + "\" /><center>" + autoReplaceLong(obj[i].name) + "</center> </div>";
         }
         $("#books").append(tempStr);
     }

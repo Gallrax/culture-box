@@ -24,7 +24,7 @@
     <div id="series_name1" class="word"></div>
     <img src="static/image/home.png" class="title-img2" onclick="location.href = '/'"/>
 </div>
-<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" style="clear:both;display:block;margin:auto;width: 80%"></video></div>
+<div class="video-wrap" id="a1"><video id="vedio_resource" src="" controls="controls" autoplay="autoplay" style="clear:both;display:block;margin:auto;width: 100%"></video></div>
 <div class="video-info">
     <span id="series_name2" class="fl word"></span>
     <span class="fr left">课程及讲师简介<img src="static/image/jiantou.png"/></span>
@@ -93,15 +93,16 @@
         init();
     });
 
-    function init() {
+    function init(){
         seriesId = getUrlParamer("sid");
         innerId = getUrlParamer("iid");
         if (innerId == null) innerId = 1;
         innerId = parseInt(innerId);
         addClick(seriesId);
-//        getTitle();
+        // getTitle();
         getVedio();//标题在此方法中设置
         getList();
+
     }
 
     //获取标题
@@ -137,9 +138,9 @@
         maxId = obj.length;
         var str = "";
         for (var i in obj) {
-            var tempLR = i % 2 ? "fr" : "fl";
+            var tempLR = i % 2 ? "fr" : "fl";//暂时去掉此样式
             var temp = (parseInt(i) + 1) == innerId ? tempLR + " blue" : tempLR;
-            str += "<span class=\"" + temp + "\" onclick=\"location.href = '/coursevideo.html?sid=" + seriesId + "&iid=" + obj[i].innerId + "'\">" +
+            str += "<span class=\""+ temp +"\" onclick=\"location.href = '/coursevideo.html?sid=" + seriesId + "&iid=" + obj[i].innerId + "'\">" +
                 "[第" + obj[i].innerId + "集]" + obj[i].name + "" +
                 "</span>";
         }

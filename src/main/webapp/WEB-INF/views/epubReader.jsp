@@ -67,13 +67,13 @@
         console.log(" document.body.offsetWidth : " + document.body.offsetWidth + " document.body.offsetHeight : " + document.body.offsetHeight);
         console.log(" document.body.scrollWidth : " + document.body.clientWidth + " document.body.scrollHeight : " + document.body.clientHeight);
         console.log(" document.body.scrollTop : " + document.body.clientWidth + " document.body.scrollLeft : " + document.body.clientHeight);
-        console.log(" window.screenTop  : " + window.screenTop  + " window.screenLeft : " + window.screenLeft);
+        console.log(" window.screenTop  : " + window.screenTop + " window.screenLeft : " + window.screenLeft);
         console.log(" window.screen.height  : " + window.screen.height + " window.screen.width : " + window.screen.width);
-        console.log(" window.screen.availHeight  : " + window.screen.availHeight  + " window.screen.availWidth  : " + window.screen.availWidth );
+        console.log(" window.screen.availHeight  : " + window.screen.availHeight + " window.screen.availWidth  : " + window.screen.availWidth);
         seriesId = getUrlParamer("id");
         clientType = getClientType();
         bookinfo = getData();
-        $("#page_temp").html(1 +" / "+ bookinfo.contents.length);
+        $("#page_temp").html(1 + " / " + bookinfo.contents.length);
         writeData(1);
         writeData(2);
         writeData(3);
@@ -85,7 +85,7 @@
         index = index <= 1 ? 1 : index;
 //        $("#epub_temp").empty();
         var text = bookinfo.contents[index - 1].content;
-        $("#epub_temp").append("<div id=\"page_"+ page +"\" class=\"swiper-slide\">" + text + "</div>");
+        $("#epub_temp").append("<div id=\"page_" + page + "\" class=\"swiper-slide\">" + text + "</div>");
         console.log(text);
         page++;
     }
@@ -99,8 +99,8 @@
         var resources = $.parseJSON(tempResult);//获得该系列下的resource
 //        var width = document.documentElement.clientWidth - 20;
 //        var height = document.documentElement.clientHeight - 20;
-        var width = $("#epub_temp").width();
-        var height = $("#epub_temp").height() ;
+        var width = $("#epub_temp").width() - 10;
+        var height = $("#epub_temp").height() - 10;
         console.log("width : " + width + " height : " + height);
         var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + width + "&height=" + height + "&clientType=" + clientType);
         var obj = $.parseJSON($.parseJSON(result));
@@ -111,12 +111,12 @@
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-        console.log(" isAndroid : " + isAndroid + " isIOS : "+ isIOS)
-        if(isAndroid) {
+        console.log(" isAndroid : " + isAndroid + " isIOS : " + isIOS)
+        if (isAndroid) {
             return 1;
-        }else if (isIOS) {
+        } else if (isIOS) {
             return 2;
-        }else {
+        } else {
             return 3
         }
     }
@@ -125,13 +125,13 @@
     var swiper = new Swiper('.swiper-container', {
         observer: true,//修改swiper自己或子元素时，自动初始化swiper
         observeParents: true,//修改swiper的父元素时，自动初始化swipe
-        onSlideChangeStart: function (swiper, event){
+        onSlideChangeStart: function (swiper, event) {
             var judge = swiper.activeIndex + 3 <= page;
-            if(judge) {
+            if (judge) {
                 writeData(page);
             }
             var index = swiper.activeIndex + 1;
-            $("#page_temp").html(index +" / "+ bookinfo.contents.length);
+            $("#page_temp").html(index + " / " + bookinfo.contents.length);
         }
     });
 </script>

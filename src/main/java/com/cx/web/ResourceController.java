@@ -69,9 +69,10 @@ public class ResourceController {
                            @RequestParam(required = true, defaultValue = "1") Integer clientType,
                            HttpServletRequest request) {
         logger.info(" ---------- resource epubRead ---------- ");
-        logger.info(" paramer : id : " + id + " width : " + width + " height : " + height + " clientType : "+ clientType);
+        logger.info(" paramer : id : " + id + " width : " + width + " height : " + height + " clientType : " + clientType);
         Resource resource = resourceService.selectById(id);
-        String route = resource.getRoute().replaceFirst("/", "");
+        boolean judge = request.getRealPath("/").endsWith("/");
+        String route = judge ? resource.getRoute().replaceFirst("/", "") : resource.getRoute();//windows获取路径尾部会加个斜杠，linux则不加斜杠
         logger.info(" tempPath : " + request.getRealPath("/"));
         String path = request.getRealPath("/") + route;
         logger.info(" path : " + path);
