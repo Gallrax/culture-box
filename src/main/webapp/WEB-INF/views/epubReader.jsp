@@ -11,15 +11,22 @@
     <title>Title</title>
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/books.css"/>
 </head>
 <style>
-    .epub_content .text_none {
+    /*.epub_content .text_none {
         text-indent: 0;
-    }
+    }*/
 </style>
 <body>
-<div class="swiper-container" style="background-color:#EBEBEB">
-    <div id="epub_temp" class="swiper-wrapper" style="height: 98%; text-align:center;">
+<div class="backBox" style="height: 3%">
+    <a href="javascript:void(0);" onclick="window.history.back();"><img
+            src="static/image/arrow-blue-left.png"/><span>返回</span></a>
+    <p class="title">书城</p>
+    <img src="static/image/home.png" onclick="location.href = '/'"/>
+</div>
+<div class="swiper-container" style="height: 97%;background-color:#EBEBEB;">
+    <div id="epub_temp" class="swiper-wrapper" style="height: 90%;">
         <%--<div id="1" class="swiper-slide">
             <div class="epub_content" style="text-indent: 2em;font-size: 20px;line-height: 1.5;"><p style="margin-left:0px;"
                                                                                class="text_none">
@@ -41,7 +48,7 @@
                 <p style="margin-left:0px;"></p></div>
         </div>--%>
     </div>
-    <div id="page_temp" style="text-align:center; font-size:30px;">
+    <div id="page_temp" style="position: fixed; text-align:center; bottom: 0; left: 50%; font-size:30px;">
 
     </div>
 </div>
@@ -63,13 +70,6 @@
 
     //初始化
     function init() {
-        console.log(" document.body.clientWidth : " + document.body.clientWidth + " document.body.clientHeight : " + document.body.clientHeight);
-        console.log(" document.body.offsetWidth : " + document.body.offsetWidth + " document.body.offsetHeight : " + document.body.offsetHeight);
-        console.log(" document.body.scrollWidth : " + document.body.clientWidth + " document.body.scrollHeight : " + document.body.clientHeight);
-        console.log(" document.body.scrollTop : " + document.body.clientWidth + " document.body.scrollLeft : " + document.body.clientHeight);
-        console.log(" window.screenTop  : " + window.screenTop + " window.screenLeft : " + window.screenLeft);
-        console.log(" window.screen.height  : " + window.screen.height + " window.screen.width : " + window.screen.width);
-        console.log(" window.screen.availHeight  : " + window.screen.availHeight + " window.screen.availWidth  : " + window.screen.availWidth);
         seriesId = getUrlParamer("id");
         clientType = getClientType();
         bookinfo = getData();
@@ -85,9 +85,10 @@
         index = index <= 1 ? 1 : index;
 //        $("#epub_temp").empty();
         var text = bookinfo.contents[index - 1].content;
-        $("#epub_temp").append("<div id=\"page_" + page + "\" class=\"swiper-slide\">" + text + "</div>");
+        $("#epub_temp").append("<div id=\"page_" + page + "\" class=\"swiper-slide\"><div style=\"height: 90%;\">" + text + "</div></div>");
         console.log(text);
         page++;
+        $("br").hide();
     }
 
     //获取数据
@@ -99,8 +100,8 @@
         var resources = $.parseJSON(tempResult);//获得该系列下的resource
 //        var width = document.documentElement.clientWidth - 20;
 //        var height = document.documentElement.clientHeight - 20;
-        var width = $("#epub_temp").width() - 10;
-        var height = $("#epub_temp").height() - 10;
+        var width = $("#epub_temp").width() - 20;
+        var height = $("#epub_temp").height() - 20;
         console.log("width : " + width + " height : " + height);
         var result = jsGet("/resource/epubRead", "id=" + resources[0].id + "&width=" + width + "&height=" + height + "&clientType=" + clientType);
         var obj = $.parseJSON($.parseJSON(result));

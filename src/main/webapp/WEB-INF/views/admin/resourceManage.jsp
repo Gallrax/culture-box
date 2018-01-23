@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
+<div>名称：<input id="searchValue" type="text" placeholder="根据名称和作者进行检索"/><input type="button" value="检索"
+                                                                              onclick="flush()"/></div>
 <div>
     <table border="1" width="98%" style="text-align: center">
         <thead>
@@ -40,6 +42,7 @@
 <script>
 
     var categoryId;
+    var searchValue;
 
     $(function () {
         init();
@@ -48,6 +51,11 @@
     //初始化
     function init() {
         categoryId = getUrlParamer("categoryId");
+        flush();
+    }
+
+    function flush() {
+        searchValue = $("#searchValue").val();
         writeData(1);
         writePage();
     }
@@ -56,6 +64,7 @@
     function writeData(page) {
         $("#series_list").empty();
         var data = getData(page);
+        console.log(" data : " + data);
         var tempStr = "";
         for (var i in data) {
             tempStr += "<tr><td>" + data[i].name + "</td><td>" + data[i].type + "</td><td>" + data[i].author + "</td><td><input type=\"button\" value=\"推荐\" onclick=\"recommend(" + data[i].id + ")\"/></td></tr>";
@@ -67,14 +76,25 @@
     function getData(page) {
         var tempObj = new Object();
         tempObj.categoryPId = categoryId;//index已定义
-        var result = jsGet("/series/getByFields", "eq=" + ifyAndEnc(tempObj) + "&page=" + page);
+        var tempSearch = "";
+        if (!isEmpty(searchValue)) {
+            var temp = new Object();
+            temp.name = jsLike(searchValue);
+            temp.author = jsLike(searchValue);
+            tempSearch = ifyAndEnc(temp);
+        }
+        var fields = "eq=" + ifyAndEnc(tempObj) + "&page=" + page + (isEmpty(tempSearch) ? "" : "&like=" + tempSearch);
+//        var result = jsGet("/series/getByFields", "eq=" + ifyAndEnc(tempObj) + "&page=" + page);
+        var result = jsGet("/series/getByFields", fields);
         console.log(result);
         var obj = $.parseJSON($.parseJSON(result));
+        if (!isEmpty(searchValue)) obj = obj.records;//如果条件中有like则返回page类，因此要返回records
         return obj;
     }
 
     //写总数
     function writePage() {
+        $("#tempPage").empty();
         totalCount = getCount();
         var page = totalCount % 12 == 0 ? totalCount / 12 : totalCount / 12 + 1;
         var tempStr;
@@ -88,7 +108,16 @@
     function getCount() {
         var tempObj = new Object();
         tempObj.categoryPId = categoryId;//index已定义
-        var result = jsGet("/series/getCountByField", "eq=" + ifyAndEnc(tempObj));
+        var tempSearch = "";
+        if (!isEmpty(searchValue)) {
+            var temp = new Object();
+            temp.name = jsLike(searchValue);
+            temp.author = jsLike(searchValue);
+            tempSearch = ifyAndEnc(temp);
+        }
+        var fields = "eq=" + ifyAndEnc(tempObj) + (isEmpty(tempSearch) ? "" : "&like=" + tempSearch);
+//        var result = jsGet("/series/getCountByField", "eq=" + ifyAndEnc(tempObj));
+        var result = jsGet("/series/getCountByField", fields);
         console.log(result);
         var obj = $.parseJSON($.parseJSON(result));
         return obj;

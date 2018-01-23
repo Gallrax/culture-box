@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
+<div id="search_Div" style="display: none;">名称：<input id="searchValue" type="text" placeholder="根据名称和作者进行检索"/><input type="button" value="检索"
+                                                                              onclick="flush()"/></div>
 <div>
     <table border="1" style="width:98%; height: 80%; text-align: center">
         <thead>
@@ -44,6 +46,7 @@
     var pageUrl;
     var eq;
     var totalCount;
+    var searchValue;
 
     $(function () {
         init();
@@ -61,10 +64,15 @@
             pageUrl = "/category/getCountByField";
         } else {
             $("#page_div").show();
+            $("#search_Div").show();
             eq = "";
             url = "/series/getByFields";
             pageUrl = "/series/getCountByField";
         }
+        flush();
+    }
+    function flush() {
+        searchValue = $("#searchValue").val();
         writeData(1);
         writePage();
     }
@@ -72,16 +80,17 @@
     function writeData(index) {
         $("#clicks_list").empty();
         var data = getData(index);
+        console.log(" data : " + data);
         var field;
         var tempStr = "";
         for (var i = 0 in data) {
             /*if (type == 1) {
-                field = "eq=" + encodeURI(encodeURI("{\"outterId\":" + data[i].id + ", \"type\":1}"));
-            } else if (type == 2) {
-                field = "eq=" + encodeURI(encodeURI("{\"innerId\":" + data[i].id + ", \"type\":1}"));
-            } else {
-                field = "eq=" + encodeURI(encodeURI("{\"innerId\":" + data[i].id + ", \"type\":2}"));
-            }*/
+             field = "eq=" + encodeURI(encodeURI("{\"outterId\":" + data[i].id + ", \"type\":1}"));
+             } else if (type == 2) {
+             field = "eq=" + encodeURI(encodeURI("{\"innerId\":" + data[i].id + ", \"type\":1}"));
+             } else {
+             field = "eq=" + encodeURI(encodeURI("{\"innerId\":" + data[i].id + ", \"type\":2}"));
+             }*/
             field = returnField(data[i].id);
             var tempResult = jsGet("/click/getByFields", field);
             var tempCount = $.parseJSON(tempResult);
@@ -93,13 +102,24 @@
 
     function getData(index) {
         var tempField = type == 3 ? "eq=" + eq + "&page=" + index : "eq=" + eq;
+        var tempSearch = "";
+        if (!isEmpty(searchValue)) {
+            var temp = new Object();
+            temp.name = jsLike(searchValue);
+            tempSearch = ifyAndEnc(temp);
+            tempField += "&like=" + tempSearch;
+        }
+        console.log("getData tempField : " + tempField);
         var result = jsGet(url, tempField);
         console.log(result);
-        return type == 3 ? $.parseJSON($.parseJSON(result)) : $.parseJSON(result);
+        var tempObj = type == 3 ? $.parseJSON($.parseJSON(result)) : $.parseJSON(result);
+        if (!isEmpty(searchValue)) tempObj = tempObj.records;//如果条件中有like则返回page类，因此要返回records
+        return tempObj;
     }
 
     //写总数
     function writePage() {
+        $("#tempPage").empty();
         totalCount = getCount();
         console.log(" totalCount : " + totalCount);
         var page = totalCount % 12 == 0 ? totalCount / 12 : totalCount / 12 + 1;
@@ -111,7 +131,16 @@
     }
 
     function getCount() {
-        var result = jsGet(pageUrl, "eq=" + eq);
+        var tempField = "eq=" + eq;
+        if (!isEmpty(searchValue)) {
+            var temp = new Object();
+            temp.name = jsLike(searchValue);
+            tempSearch = ifyAndEnc(temp);
+            tempField += "&like=" + tempSearch;
+        }
+//        var result = jsGet(pageUrl, "eq=" + eq);
+        console.log("tempField : " + tempField);
+        var result = jsGet(pageUrl, tempField);
         return $.parseJSON(result);
     }
 
@@ -136,13 +165,13 @@
         } else if (type == 2) {
             var result = jsGet("/category/getByFields", "eq=" + encodeURI(encodeURI("{\"id\":" + obj.pid + "}")));
             var tempObj = $.parseJSON(result);//分类的父分类
-            tempStr = "<tr><td>" + obj.name + "</td><td>" + tempCount + "</td><td>"+ tempObj[0].name +"</td><td></td></tr>";
+            tempStr = "<tr><td>" + obj.name + "</td><td>" + tempCount + "</td><td>" + tempObj[0].name + "</td><td></td></tr>";
         } else {
             var result1 = jsGet("/category/getByFields", "eq=" + encodeURI(encodeURI("{\"id\":" + obj.categoryId + "}")));
             var result2 = jsGet("/category/getByFields", "eq=" + encodeURI(encodeURI("{\"id\":" + obj.categoryPId + "}")));
             var tempObj1 = $.parseJSON(result1);//系列的分类
             var tempObj2 = $.parseJSON(result2);//分类的父分类
-            tempStr = "<tr><td>" + obj.name + "</td><td>" + tempCount + "</td><td>"+ tempObj2[0].name +"</td><td>"+ tempObj1[0].name +"</td></tr>";
+            tempStr = "<tr><td>" + obj.name + "</td><td>" + tempCount + "</td><td>" + tempObj2[0].name + "</td><td>" + tempObj1[0].name + "</td></tr>";
         }
         return tempStr;
     }

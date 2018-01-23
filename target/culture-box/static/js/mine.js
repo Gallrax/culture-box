@@ -32,7 +32,7 @@ function jsLike(value) {
 }
 
 function ifyAndEnc(obj) {
-    eq = JSON.stringify(obj);
+    var eq = JSON.stringify(obj);
     var s = encodeURI(encodeURI(eq));
     return s;
 }
