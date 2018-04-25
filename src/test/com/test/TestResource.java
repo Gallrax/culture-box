@@ -1,6 +1,7 @@
 package com.test;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.cx.entity.Resource;
 import com.cx.entity.Series;
 import com.cx.service.ResourceService;
@@ -113,8 +114,8 @@ public class TestResource {
                         split[0].toLowerCase()
                         + "."
                         + split[1];
-                System.out.println( " old : "+route);
-                System.out.println( " new : "+tempStr);
+                System.out.println(" old : " + route);
+                System.out.println(" new : " + tempStr);
                 resource.setRoute(tempStr);
                 resourceService.updateById(resource);
             }
@@ -133,5 +134,41 @@ public class TestResource {
         System.out.println(str);
 //        String s = tempStr.toUpperCase();
 //        System.out.println(s);
+    }
+
+    @Test
+    public void test08() {
+        String prefix = "/datas/resources/epub/cover/";
+        EntityWrapper<Series> ew = new EntityWrapper<>();
+        ew.like("image", "%文化盒子%");
+        List<Series> series = seriesService.selectList(ew);
+        for (Series serie : series) {
+            System.out.println(serie.getImage());
+            String[] split = serie.getImage().split("\\\\");
+            String temp = prefix + split[split.length - 1];
+            System.out.println(temp);
+            serie.setImage(temp);
+            seriesService.updateById(serie);
+            Series tempSeries = seriesService.selectById(serie.getId());
+            System.out.println(tempSeries.getImage());
+        }
+    }
+
+    @Test
+    public void test09() {
+        String prefix = "/datas/resources/epub/EPUB/";
+        EntityWrapper<Resource> ew = new EntityWrapper<>();
+        ew.like("route", "%文化盒子%");
+        List<Resource> resources = resourceService.selectList(ew);
+        for (Resource resource : resources) {
+            System.out.println(resource.getRoute());
+            String[] split = resource.getRoute().split("\\\\");
+            String temp = prefix + split[split.length - 1];
+            System.out.println(temp);
+            resource.setRoute(temp);
+            resourceService.updateById(resource);
+            Resource tempResource = resourceService.selectById(resource.getId());
+            System.out.println(tempResource.getRoute());
+        }
     }
 }
