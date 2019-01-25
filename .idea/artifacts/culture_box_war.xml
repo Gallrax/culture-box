@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="culture-box:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="culture-box.war">
-      <element id="artifact" artifact-name="culture-box:war exploded" />
-    </root>
-  </artifact>
-</component>

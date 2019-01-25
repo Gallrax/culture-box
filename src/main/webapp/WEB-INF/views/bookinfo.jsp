@@ -52,6 +52,13 @@
         </div>--%>
     </div>
 </div>
+<!--收藏弹框-->
+<div class="mask"></div>
+<div class="content-pop">
+    <h2>通知</h2>
+    <div class="aside">收藏资源需要下载相应APP，是否前往跳转？</div>
+    <div class="btn_con"><a class="btn btn_true">是</a><a class="btn btn_false">否</a></div>
+</div>
 </body>
 </html>
 <script src="static/js/jquery.min.js"></script>
@@ -75,7 +82,8 @@
         var tempDiv = "<p>" + obj[0].name + "</p>" +
             "<p>作者：" + obj[0].author + "著</p>" +
             "<p>出版社：" + obj[0].press + "</p>" +
-            "<img src=\"static/image/readbtn.png\" onclick=\"location.href = '/epubReader.html?id="+ seriesId +"'\"/>";
+            "<img src=\"static/image/readbtn.png\" onclick=\"location.href = '/epubReader.html?id=" + seriesId + "'\"/>" +
+            "<div class=\"content-love\"><b class=\"icon\"></b><span>收藏</span></div>";
         $("#data_div").append(tempDiv);
         var tempText = obj[0].introduce;
         $("#data_text").append(tempText);
@@ -86,7 +94,7 @@
         var obj = getBooks(categoryPId);
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div onclick=\"location.href = '/bookinfo.html?sid="+ obj[i].id +"'\" class=\"nov-section fl\"><img src=\"" + obj[i].image + "\" /><center>" + autoReplaceLong(obj[i].name) + "</center> </div>";
+            tempStr += "<div onclick=\"location.href = '/bookinfo.html?sid=" + obj[i].id + "'\" class=\"nov-section fl\"><img src=\"" + obj[i].image + "\" /><center>" + autoReplaceLong(obj[i].name) + "</center> </div>";
         }
         $("#books").append(tempStr);
     }
@@ -110,4 +118,20 @@
     }
 
 
+</script>
+<script>
+    $(".content-love .icon").click(function () {
+        $(".content-pop").show();
+        $(".mask").show();
+        $(".btn_true").click(function () {
+            $(".content-pop").hide();
+            $(".mask").hide();
+            $(".content-love").addClass("content-love-cur");
+        });
+        $(".btn_false").click(function () {
+            $(".content-pop").hide();
+            $(".mask").hide();
+            $(".content-love").removeClass("content-love-cur");
+        })
+    })
 </script>

@@ -16,6 +16,7 @@
             padding-bottom: 1rem;
             border-bottom: 1px solid #dcdcdc;
         }
+
         .content-section center {
             font-size: 1rem;
             color: #000000;
@@ -30,7 +31,11 @@
 </head>
 
 <body>
-<img src="/datas/logo/${_logo}" class="head"/>
+<div class="headBox">
+    <img src="/datas/logo/${_logo}" class="head"/>
+    <a href="" class="down"></a>
+</div>
+<%--<img src="/datas/logo/${_logo}" class="head"/>--%>
 <div class="banner-wrap">
     <div class="swiper-container swiper-container1">
         <div class="swiper-wrapper" id="carousel_image">
@@ -42,17 +47,45 @@
     </div>
 </div>
 <div class="nov-wrap">
-    <div class="nov fl">
-        <img src="static/image/nov1.png" onclick="location.href='/books.html'"/>
-        <center>书城</center>
+    <div class="swiper-nav swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide nov">
+                <img src="/static/image/nov1.png" onclick="location.href='/books.html'"/>
+                <center>书城</center>
+            </div>
+            <div class="swiper-slide nov">
+                <img src="/static/image/nov2.png" onclick="location.href='/course.html'"/>
+                <center>公开课</center>
+            </div>
+            <div class="swiper-slide nov">
+                <img src="/static/image/nov3.png" onclick="location.href='/reader.html'"/>
+                <center>有声读物</center>
+            </div>
+            <div class="swiper-slide nov">
+                <img src="/static/image/nov4.png" onclick="location.href='/informations.html'"/>
+                <center>资讯</center>
+            </div>
+        </div>
     </div>
-    <div class="nov fl">
-        <img src="static/image/nov2.png" onclick="location.href='/course.html'"/>
-        <center>公开课</center>
+</div>
+<!--消息资讯 2018.08.30-->
+<div class="content-wrap clearfix">
+    <div class="content-title">
+        <span class="fl">消息资讯</span>
+        <img class="fr" src="/static/image/jiantou.png"/>
+        <div class="fr" onclick="location.href='/informations.html'">更多</div>
     </div>
-    <div class="nov fl">
-        <img src="static/image/nov3.png" onclick="location.href='/reader.html'"/>
-        <center>有声读物</center>
+    <div class="newsCon">
+        <div class="img"><img src="/static/image/news.jpg"/></div>
+        <div class="news_r">
+            <div class="news_tit">
+                <time class="fr">2018-01-01</time>
+                <h2 class="word">文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题</h2>
+            </div>
+            <div class="news_lib words">
+                如果你无法简洁的表达你的想法，那只能说明你还不够了解它。如果你无法简洁的表达你的想法，那只能说明你还不够了解它。如果你无法简洁的表达你的如果你无法简洁的表达你的想法，那只能说明你还不够了解它。
+            </div>
+        </div>
     </div>
 </div>
 <div class="content-wrap clearfix">
@@ -158,16 +191,16 @@
         var obj = getSeries(pcid);
         console.log(obj.length);
         var url;
-        if(pcid == 1) {
+        if (pcid == 1) {
             url = "/bookinfo.html";
-        }else if(pcid == 2) {
+        } else if (pcid == 2) {
             url = "/coursevideo.html";
-        }else if(pcid == 3) {
+        } else if (pcid == 3) {
             url = "/coursemusic.html";
         }
         var tempStr = "";
         for (var i in obj) {
-            tempStr += "<div class=\"swiper-slide content-section\" onclick=\"location.href = '"+ url +"?sid="+ obj[i].id +"'\"><img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\"/><center>" + obj[i].name + "</center></div>";
+            tempStr += "<div class=\"swiper-slide content-section\" onclick=\"location.href = '" + url + "?sid=" + obj[i].id + "'\"><img src=\"" + autoReplaceImage(obj[i].image, "/static/image/listen.png") + "\"/><center>" + obj[i].name + "</center></div>";
         }
         $("#" + domId).append(tempStr);
     }
@@ -179,11 +212,12 @@
         return obj;
     }
 
+
     function endInit() {
         var swiper = new Swiper('.swiper-container1', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-            autoplay:2000,
+            autoplay: 2000,
             observer: true,//修改swiper自己或子元素时，自动初始化swiper
             observeParents: true//修改swiper的父元素时，自动初始化swiper
         });
@@ -211,9 +245,15 @@
 </script>
 
 <script src="/static/js/swiper.min.js"></script>
+<%-- 四个导航初始化 --%>
 <script>
-
-
+    var tempSwipper = new Swiper('.swiper-banner', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var tempNav = new Swiper('.swiper-nav', {
+        slidesPerView: 4,
+    })
 </script>
 </body>
 </html>

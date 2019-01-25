@@ -1,9 +1,21 @@
+.headBox{
+	width:100%;
+	position: relative;
+}
 .head {
 	display: block;
 	width: 100%;
-	height: 2.5rem;
 }
-
+.headBox .down{
+	width:3.958333rem;
+	height: 1.166666rem;
+	position: absolute;
+	right:0.416666rem;
+	top:50%;
+	margin-top:-0.583333rem;
+	background: url(/static/image/head_down.png) no-repeat;
+	background-size: contain;
+}
 .banner-wrap {
 	width: 100%;
 	height: 13.375rem;
@@ -19,14 +31,12 @@
 	width: 100%;
 	height: 100%;
 }
-
+/*2018.08.30*/
 .nov-wrap {
 	width: 100%;
 	height: 10.3333rem;
 	overflow: hidden;
 	border-bottom: 1px solid #dcdcdc;
-	padding-left: 1.9166rem;
-	padding-right: 1.9166rem;
 }
 
 .nov {
@@ -44,7 +54,7 @@
 }
 
 .nov center {
-	font-size: 1.0833rem;
+	font-size: 1rem;
 	color: #313131;
 }
 
@@ -70,7 +80,7 @@
 
 .content-title div {
 	line-height: 2.25rem;
-	font-size: 0.9166rem;
+	font-size: 0.7916rem;
 	color: #000000;
 }
 
@@ -119,8 +129,92 @@
 .listen {
 	padding-bottom: 0rem;
 }
-
-
+.newsCon{
+	padding:0.625rem 0.75rem 1.666666rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+}
+.newsCon .img{
+	width:9.583333rem;
+	height:5.625rem;
+	overflow: hidden;
+	background: #CCC;
+	margin-right: 1.041666rem;
+}
+.newsCon .img img{
+	display: block;
+	width:100%;
+	min-height: 100%;
+}
+.news_r{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	flex: 1;
+}
+.news_tit{
+	font-size:1rem;
+	line-height:1.25rem;
+	margin-top:-0.208333rem;
+}
+.news_tit time{
+	font-size:0.5rem;
+	color:#a0a0a0;
+}
+.news_tit h2{
+	margin-right:6.25rem;
+}
+.news_lib{
+	margin-top:0.541666rem;
+}
+/*列表页*/
+.list li{
+	height: 6.041666rem;
+	padding:0 1.666666rem;
+	border-bottom: 1px solid #eeeeee;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+}
+.list li .img{
+	width:3.666666rem;
+	height: 3.666666rem;
+	margin-right: 0.833333rem;
+	overflow: hidden;
+	border-radius: 0.416666rem;
+	background: url(../image/news_img.jpg) no-repeat;
+	background-size: contain;
+}
+.list li .img img{
+	display: block;
+	width:100%;
+	min-height: 100%;
+}
+.list li .lib{
+	width:100%;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	flex: 1;
+}
+.list li h2{
+	width:100%;
+	font-size:1.25rem;
+	line-height:1.5;
+}
+.list li p{
+	font-size:0.916666rem;
+	color:#a0a0a0;
+	margin-top:0.208333rem;
+}
+.artile{
+	padding:20px;
+}
+.artile p{
+	font-size:16px;
+	line-height:1.7;
+	margin-bottom: 30px;
+}
 /*加载*/
 
 .pullUp {

@@ -1,9 +1,17 @@
 package com.test;
 
 import com.alibaba.fastjson.JSON;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.*;
 
 /**
@@ -63,5 +71,15 @@ public class TestOther {
         for (String s : temp) {
             System.out.println(" test set : " + s);
         }
+    }
+
+    @Test
+    public void test05() throws IOException {
+        String objectid = "993e43575ae2ded5dcd82f75e232fb0c";
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        HttpGet httpGet = new HttpGet("http://jpkc.yunya2.chaoxing.com/editor/cdn/status/" + objectid);
+        CloseableHttpResponse execute = httpClient.execute(httpGet);
+        System.out.println(EntityUtils.toString(execute.getEntity(), Charset.forName("UTF-8")));
+        httpClient.close();
     }
 }

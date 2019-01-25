@@ -29,56 +29,68 @@
 	width: 100%;
 	padding: 2.1666rem 1.5416rem 1.5416rem 1.5416rem;
 }
+.content-title {
+	align-items:flex-end;
+}
 .content-img1{
 	display: block;
 	width: 11.7916rem;
 	height: 16.6666rem;
-	box-shadow: 0px 0px 1px #000000;
+	box-shadow: 1px  #000000;
 }
 .content-section{
-	height: 14.5rem;
 	margin-left: 1rem;
+	line-height: 1.5;
+	padding-bottom: 0.6rem;
 }
 .content-section p:nth-child(1){
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: #000000;
 	font-weight: 900;
-	margin-bottom: 1.25rem;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+	margin-bottom: 0.75rem;
+	-webkit-line-clamp:2;
 }
 .content-section p:nth-child(2){
-	font-size: 1.1666rem;
+	font-size: 1rem;
 	color: #000;
-	margin-bottom: 1.25rem;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	width: 100%;
+	margin-bottom: 0.75rem;
+	-webkit-line-clamp:1;
 }
 .content-section p:nth-child(3){
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: #000;
-	margin-bottom: 3.25rem;
-}
-.content-section
-	center {      font-size: 1rem;
-	color: #000000;
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+	margin-bottom: 1.666666rem;
+	-webkit-line-clamp:1;
 }
 .content-section img{
 	display: block;
 	width: 11.5833rem;
 	height: 2.9166rem;
+	margin-left:-0.26rem;
+}
+.content-love{
+	margin-top:1.666666rem;
+}
+.content-love span{
+	font-size:0.75rem;
+	color:#000;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	display: inline-block;
+}
+.content-love .icon{
+	display: inline-block;
+	vertical-align: middle;
+	width:1.583333rem;
+	height:1.416666rem;
+	background: url(../image/icon_love.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 0.625rem;
+	overflow: hidden;
+}
+.content-love-cur .icon{
+	background: url(../image/icon_love_cur.png) no-repeat;
+	background-size: 100% 100%;
 }
 @media screen and (min-width:320px) and (max-width:345px) {
 .content-img1{
@@ -122,14 +134,58 @@
 .content p:nth-child(2){
 	display: block;
 	width: 100%;
-	height: 11.875rem;
-	font-size: 1.1666rem;
+	font-size: 0.8333rem;
 	color: #313131;
 	line-height: 1.5rem;
 	overflow: hidden;
 	margin-bottom: 1.4583rem;
 }
-
+.mask{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,.2);
+	display: none;
+}
+.content-pop{
+	position: fixed;
+	top:40%;
+	left: 12%;
+	width:76%;
+	margin-top:-6.25rem;
+	padding:2.291666rem 0.833333rem 2.083333rem;
+	text-align: center;
+	min-height: 13.75rem;
+	background: #FFF;
+	border-radius: 0.833333rem;
+	display: none;
+}
+.content-pop h2{
+	font-size:1.5rem;	
+}
+.content-pop .aside{
+	font-size:1rem;
+	line-height:1.5;
+	margin-top:1.458333rem;
+}
+.content-pop .btn_con{
+	margin-top:2.916666rem;
+}
+.content-pop .btn{
+	width:7.041666rem;
+	height: 2.083333rem;
+	line-height: 2.083333rem;
+	text-align: center;
+	background: #eee;
+	border:1px solid #a0a0a0;
+	border-radius: 0.416666rem;
+	margin:0 0.958333rem;
+	font-size:1rem;
+	display:inline-block;
+	vertical-align: top;
+}
 .nov-wrap {
 	width: 100%;
 	padding-bottom: 1rem;
@@ -172,7 +228,6 @@
 .nov-section {
 	width: 33%;
 	height: 9.7083rem;
-	margin-bottom:10px;
 }
 
 .nov-section img {
@@ -184,6 +239,6 @@
 }
 
 .nov-section center {
-	font-size: 0.9166rem;
+	font-size: 0.5833rem;
 	color: #000000;
 }
